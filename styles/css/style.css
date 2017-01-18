@@ -2278,7 +2278,7 @@ a, .btn-link { color: #5aa9f0; }
 .sidenav nav .top-shows .action { display: block; text-align: right; font-size: 13px; color: #424242; }
 .sidenav nav .top-shows .action > i { margin-left: 5px; color: #5aa9f0; }
 @media (max-width: 991px) { .sidenav:before { display: none; }
-  .sidenav .nav-mobile { display: block; position: fixed; top: 0px; left: 0px; z-index: 30; }
+  .sidenav .nav-mobile { display: block; position: fixed; top: 0px; left: 0px; z-index: 35; }
   .sidenav .nav-mobile > a { display: block; text-decoration: none; color: #fff; padding: 32px 20px; width: 75px; height: 90px; }
   .sidenav .nav-mobile > a > img { width: 35px; position: absolute; top: 27px; left: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
   .sidenav .nav-mobile > a > img.close-icon { width: 28px; top: 25px; left: 24px; -moz-transform: scale(0); -o-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }

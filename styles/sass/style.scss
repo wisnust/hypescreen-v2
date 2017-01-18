@@ -428,7 +428,7 @@ a, .btn-link {
 		.nav-mobile { 
 			display: block;
 			@include position(fixed, $top: 0px, $left: 0px);
-		    z-index: 30;
+		    z-index: 35;
 
 		    > a { 
 		    	display: block;
