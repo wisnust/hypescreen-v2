@@ -2309,6 +2309,7 @@ a, .btn-link { color: #5aa9f0; }
 .filter > .filter-body > .filter-filter .btn-link { font-size: 12px; letter-spacing: -0.09px; }
 .filter > .filter-body > .filter-tags { padding: 20px 20px 10px; }
 .filter > .filter-body > .filter-more-tags { border-top: 1px solid rgba(137, 152, 171, 0.23); padding: 20px; }
+.filter > .filter-body > .filter-more-tags .button-checkbox .btn-tag { font-size: 12px; letter-spacing: -0.09px; padding: 4px 19px; }
 .filter > .filter-body > .btn-more-tags { padding-left: 10px; }
 .filter > .filter-body > .btn-more-tags > .btn-link { font-size: 12px; text-transform: uppercase; }
 .filter > .filter-body > .btn-close-collapse > .btn-link { display: block; padding: 10px 0px 20px; }
