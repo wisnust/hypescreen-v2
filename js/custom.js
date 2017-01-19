@@ -16,7 +16,7 @@ $(document).ready(function() {
     $(window).on("resize", function() {
 
         $topNav.css('top', $logoHeight);
-        $sideNav.css('top', $topNav_height + $logoHeight + 60);
+        // $sideNav.css('top', $topNav_height + $logoHeight + 60);
 
     });
     
@@ -86,6 +86,11 @@ $(document).ready(function() {
             updateDisplay(); 
         }
         init();
+    });
+
+    // Filter tags
+    $('.btn-more-tags .btn-link').click(function() {
+        $(this).find('span').html($('.btn-more-tags .btn-link span').text() == 'Less tags' ? 'More tags' : 'Less tags');
     });
 
 });

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Tags-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="What's-new-(More-tags)" transform="translate(-454.000000, -617.000000)" fill="#56A7F3">
+            <g id="Customize" transform="translate(433.000000, 238.000000)">
+                <g id="Tags-expanded" transform="translate(2.000000, 59.000000)">
+                    <g id="More-tags" transform="translate(19.000000, 318.000000)">
+                        <g id="Tags-Icon" transform="translate(0.000000, 2.000000)">
+                            <path d="M10.2757661,0 L6.67374487,0 C6.31354275,0 5.98002226,0.132564841 5.73988752,0.38443804 L0.390218965,5.67377522 C-0.130072988,6.1907781 -0.130072988,7.0259366 0.390218965,7.54293948 L3.96555855,11.0824207 C4.21903411,11.3342939 4.5525546,11.4668588 4.91275672,11.4668588 C5.27295884,11.4668588 5.60647932,11.3342939 5.85995489,11.0824207 L11.2096234,5.76657061 C11.463099,5.52795389 11.609848,5.19654179 11.609848,4.8518732 L11.609848,1.32564841 C11.609848,0.596541787 11.0095112,0 10.2757661,0 Z M8.14790541,4.6 C8.79075739,4.6 9.31189189,4.08512746 9.31189189,3.45 C9.31189189,2.81487254 8.79075739,2.3 8.14790541,2.3 C7.50505342,2.3 6.98391892,2.81487254 6.98391892,3.45 C6.98391892,4.08512746 7.50505342,4.6 8.14790541,4.6 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

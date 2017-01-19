@@ -476,6 +476,7 @@ a, .btn-link {
 		// 	bottom: 0px;
 		// }
 		nav {
+			top: 322.422px;
 			width: 100%;
 			height: auto;
 			bottom: inherit;
@@ -544,6 +545,15 @@ a, .btn-link {
     	width: 150px;
     	margin: 0 auto;
     }
+	@media (max-width: $screen-sm-max) {
+		font-size: 24px;
+		color: #B6BBC0;
+		letter-spacing: 1.53px;
+		margin-bottom: 30px;
+		&:after {
+			display: none;
+		}
+	}
 }
 
 .filter {
@@ -551,6 +561,7 @@ a, .btn-link {
 	border: 1px solid #56A7F3;
 	box-shadow: 6px 6px 0 0 rgba($c-black, .09);
 	border-radius: 4px;
+	margin-bottom: 50px;
 
 	> .filter-header {
 		> h2 { 
@@ -571,7 +582,7 @@ a, .btn-link {
 	}
 	> .filter-body {
 		border-top: 1px solid $c-blue;
-		.filter-filter {
+		> .filter-filter {
 			margin: -6px -12px 0px;
 			padding: 20px 20px 0px;
 			.btn-link {
@@ -579,11 +590,47 @@ a, .btn-link {
 				letter-spacing: -0.09px;
 			}
 		}
-		.filter-tags {
+		> .filter-tags {
 			padding: 20px 20px 10px;
 		}
-		.filter-more-tags {
+		> .filter-more-tags {
 			border-top: 1px solid rgba(137,152,171,0.23);
+			padding: 20px;
+		}
+		> .btn-more-tags {
+			padding-left: 10px;
+			> .btn-link {
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+		}
+		> .btn-close-collapse {
+			> .btn-link {
+				display: block;
+				padding: 10px 0px 20px;
+			}
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+
+		@include box-shadow(0px 2px 4px rgba($c-black, .25));
+
+		> .filter-body {
+			> .filter-filter {
+				padding: 15px 20px 0px;
+				> .pull-left, > .pull-right {
+					float: none !important;
+					text-align: center;
+				}
+			}
+			> .filter-tags {
+				padding: 10px 5px 10px;
+				text-align: center;
+			}
+			> .filter-more-tags {
+				padding: 10px 5px 10px;
+    			text-align: center;
+			}
 		}
 	}
 }
@@ -607,6 +654,9 @@ a, .btn-link {
 	    	outline: none !important;
 	    	@include box-shadow(0px 0px 0px transparent);
 	    }
+	    &:hover {
+	    	background-color: rgba($c-blue, .1) !important;
+	    }
 	    &.active {
 	    	background-color: $c-blue !important;
 	    	color: $c-white !important;
@@ -614,6 +664,9 @@ a, .btn-link {
 	    	outline: none !important;
 	    	@include box-shadow(0px 0px 0px transparent);
 	    }
+	}
+	@media (max-width: $screen-sm-max) {
+		margin-right: 5px;
 	}
 }
 // =============================================================================
