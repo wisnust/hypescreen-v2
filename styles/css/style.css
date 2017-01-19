@@ -2326,4 +2326,34 @@ a, .btn-link { color: #5aa9f0; }
 .button-checkbox .btn-tag.active { background-color: #5aa9f0 !important; color: #fff !important; border: 1px solid #5aa9f0 !important; outline: none !important; -moz-box-shadow: 0px 0px 0px transparent; -o-box-shadow: 0px 0px 0px transparent; -webkit-box-shadow: 0px 0px 0px transparent; box-shadow: 0px 0px 0px transparent; }
 @media (max-width: 991px) { .button-checkbox { margin-right: 5px; } }
 
+.card { background: #fff; border: 1px solid #E2EDF7; box-shadow: 0 15px 20px 0 rgba(133, 169, 207, 0.11); border-radius: 7px; }
+.card > .card-header { padding: 25px 35px; }
+.card > .card-header::after { clear: both; content: ""; display: block; }
+.card > .card-header .episode { font-size: 22px; font-weight: 400; color: #737C8A; float: left; letter-spacing: 0; margin: 0px; line-height: 30px; }
+.card > .card-header .episode > span { font-weight: bold; color: #56A7F3; }
+.card > .card-header .share { float: right; }
+.card > .card-header .share > a { background: rgba(105, 156, 205, 0.1); border-radius: 100px; width: 32px; height: 32px; display: inline-block; padding: 5px; text-align: center; }
+.card > .card-header .share > a > i { font-size: 10px; }
+.card > .card-body { margin-bottom: 30px; padding: 0px 35px 0px; position: relative; }
+.card > .card-body::after { clear: both; content: ""; display: block; }
+.card > .card-body > .image { border-radius: 4px; width: 450px; height: 250px; float: left; margin-right: 30px; position: relative; overflow: hidden; }
+.card > .card-body > .image > img { width: 100%; height: 100%; object-fit: cover; }
+.card > .card-body > .image > .play-time { background: rgba(0, 0, 0, 0.57); color: #fff; font-size: 12px; padding: 10px 15px; display: inline-block; position: absolute; bottom: 20px; left: 20px; }
+.card > .card-body > .image > .btn-play { position: absolute; top: 50%; left: 50%; margin-top: -22.5px; margin-left: -22.5px; z-index: 3; }
+.card > .card-body > .image > .btn-play > a { opacity: 0.85; background: rgba(0, 0, 0, 0.57); border: 1px solid rgba(255, 255, 255, 0); border-radius: 100px; color: #fff; width: 55px; height: 55px; display: inline-block; padding: 15px; text-align: center; }
+.card > .card-body > .image > .btn-play > a > i { font-size: 12px; }
+.card > .card-body > .image > .btn-play > a:hover { opacity: 1; }
+.card > .card-body > .content > h2 { font-size: 18px; font-weight: 400; letter-spacing: 0; line-height: 27px; margin: -7px 0px 10px; }
+.card > .card-body > .content > h2 > a { color: #F38D4B; }
+.card > .card-body > .content > .time { font-size: 11px; color: #B6BBC0; letter-spacing: -0.11px; margin-bottom: 18px; display: block; }
+.card > .card-body > .content > .time > i { margin-right: 8px; }
+.card > .card-body > .content > .tags > a { background-color: #EDEDED; border: 0px; font-family: Lato-Regular; font-size: 11px; color: #737982; letter-spacing: -0.1px; margin: 0px 8px 8px 0px; border-radius: 200px; padding: 3px 20px; -moz-transition: background-color 0.3s, color 0.3s; -o-transition: background-color 0.3s, color 0.3s; -webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
+.card > .card-body > .content > .tags > a:hover, .card > .card-body > .content > .tags > a:focus { color: #fff; background-color: #5aa9f0; }
+.card > .card-body > .content > .likes { position: absolute; bottom: 0px; left: 515px; min-width: 90px; }
+.card > .card-body > .content > .likes::after { clear: both; content: ""; display: block; }
+.card > .card-body > .content > .likes > a { background-image: linear-gradient(-58deg, #925AF7 0%, #FF6C37 100%); box-shadow: 0 9px 19px 0 rgba(208, 100, 138, 0.41); border-radius: 100px; width: 46px; height: 46px; display: inline-block; padding: 10px; text-align: center; float: left; margin-right: 10px; position: relative; z-index: 3; }
+.card > .card-body > .content > .likes > .count { margin-top: 5px; margin-bottom: 3px; opacity: 0.71; font-size: 26px; color: #5B6575; letter-spacing: -0.57px; line-height: 18px; display: block; }
+.card > .card-body > .content > .likes > .text { opacity: 0.31; font-size: 11px; color: #5B6575; letter-spacing: -0.17px; line-height: 18px; text-transform: uppercase; display: block; }
+.card > .card-body > .content > .source { position: absolute; right: 35px; bottom: 0px; }
+
 /*# sourceMappingURL=style.css.map */
