@@ -136,11 +136,17 @@
 
                 <!-- Filter -->
                 <div class="filter">
-                    <div class="filter-header" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
-                        <h2>Customize Feed <img src="images/filter.svg"/></h2>
+
+                    <!-- Filter Header -->
+                    <div class="filter-header collapsed" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                        <h2><img src="images/filter.svg"/> <span>Customize Feed</span> <img src="images/arrow_up_icon.svg" class="arrow" /></h2>
                     </div>
+
+                    <!-- Filter Body -->
                     <div class="filter-body collapse" id="collapseFilter">
-                        <div class="filter-filter clearfix">
+
+                        <!-- Filter Action -->
+                        <div class="filter-action clearfix">
                             <div class="pull-left">
                                 <a href="#" class="btn btn-link">Clear All</a>
                                 <a href="#" class="btn btn-link">Select All</a>
@@ -149,6 +155,8 @@
                                 <a href="#" class="btn btn-link">All Publisher <i class="fa fa-caret-down"></i></a>
                             </div>
                         </div>
+
+                        <!-- Filter Tags -->
                         <div class="filter-tags">
                             <span class="button-checkbox">
                                 <button type="button" class="btn btn-tag" data-color="default">Business &amp; Tech</button>
@@ -189,12 +197,10 @@
                             <span class="button-checkbox">
                                 <button type="button" class="btn btn-tag" data-color="default">YouTubers</button>
                                 <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
+                            </span>  
                         </div>
+
+                        <!-- Filter More Tags -->
                         <div class="filter-more-tags collapse" id="MoreTags">
                             <div class="filter-tags">
                                 <span class="button-checkbox">
@@ -287,28 +293,39 @@
                                 </span> 
                             </div>
                         </div>
+
+                        <!-- Button Filter More Tags -->
                         <div class="btn-more-tags">
                             <a class="btn btn-link" role="button" data-toggle="collapse" href="#MoreTags" aria-expanded="false" aria-controls="MoreTags">
                                 <img src="images/tags_icon.svg"/>&nbsp; <span>More Tags</span>
                             </a> 
-                        </div>
-                        <div class="btn-close-collapse text-center">
-                            <a class="btn btn-link" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
-                                Collapse&nbsp; <img src="images/arrow_up_icon.svg"/>
-                            </a> 
-                        </div>
+                        </div> 
                     </div>
                 </div> 
 
-                <!-- Newsfeed Items -->
-                <div class="card">
+                <!-- Newsfeed Post -->
+                <div class="newsfeed-post card">
+
+                    <!-- Header -->
                     <div class="card-header">
                         <h3 class="episode">NEW EPISODE : <span>7 Minutes in Heaven</span></h3>
                         <div class="share">
-                            <a href=""><i class="fa fa-share"></i></a>
+                            <a tabindex="0"
+                               class="btn share-popover"   
+                               data-placement="top"
+                               data-html="true" 
+                               data-toggle="popover"  
+                               data-trigger="focus"
+                               role="button"
+                               title="false" 
+                               data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>"><i class="fa fa-share"></i></a>
                         </div>
                     </div>
+
+                    <!-- Body -->
                     <div class="card-body clearfix">
+
+                        <!-- Image -->
                         <div class="image">
                             <img src="images/newsfeed/post_1.png" alt="image" title="image" />
                             <div class="play-time">
@@ -318,9 +335,13 @@
                                 <a href=""><i class="fa fa-play"></i></a>
                             </div>
                         </div>
+
+                        <!-- Content -->
                         <div class="content">
                             <h2><a href="">Episode 3: Paul Rudd in the House</a></h2>
                             <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                            <!-- Tags -->
                             <div class="tags">
                                 <a href="" class="btn tag-item">Sports</a>
                                 <a href="" class="btn tag-item">Football</a>
@@ -329,11 +350,15 @@
                                 <a href="" class="btn tag-item">Football</a>
                                 <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
                             </div>
+
+                            <!-- Likes -->
                             <div class="likes clearfix">
-                                <a href="#"><img src="images/thumb_up_icon.png"/></a>
+                                <button class="btn" type="button"><img src="images/thumb_up_icon.png"/></button>
                                 <span class="count">23</span>
                                 <span class="text">Likes</span>
                             </div>
+
+                            <!-- Source -->
                             <div class="source">
                                 <img src="images/newsfeed/youtube_logo.svg"/>
                             </div>
@@ -343,9 +368,11 @@
 
                         <!-- Comments -->
                         <div class="comments">
-                            <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
-                            <h5>Ollie Pena</h5>
-                            <span class="time">3 hours ago</span>
+                            <a href="#">
+                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                <h5>Ollie Pena</h5>
+                                <span class="time">3 hours ago</span>
+                            </a>
                             <p>
                                 Astronomy Binoculars A Great Alternative
                             </p>
@@ -356,23 +383,29 @@
 
                             <!-- Comments -->
                             <div class="comments">
-                                <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-                                <h5>Isaiah Delgado</h5>
-                                <span class="time">3 hours ago</span>
+                                <a href="#">
+                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                    <h5>Isaiah Delgado</h5>
+                                    <span class="time">3 days ago</span>
+                                </a>
                                 <p>
                                     Creating Remarkable Poster Prints Through 4 Color Poster Printing
                                 </p>  
                             </div>
                             <div class="comments">
-                                <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-                                <h5>Edward Hayes</h5>
-                                <span class="time">3 hours ago</span>
+                                <a href="#">
+                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                    <h5>Edward Hayes</h5>
+                                    <span class="time">3 days ago</span>
+                                </a>
                                 <p>
                                     Las Vegas How To Have Non Gambling Related Fun
                                 </p>  
                             </div>
                             <div class="comments comments-form">
-                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                <a href="">
+                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                </a>
                                 <form class="form-inline">
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="enter_comment" placeholder="Enter Comment">
@@ -384,7 +417,127 @@
 
                         <!-- Btn more comments -->
                         <div class="btn-more-comments">
-                            <a data-toggle="collapse" href="#MoreComments" aria-expanded="false" aria-controls="MoreComments">
+                            <a class="collapsed" data-toggle="collapse" href="#MoreComments" aria-expanded="false" aria-controls="MoreComments">
+                                <img src="images/arrow_down_icon.svg" />
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsfeed-post card">
+
+                    <!-- Header -->
+                    <div class="card-header">
+                        <h3 class="episode">NEW EPISODE : <span>7 Minutes in Heaven</span></h3>
+                        <div class="share">
+                            <a tabindex="0"
+                               class="btn share-popover"   
+                               data-placement="top"
+                               data-html="true" 
+                               data-toggle="popover"  
+                               data-trigger="focus"
+                               role="button"
+                               title="false" 
+                               data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>"><i class="fa fa-share"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body clearfix">
+
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                            <div class="play-time">
+                                <span>01:23:23</span>
+                            </div>
+                            <div class="btn-play">
+                                <a href=""><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="content">
+                            <h2><a href="">Episode 3: Paul Rudd in the House</a></h2>
+                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                            <!-- Tags -->
+                            <div class="tags">
+                                <a href="" class="btn tag-item">Sports</a>
+                                <a href="" class="btn tag-item">Football</a>
+                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                <a href="" class="btn tag-item">Funny</a>
+                                <a href="" class="btn tag-item">Football</a>
+                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                            </div>
+
+                            <!-- Likes -->
+                            <div class="likes clearfix">
+                                <button class="btn not-like" type="button"><img src="images/thumb_up_icon.png"/></button>
+                                <span class="count">23</span>
+                                <span class="text">Likes</span>
+                            </div>
+
+                            <!-- Source -->
+                            <div class="source">
+                                <img src="images/newsfeed/youtube_logo.svg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+
+                        <!-- Comments -->
+                        <div class="comments">
+                            <a href="#">
+                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                <h5>Ollie Pena</h5>
+                                <span class="time">3 hours ago</span>
+                            </a>
+                            <p>
+                                Astronomy Binoculars A Great Alternative
+                            </p>
+                        </div>
+
+                        <!-- More comments -->
+                        <div class="more-comments collapse" id="MoreComments">
+
+                            <!-- Comments -->
+                            <div class="comments">
+                                <a href="#">
+                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                    <h5>Isaiah Delgado</h5>
+                                    <span class="time">3 days ago</span>
+                                </a>
+                                <p>
+                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                </p>  
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                    <h5>Edward Hayes</h5>
+                                    <span class="time">3 days ago</span>
+                                </a>
+                                <p>
+                                    Las Vegas How To Have Non Gambling Related Fun
+                                </p>  
+                            </div>
+                            <div class="comments comments-form">
+                                <a href="">
+                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                </a>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="enter_comment" placeholder="Enter Comment">
+                                    </div> 
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Btn more comments -->
+                        <div class="btn-more-comments">
+                            <a class="collapsed" data-toggle="collapse" href="#MoreComments" aria-expanded="false" aria-controls="MoreComments">
                                 <img src="images/arrow_down_icon.svg" />
                             </a> 
                         </div>

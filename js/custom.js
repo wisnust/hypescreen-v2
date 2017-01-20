@@ -18,6 +18,13 @@ $(document).ready(function() {
         $topNav.css('top', $logoHeight);
         // $sideNav.css('top', $topNav_height + $logoHeight + 60);
 
+        if ($(window).width() < 500 ) {
+           
+            // More comments
+            $('.card-footer > .comments').prependTo('#MoreComments');
+
+        }
+
     });
     
      $(window).trigger("resize");  
@@ -93,4 +100,6 @@ $(document).ready(function() {
         $(this).find('span').html($('.btn-more-tags .btn-link span').text() == 'Less tags' ? 'More tags' : 'Less tags');
     });
 
+    $('[data-toggle="popover"]').popover()
+ 
 });
