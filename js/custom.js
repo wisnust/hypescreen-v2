@@ -20,9 +20,17 @@ $(document).ready(function() {
 
         if ($(window).width() < 500 ) {
            
-            // More comments
-            $('.card-footer > .comments').prependTo('#MoreComments');
+            // Arrow and Dot more comments
+            $('.more-comments').on('shown.bs.collapse', function() {
+                $(this).next().next().addClass('active');
+            });
+            $('.more-comments').on('hidden.bs.collapse', function() {
+                $(this).next().next().removeClass('active');
+            });
 
+            // Move comments
+            $('#newsfeed-post-1 .card-footer > .comments').prependTo('#newsfeed-post-1 .card-footer > .more-comments');
+            $('#newsfeed-post-2 .card-footer > .comments').prependTo('#newsfeed-post-2 .card-footer > .more-comments');
         }
 
     });
