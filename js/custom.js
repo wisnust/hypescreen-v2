@@ -15,33 +15,25 @@ $(document).ready(function() {
           
     $(window).on("resize", function() {
 
-        $topNav.css('top', $logoHeight);
-        // $sideNav.css('top', $topNav_height + $logoHeight + 60);
+        $topNav.css('top', $logoHeight); 
+        $sideNav.css('top', $topNav_height + $logoHeight + 75);
 
-        if ($(window).width() < 500 ) {
-           
-            // Arrow and Dot more comments
+        if ($(window).width() < 500 ) { 
+
+            // More comment
             $('.more-comments').on('shown.bs.collapse', function() {
                 $(this).next().next().addClass('active');
             });
             $('.more-comments').on('hidden.bs.collapse', function() {
                 $(this).next().next().removeClass('active');
-            });
-
-            // Move comments
-            $('#newsfeed-post-1 .card-footer > .comments').prependTo('#newsfeed-post-1 .card-footer > .more-comments');
-            $('#newsfeed-post-2 .card-footer > .comments').prependTo('#newsfeed-post-2 .card-footer > .more-comments');
+            }); 
+            // $('#newsfeed-post-1 .card-footer > .comments').prependTo('#newsfeed-post-1 .card-footer > .more-comments');
+            // $('#newsfeed-post-2 .card-footer > .comments').prependTo('#newsfeed-post-2 .card-footer > .more-comments');
         }
 
     });
     
-     $(window).trigger("resize");  
-
-    // $('#nav-backdrop').click(function(event) {
-    //     $topNav.add($sideNav).toggleClass('nav-open');
-    //     $(this).fadeToggle(400);
-    // }); 
-
+     $(window).trigger("resize");   
 
     // Button Checkbox
     $('.button-checkbox').each(function () {
