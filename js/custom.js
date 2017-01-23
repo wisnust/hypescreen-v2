@@ -18,7 +18,7 @@ $(document).ready(function() {
         $topNav.css('top', $logoHeight); 
         $sideNav.css('top', $topNav_height + $logoHeight + 75);
 
-        if ($(window).width() < 500 ) { 
+        if ($(window).width() < 669 ) { 
 
             // More comment
             $('.more-comments').on('shown.bs.collapse', function() {
@@ -27,8 +27,12 @@ $(document).ready(function() {
             $('.more-comments').on('hidden.bs.collapse', function() {
                 $(this).next().next().removeClass('active');
             }); 
-            // $('#newsfeed-post-1 .card-footer > .comments').prependTo('#newsfeed-post-1 .card-footer > .more-comments');
-            // $('#newsfeed-post-2 .card-footer > .comments').prependTo('#newsfeed-post-2 .card-footer > .more-comments');
+
+            var $videoHeight = $('.card > .card-body > .video > .video-inner').height(),
+                $videoLikes = $('.card > .card-body > .content > .likes');
+
+            $videoLikes.css('top', $videoHeight - 23);
+            $videoLikes.css('opacity', 1);
         }
 
     });
