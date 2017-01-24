@@ -1,0 +1,627 @@
+
+.card {
+	background: $c-white; 
+	border: 2px solid #E2EDF7;
+	box-shadow: 0 15px 20px 0 rgba(132,169,206,0.17);
+	border-radius: 7px;
+	margin-bottom: 30px;
+	position: relative;
+	> .card-header {
+		@include clearfix;
+		padding: 20px 35px 20px;
+		h2.episode {
+			font-size: 22px;
+			font-weight: 400;
+			color: #737C8A;
+			float: left;
+			letter-spacing: 0;
+			margin: 0px;
+			line-height: 27px;
+			> a {
+				font-weight: bold;
+			}
+		}
+		.share {
+			@include position(absolute, $top: 24px, $right: 35px);
+			> a {
+				background: rgba(#699CCD, .1);
+			    border-radius: 100px;
+			    width: 32px;
+			    height: 32px;
+			    display: inline-block;
+			    padding: 5px;
+			    text-align: center;
+			    cursor: pointer;
+			    outline: none !important;
+			    @include transition(background .3s);
+			    > i {
+			    	font-size: 10px;
+			    }
+			    &:hover, &:focus {
+					background: rgba($c-blue, .2);
+					> i {
+						color: $c-blue;
+					}
+			    }
+			}
+			.popover.top {
+				// margin-top: 20px;
+				min-width: 380px;
+			    background: $c-blue;
+			    box-shadow: 0 10px 17px 0 rgba(108,150,198,0.28);
+			    border-radius: 200px;
+			    border: 0px;
+			    margin-left: -95px;
+			    margin-top: 5px;
+			    > .arrow {
+			    	display: none;
+			    }
+				.popover-title {
+					display: none;
+				}
+				.popover-content {
+					padding: 0px;
+					.row {
+						> div:first-of-type {
+							> a {
+								border-right: 1px solid rgba($c-white, .2);
+							}
+						}
+					}
+					a {
+						display: block;
+					    font-size: 12px;
+					    color: $c-white;
+					    letter-spacing: -0.09px;
+					    padding: 12px;
+					    text-align: center;
+					    text-decoration: none;
+			    		@include transition(background-color .3s);
+					    > i {
+					    	margin-right: 10px;
+					    }
+					    &:hover {
+							background-color: rgba($c-white, .1);
+					    }
+					}
+					.share-arrow {
+						position: absolute;
+					    width: 60px;
+					    left: 67%;
+					    top: 100%;
+					    margin-top: -11px;
+					}
+				}
+			}
+		}
+	}
+	> .card-body {
+		@include clearfix;
+		margin-bottom: 22px;
+		padding: 0px 35px 0px;
+		position: relative;
+			    position: relative;
+		> .video {
+		    float: left;
+		    margin-right: 30px;
+
+		    > .video-inner {
+				border-radius: 4px;
+			    height: 252px;
+			    position: relative;
+			    overflow: hidden;
+				width: 448px;
+			    > img {
+			    	width: 100%;
+			    	height: 100%;
+			    	object-fit: cover;
+			    }
+			    > .play-time {
+			    	background: rgba($c-black, 0.57);
+				    color: $c-white;
+				    font-size: 12px;
+				    padding: 10px 15px;
+				    display: inline-block;
+				    @include position(absolute, $bottom: 20px, $left: 20px);
+			    }
+			    > .btn-play {
+				    @include position(absolute, $top: 50%, $left: 50%);
+				    margin-top: -22.5px;
+				    margin-left: -22.5px;
+				    z-index: 3;
+				    > a {
+				    	opacity: 0.85;
+					    background: rgba(0,0,0,0.57);
+					    border: 1px solid rgba(255,255,255,0.00);
+					    border-radius: 100px;
+					    color: #fff;
+					    width: 55px;
+					    height: 55px;
+					    display: inline-block;
+					    padding: 15px;
+					    text-align: center;
+					    > i {
+					    	font-size: 12px;
+					    }
+					    &:hover {
+					    	opacity: 1;
+					    }
+				    }
+			    }
+		    }
+		}
+		> .content { 
+			float: left;
+    		width: -webkit-calc(100% - 480px);
+    		width: -moz-calc(100% - 480px);
+    		width: -ms-calc(100% - 480px);
+    		width: calc(100% - 480px);
+			> h3 {
+				display: inline-block;
+				color: $c-orange;
+				font-size: 18px;
+				font-weight: 400;
+				letter-spacing: 0;
+				line-height: 27px;
+				margin: -7px 0px 10px;
+				max-width: 180px; 
+			}
+			> .time {
+				font-size: 11px;
+				color: #B6BBC0;
+				letter-spacing: -0.11px;
+				margin-bottom: 18px;
+				display: block;
+				> i {
+					margin-right: 8px;
+				}
+			}
+			> .tags {
+				> a {
+					background-color: #EDEDED;
+					border: 0px;
+					font-size: 11px;
+					color: #737982;
+					letter-spacing: -0.1px;
+					margin: 0px 8px 8px 0px;
+				    border-radius: 200px;
+				    padding: 3px 20px;
+				    @include transition(background-color .3s, color .3s);
+				    &:hover, &:focus {
+				    	color: $c-white;
+				    	background-color: $c-blue;
+				    }
+				}
+			}
+			> .likes {
+				@include clearfix;
+				@include position(absolute, $left: 515px, $bottom: 0px);
+			    min-width: 90px;
+				> button {   
+					background-image: -webkit-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
+					background-image: -moz-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
+					background-image: -ms-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
+					background-image: -o-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
+					background-image: linear-gradient(to right, #925AF7 -58%, #FF6C37 100%);
+				    box-shadow: 0 9px 19px 0 rgba(208,100,138,0.41);
+				    border-radius: 100px;
+				    border: 0px;
+				    width: 46px;
+				    height: 46px;
+				    display: inline-block;
+				    padding: 10px;
+				    text-align: center;
+				    float: left;
+				    margin-right: 10px;
+				    position: relative;
+				    z-index: 3;
+				    top: 0px;
+				    transition: all .3s;
+				    outline: none !important;
+				    &:before {
+				    	content: " ";
+				    	display: block;
+				    	@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+						background-image: -webkit-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
+						background-image: -moz-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
+						background-image: -ms-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
+						background-image: -o-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
+						background-image: linear-gradient(to right, #FF6C37 -10%, #925AF7 100%);
+				    	border-radius: 100px;
+						opacity: 0;
+						transition: opacity .3s;
+				    }
+				    &:hover {
+				    	@include box-shadow(0 13px 28px 0 rgba(208, 100, 138, 0.41));
+				    	&:before {
+				    		opacity: 1;
+				    	}
+				    }
+				    > img {
+				    	position: relative;
+				    	top: -2px;
+				    	z-index: 3;
+				    }
+				    &.not-like { 
+						background-image: -webkit-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
+						background-image: -moz-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
+						background-image: -ms-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
+						background-image: -o-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
+				    	background-image: linear-gradient(117deg, #bdbdbd 3%, #8999AB 80%);
+    					box-shadow: 0 9px 19px 0 rgba(145,145,145,0.50);
+    					&:before {
+							background-image: -webkit-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
+							background-image: -moz-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
+							background-image: -ms-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
+							background-image: -o-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
+					    	background-image: linear-gradient(117deg, #8999AB 30%, #bdbdbd 110%);
+    					}
+    					~ .text {
+    						color: #5B6575;
+    						opacity: 1;
+    					}
+    					&:hover {
+    						@include box-shadow(0 13px 28px 0 rgba(145,145,145,0.50));
+    					}
+				    }
+				}
+				> .count {
+					margin-top: 5px;
+					margin-bottom: 3px;
+					opacity: 0.71;
+				    font-size: 26px;
+				    color: #5B6575;
+				    letter-spacing: -0.57px;
+				    line-height: 18px;
+				    display: block;
+				}
+				> .text {
+					opacity: 0.31;
+				    font-size: 11px;	
+				    color: #5B6575;
+				    letter-spacing: -0.17px;
+				    line-height: 18px;
+				    text-transform: uppercase;
+				    display: block;
+				}
+			}
+			> .source {
+				@include position(absolute, $right: 35px, $bottom: 5px);
+			}
+		}
+	}
+	> .card-footer {
+    	border-top: 1px solid rgba(#5B6575, .1);
+		padding: 0px 35px 15px 35px;
+		position: relative;
+		.comments {
+			padding-left: 48px;
+			padding-right: 40px;
+			position: relative;
+			margin-top: 15px;
+			> a {
+				text-decoration: none;
+				> .avatar {
+					@include position(absolute, $top: 5px, $left: 0px);
+					width: 33px;
+					height: 33px;
+				    @include transition(opacity .3s);
+				}
+				> h5 {
+					font-size: 13px;
+				    color: #5B6575;
+				    letter-spacing: 0.13px;
+				    margin: 0px 5px 0px 0px;
+				    display: inline-block;
+				    @include transition(color .3s);
+				}
+				> .time {
+					font-size: 12px;
+				    color: #B6BBC0;
+				    letter-spacing: -0.45px;
+				}
+				&:hover {
+					> .avatar {
+						opacity: .8;
+					}
+					> h5 {
+						color: $c-black;
+					}
+				}
+			}
+			> p {
+				opacity: 0.83;
+			    font-size: 12px;
+			    color: #5B6575;
+			    letter-spacing: 0.2px;
+			    line-height: 22px;
+			    margin-bottom: 0px;
+			} 
+			&.comments-form {
+				margin-bottom: 60px;
+				padding-right: 0px;
+				> .avatar {
+					top: 2px;
+				}
+				.form-inline {
+					padding-top: 4px;
+					.form-control {
+						border: 1px solid #B6BBC0;
+						border-radius: 0px;
+					    width: 510px;
+					    margin-right: 10px;
+					    height: 36px;
+					}
+					.btn-primary {
+						background-color: $c-blue;
+						border-color: $c-blue;
+						width: 100px; 
+						height: 36px;
+						@include transition(all .3s);
+						&:hover, &:focus {
+							background-color: $c-blue-dark;
+							border-color: $c-blue-dark;
+						}
+					}
+				}
+			}
+		}
+		.btn-more-comments {
+			@include position(absolute, $right: 35px, $bottom: 20px);
+			transition: bottom .3s;
+			> a {
+				border: 1px solid rgba(#5B6575, .14);
+			    border-radius: 100px;
+			    width: 32px;
+			    height: 32px;
+			    display: inline-block;
+			    padding: 5px;
+			    text-align: center;
+			    @include transition(background-color .3s);
+			    > img {
+					@include transform(rotate(180deg));
+			    }
+			    &:hover {
+			    	background-color: rgba($c-blue, .1);
+			    }
+				&.collapsed {
+					> img {
+						@include transform(rotate(0deg));
+					}
+				}
+			}
+		}
+		.more-comments {
+			.comments {
+				margin-top: 20px;
+			}
+			&.in {
+				~ .btn-more-comments {
+					bottom: 15px;
+				}
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		> .card-header {
+			padding: 20px;
+			h2.episode {
+				font-size: 16px;
+			    color: #8999AB;
+			    line-height: 20px;
+			    > a {
+			    	display: block;
+			    }
+			}
+			.share { 
+				right: 20px;
+				.popover.top {
+					min-width: 300px; 
+				    margin-left: -100px;  
+					.popover-content {
+						padding: 0px; 
+						.share-arrow { 
+						    left: 73.5%; 
+						}
+					}
+				}
+			}
+		}
+		> .card-body {
+			padding: 0px 20px;
+			margin-bottom: 30px;
+
+			> .video {
+				margin-bottom: 20px;
+				float: none;
+				@include aspect-ratio-video(16,9);
+				width: 100%;
+				> .video-inner { 
+				    margin: 0px auto; 
+				    width: 100%;
+				    height: 100%;
+				    > img { 
+				    	width: 100%;
+				    	height: 100%;
+				    }
+					> .play-time {
+						left: 13px;
+					    bottom: 13px;
+					    font-size: 10px;
+					    padding: 5px 10px;
+					}
+				}
+			}
+			> .content {
+				float: none;
+				width: 100%;
+				> h2 {
+					margin-top: 0px;
+				}
+				> .time {
+					margin-bottom: -10px;
+				}
+				> .tags {
+					display: none;
+				}
+				> .likes {
+					left: inherit;
+				    bottom: inherit;
+				    top: 0px;
+				    opacity: 0;
+				    right: 30px;
+				    min-width: auto;
+				    text-align: center; 
+				    > button {
+				    	float: none;
+					    margin-right: 0px;
+					    margin-bottom: 5px;
+				    }
+				}
+				> .source {
+					display: none;
+				}
+			}
+		}
+		> .card-footer {
+			padding: 0px 20px 50px; 
+			.comments {
+				&.comments-form {
+					margin-bottom: 70px;
+					.form-inline {
+						.form-control {
+							width: 100%;
+						}
+						.btn-primary {
+							float: right;
+						}
+					}
+				}
+			}
+			.btn-more-comments {
+				left: 0px;
+			    right: 0px;
+			    bottom: 0px;
+			    text-align: center;
+			    > a {
+					@include transform(scale(0));
+			    	margin: 0 auto 10px;
+			    	@include transition(all .2s);
+			    	@include position(absolute, $left: 0px, $right: 0px, $bottom: 0px); 
+				    > img {
+				    	width: 10px;
+				    }
+			    }
+			    > a.dot-icon {
+					@include transform(scale(1));
+				    width: 100%;
+				    height: 50px;
+				    border: 0px;
+				    border-radius: 0px;
+				    padding: 15px;
+				    margin: 0px;
+				    &:hover, &:active {
+				    	background-color: transparent;
+				    }
+				    > img {
+				    	width: 28px;
+				    }
+			    }
+			    &.active {
+			    	> a {
+						@include transform(scale(1));
+			    		margin-bottom: 15px; 
+			    	}
+			    	> a.dot-icon {
+						@include transform(scale(0));
+			    	}
+			    }
+			}
+			.more-comments.in {
+				~ .btn-more-comments {
+					bottom: 0px;
+				}
+			}
+		}
+	} 
+	@media (min-width: $screen-sm-min) {
+		> .card-body {  
+			> .content {
+				> .likes {
+					top: inherit !important;
+				}
+			}
+		}
+	}
+}
+
+
+// Subscribe Card
+.subscribe-card {
+	background-image: -webkit-linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
+	background-image: -moz-linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
+	background-image: linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
+	border-radius: 7px;
+	margin: 40px 0px;
+	padding: 45px 190px 50px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	.inner {
+		position: relative;
+		z-index: 3;
+		> h3 {
+			font-size: 22px;
+			font-weight: 400;
+			color: $c-white;
+			letter-spacing: 0;
+			line-height: 27px;
+			margin: 0px 0px 25px;
+		}
+		> .btn-subscribe {
+			background-color: $c-white;
+			border-radius: 4px;
+			font-size: 16px;
+		    color: #35588F;
+		    letter-spacing: 0;
+		    padding: 10px 40px;
+		    border: 0px;
+		    transition: all .3s;
+		    &:hover {
+				background-color: rgba($c-white, .9);
+		    	@include box-shadow(0px 2px 4px rgba($c-black, .2));
+		    }
+		}
+	}
+	&:before {
+		content: " ";
+		display: block;
+		@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+		background-image: -webkit-linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
+		background-image: -moz-linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
+		background-image: -linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
+		opacity: 0;
+		transition: opacity .5s;
+		border-radius: 7px;
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 25px;
+		margin: 25px 0px 30px;
+		.inner {
+			> h3 {
+				font-size: 16px;
+			    letter-spacing: 0;
+			    line-height: 27px;
+			    margin-bottom: 20px;
+			}
+			> .btn-subscribe {
+				font-size: 12px;
+			}
+		}
+	}
+}

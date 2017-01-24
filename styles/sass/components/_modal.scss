@@ -1,0 +1,139 @@
+#loginModal {
+	.modal-dialog {
+		width: 525px;
+		.modal-content {
+		    border: 0px;
+			border-radius: 0px;
+		    @include box-shadow(0px 0px 0px transparent);
+		    .modal-header {
+		    	border: 0px;
+		    	padding: 60px;
+		    	img {
+		    		max-width: 100%;
+		    		margin: 0 auto;
+		    	}
+		    	.close {
+		    		@include position(absolute, $top: 13px, $right: 14px);
+		    		opacity: 1;
+		    		transition: opacity .3s;
+		    		&:hover, &:focus {
+		    			opacity: .5;
+		    		}
+		    	}
+		    }
+		    .modal-body {
+		    	padding: 0px 50px 60px;
+		    	text-align: center;
+		    	.auth {
+		    		margin-bottom: 17px;
+		    		> a {
+						display: inline-block; 
+						transition: opacity .3s;
+						&:first-of-type {
+							margin-right: 20px;
+						}
+						&:hover, &:focus {
+							opacity: .8;
+						}
+		    		}
+		    	}
+		    	.form-control {
+					border: 1px solid #CCCCCC;
+					border-radius: 0px;
+					box-shadow: 0px 0px 0px transparent;
+					font-size: 16px;
+					height: 37px;
+					margin: 0 auto 18px;
+					transition: border-color .3s;
+					width: 363px;
+					padding: 6px 15px;
+					&:hover {
+						border-color: #919191;
+					}
+					&:focus {
+						border-color: $c-blue;
+					}
+		    	}
+		    	.btn-login {
+				    background: $c-blue;
+		    		display: block;
+				    margin: 43px auto 15px;
+				    font-size: 16px;
+				    padding: 14px 30px;
+				    line-height: 19px;
+				    border: 0px;
+				    width: 100px;
+				    transition: background-color .3s;
+				    &:hover, &:focus {
+				    	background-color: $c-blue-dark;
+				    }
+		    	}
+		    	.btn-signup {
+					font-size: 16px;
+					letter-spacing: -0.41px;
+		    	}
+		    }
+		}
+	}
+	&.v-middle {
+		padding: 0px !important;
+		text-align: center;
+		.modal-dialog {
+			display: inline-block;
+		    text-align: left;
+		    vertical-align: middle;
+		}
+		&:before {
+		    content: '';
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		    margin-right: -4px;
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+
+		.modal-dialog {
+			margin: 80px 20px 0px;
+			width: auto;
+			.modal-content {
+				.modal-header {
+					padding: 55px 44px 32px;
+					.close {
+						top: 10px;
+						right: 10px;
+					}
+				}
+				.modal-body {
+					padding: 0px 10px 40px;
+					.auth {
+						> a {
+							width: 125px;
+							> img {
+								width: 100%;
+							}
+							&:first-of-type {
+								margin-right: 5px;
+							}
+						}
+					}
+					.form-control {
+						width: 235px;
+					}
+					.btn-login {
+						margin: 20px auto 10px;
+					}
+				}
+			}
+		}
+		&.v-middle {
+			.modal-dialog {
+				display: block;
+			}
+			&:before {
+				display: none;
+			}
+		}
+
+	}
+}
