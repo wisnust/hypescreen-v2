@@ -6157,27 +6157,32 @@ a, .btn-link {
   .sidenav nav .top-shows .top-shows-dropdown {
     margin-top: -3px;
     display: inline-block;
-    float: left; }
+    float: right; }
     .sidenav nav .top-shows .top-shows-dropdown .btn-group {
-      display: inline-block; }
+      display: inline-block;
+      width: 100%; }
       .sidenav nav .top-shows .top-shows-dropdown .btn-group .btn-primary {
-        background-color: #5aa9f0;
+        background-color: #fff;
         border: 0px;
+        color: #8999AB;
         text-align: left;
         font-size: 13px;
         padding: 3px 7px;
-        width: 80px; }
+        width: 120px; }
         .sidenav nav .top-shows .top-shows-dropdown .btn-group .btn-primary.dropdown-toggle {
-          background-color: #4e91ce;
+          color: #fff;
+          background-color: #5aa9f0;
           border: 0px;
           text-align: center;
           font-size: 10px;
           padding: 5px 10px;
           border: 0px;
-          width: inherit; }
+          width: 25px; }
+          .sidenav nav .top-shows .top-shows-dropdown .btn-group .btn-primary.dropdown-toggle:hover, .sidenav nav .top-shows .top-shows-dropdown .btn-group .btn-primary.dropdown-toggle:focus {
+            background-color: #4e91ce; }
     .sidenav nav .top-shows .top-shows-dropdown .dropdown-menu {
       padding: 5px 0px;
-      min-width: 130px; }
+      min-width: 100%; }
       .sidenav nav .top-shows .top-shows-dropdown .dropdown-menu > li > a {
         padding: 5px 13px;
         font-size: 11px; }

@@ -108,30 +108,36 @@
 			.top-shows-dropdown {
 				margin-top: -3px;
 				display: inline-block;
-				float: left;
+				float: right;
 				.btn-group {
 					display: inline-block;
+					width: 100%;
 					.btn-primary {
-						background-color: $c-blue;
+						background-color: $c-white;
 						border: 0px;
+						color: $c-grey;
 						text-align: left;
 						font-size: 13px;
 					    padding: 3px 7px; 
-					    width: 80px;
+					    width: 120px;
 						&.dropdown-toggle {
-							background-color: $c-blue-dark;
+							color: $c-white;
+							background-color: $c-blue;
 							border: 0px;
 							text-align: center;
 							font-size: 10px;
 						    padding: 5px 10px;
 						    border: 0px;
-						    width: inherit;
+						    width: 25px;
+						    &:hover, &:focus {
+						    	background-color: $c-blue-dark;
+						    }
 						}
 					} 
 				}
 				.dropdown-menu {
 					padding: 5px 0px;
-					min-width: 130px;
+					min-width: 100%;
 					> li > a {
 						padding: 5px 13px;
    						font-size: 11px;
