@@ -1,8 +1,8 @@
-
+// Card 1
 .card {
 	background: $c-white; 
 	border: 2px solid #E2EDF7;
-	box-shadow: 0 15px 20px 0 rgba(132,169,206,0.17);
+	@include box-shadow(0 15px 20px 0 rgba(132,169,206,0.17));
 	border-radius: 7px;
 	margin-bottom: 30px;
 	position: relative;
@@ -197,11 +197,8 @@
 				@include clearfix;
 				@include position(absolute, $left: 515px, $bottom: 0px);
 			    min-width: 90px;
-				> button {   
-					background-image: -webkit-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
-					background-image: -moz-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
-					background-image: -ms-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
-					background-image: -o-linear-gradient(left, #925AF7 -58%, #FF6C37 100%);
+				> button {    
+					@include gradient(left, #925AF7 -58%, #FF6C37 100%);
 					background-image: linear-gradient(to right, #925AF7 -58%, #FF6C37 100%);
 				    box-shadow: 0 9px 19px 0 rgba(208,100,138,0.41);
 				    border-radius: 100px;
@@ -221,11 +218,8 @@
 				    &:before {
 				    	content: " ";
 				    	display: block;
-				    	@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
-						background-image: -webkit-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
-						background-image: -moz-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
-						background-image: -ms-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
-						background-image: -o-linear-gradient(left, #FF6C37 -10%, #925AF7 100%);
+				    	@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px); 
+						@include gradient(left, #FF6C37 -10%, #925AF7 100%);
 						background-image: linear-gradient(to right, #FF6C37 -10%, #925AF7 100%);
 				    	border-radius: 100px;
 						opacity: 0;
@@ -243,17 +237,11 @@
 				    	z-index: 3;
 				    }
 				    &.not-like { 
-						background-image: -webkit-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
-						background-image: -moz-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
-						background-image: -ms-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
-						background-image: -o-linear-gradient(left, #bdbdbd 3%, #8999AB 80%);
+						@include gradient(left, #bdbdbd 3%, #8999AB 80%); 
 				    	background-image: linear-gradient(117deg, #bdbdbd 3%, #8999AB 80%);
     					box-shadow: 0 9px 19px 0 rgba(145,145,145,0.50);
     					&:before {
-							background-image: -webkit-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
-							background-image: -moz-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
-							background-image: -ms-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
-							background-image: -o-linear-gradient(left, #8999AB 30%, #bdbdbd 110%);
+							@include gradient(left, #8999AB 30%, #bdbdbd 110%);  
 					    	background-image: linear-gradient(117deg, #8999AB 30%, #bdbdbd 110%);
     					}
     					~ .text {
@@ -555,11 +543,80 @@
 	}
 }
 
+// Card 2
+.card-2 {
+	background: $c-white;
+	border: 1px solid #E2EDF7;
+	@include box-shadow(0 15px 20px 0 rgba(132,169,206,0.17));
+	border-radius: 7px;
+	padding: 25px; 
+	> .image {
+		margin-bottom: 25px;
+		> a {
+			display: block;
+			@include box-shadow(0 8px 16px 0 rgba(33,53,53,0.20));
+			> img {
+				border-radius: 4px;
+				width: 100%;
+				height: 175px;
+				object-fit: cover;
+			}
+		}
+	}
+	> .content {
+		position: relative;
+		> .ratings {
+			border-radius: 100px;
+    		background-color: #F3F3F3;
+    		position: relative;
+    		> .result {
+    			@include gradient(-215deg, #FFBA81 0%, #FEE37F 100%);
+    			background-image: linear-gradient(-215deg, #FFBA81 0%, #FEE37F 100%);
+			    border: 0px;
+			    box-shadow: -4px -1px 7px 0 rgba(0,0,0,0.10);
+			    border-radius: 0 100px 100px 0;
+			    font-size: 20px;
+			    color: #FFFFFF;
+			    letter-spacing: -1.52px;
+			    line-height: 20px;
+			    padding: 9px 21px 9px 17px;
+    		}
+		}
+		> h2 {
+			font-weight: 700;
+			font-size: 20px;
+			color: #6FB9FF;
+			letter-spacing: 0;
+			line-height: 27px;
+			margin: 0px 0px 18px;
+		}
+		> p {
+			font-size: 14px;
+			color: #737C8A;
+			letter-spacing: -0.09px;
+			line-height: 20px;
+			margin-bottom: 25px;
+		}
+		> .btn-primary {
+			background-color: $c-blue;
+			border-color: $c-blue;
+			border-radius: 100px;
+			font-size: 16px;
+			padding: 8px 20px;
+			&:hover, &:focus {
+				background-color: $c-blue-dark;
+				border-color: $c-blue-dark;
+			}
+		}
+		> .source {
+			@include position(absolute, $right: 10px, $bottom: 10px);
+		}
+	}
+}
 
 // Subscribe Card
 .subscribe-card {
-	background-image: -webkit-linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
-	background-image: -moz-linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
+	@include gradient(53deg, #6386A9 0%, #60AFFF 100%);
 	background-image: linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
 	border-radius: 7px;
 	margin: 40px 0px;
@@ -596,10 +653,9 @@
 	&:before {
 		content: " ";
 		display: block;
-		@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
-		background-image: -webkit-linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
-		background-image: -moz-linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
-		background-image: -linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
+		@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px); 
+		@include gradient(53deg, #60AFFF 0%, #6386A9 100%);
+		background-image: linear-gradient(53deg, #60AFFF 0%, #6386A9 100%); 
 		opacity: 0;
 		transition: opacity .5s;
 		border-radius: 7px;

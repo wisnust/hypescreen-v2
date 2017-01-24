@@ -23,6 +23,17 @@
 }
 
 // =============================================================================
+// Gradient
+// =============================================================================
+
+@mixin gradient($gradient...) {
+  background-image: -webkit-linear-gradient($gradient);
+  background-image: -moz-linear-gradient($gradient);
+  background-image: -ms-linear-gradient($gradient);
+  background-image: -o-linear-gradient($gradient);
+}
+
+// =============================================================================
 // Transition
 // =============================================================================
 
