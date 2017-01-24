@@ -1,0 +1,105 @@
+.filter {
+	background-color: $c-white;
+	border: 1px solid #56A7F3;
+	box-shadow: 6px 6px 0 0 rgba($c-black, .09);
+	border-radius: 4px;
+	margin-bottom: 50px;
+
+	> .filter-header {
+		@include transition(background-color .3s);
+
+		> h2 { 
+			font-weight: 700;
+			font-size: 16px;
+			color: #56A7F3;
+			letter-spacing: 0.07px;
+			margin: 0px;
+			text-align: center;
+		    text-transform: uppercase;
+		    padding: 14px;
+		    > img {
+		    	display: inline-block;
+			    margin-top: -2px;
+		    }
+		    > span {
+		    	margin: 0px 10px;
+		    }
+		}
+		&.collapsed {
+			img.arrow {
+				@include transform(rotate(180deg));
+			}
+		}
+		&:hover, &:focus {
+			background-color: rgba($c-blue, .05);
+		}
+	}
+	> .filter-body {
+		border-top: 1px solid $c-blue;
+		> .filter-action {
+			margin: -6px -12px 0px;
+			padding: 20px 20px 0px;
+			.btn-link {
+				font-size: 12px;
+				letter-spacing: -0.09px;
+			}
+		}
+		> .filter-tags {
+			padding: 20px 20px 10px;
+			text-align: center;
+		}
+		> .filter-more-tags {
+			border-top: 1px solid rgba(137,152,171,0.23);
+			padding: 20px 20px 10px;
+			text-align: center;
+			.button-checkbox .btn-tag {
+				font-size: 12px;
+			    letter-spacing: -0.09px;
+			    padding: 4px 19px;
+			}
+		}
+		> .btn-more-tags {
+			> .btn-link {
+				display: block;
+				font-size: 12px;
+				text-transform: uppercase;
+				padding: 15px;
+			}
+		} 
+	}
+	@media (max-width: $screen-xs-max) {
+
+		@include box-shadow(0px 2px 4px rgba($c-black, .11));
+		margin-bottom: 30px;
+		> .filter-header > h2 {
+			font-size: 13px;
+		}
+
+		> .filter-body {
+			> .filter-filter {
+				padding: 15px 20px 0px;
+				> .pull-left, > .pull-right {
+					float: none !important;
+					text-align: center;
+				}
+			}
+			> .filter-action { 
+				text-align: center;
+				> .pull-left, > .pull-right {
+					float: none !important;
+				}
+			}
+			> .filter-tags {
+				padding: 10px 5px 10px;
+				text-align: center;
+				> .button-checkbox:nth-child(odd) {
+				    margin-right: 0px;
+				}
+			}
+			> .filter-more-tags {
+				padding: 10px 5px 10px;
+    			text-align: center;
+			}
+		}
+	}
+}

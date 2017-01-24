@@ -1,0 +1,71 @@
+// =============================================================================
+//
+// Global
+//
+// =============================================================================
+
+body {
+    font-family: $lato;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}   
+
+a, .btn-link {
+	color: $c-blue;
+	text-decoration: none !important;
+	@include transition(color .3s);
+	&:hover, &:focus {
+		color: $c-blue-dark;
+	}
+}
+ 
+// =============================================================================
+//
+// MAIN CONTENT
+//
+// =============================================================================
+
+.content-heading {
+	font: {
+		family: $open-sans;
+		weight: bold;
+		size: 36px;
+	};
+	color: #B6BBC0;
+	letter-spacing: 2.29px;
+	margin: 0px 0px 80px;
+    text-align: center;
+    position: relative;
+    &:after {
+    	background-color: $c-grey;
+    	content: " ";
+    	display: block;
+    	@include position(absolute, $right: 0px, $bottom: -25px, $left: 0px);
+    	height: 1px;
+    	width: 150px;
+    	margin: 0 auto;
+    }
+	@media (max-width: $screen-xs-max) {
+		font-size: 24px;
+		color: #B6BBC0;
+		letter-spacing: 1.53px;
+		margin-bottom: 55px; 
+	}
+}
+
+.main-content {
+	padding-top: 75px;
+	padding-left: $left-335px;
+	.container { 
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 805px;
+	}
+	@media (max-width: $screen-sm-max) {
+		padding-left: 0px;
+		.container {
+			width: 100%;
+			padding: 30px 20px; 
+		}
+	}
+}

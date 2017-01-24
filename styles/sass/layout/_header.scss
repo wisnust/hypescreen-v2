@@ -1,0 +1,240 @@
+// =============================================================================
+//
+// Header / Navbar
+//
+// =============================================================================
+.navbar-hypescreen {
+	background-color: $c-blue;
+ 	border: 0px;
+ 	border-radius: 0px;
+ 	height: 75px;
+	@include position(fixed, $top: 0px, $right: 0px, $left: 0px); 
+	z-index: 32;
+ 	.navbar-header {
+ 		.navbar-brand {
+ 			height: 100%;
+ 			padding: 13px 0px 0px 40px;
+ 			> img {
+ 				width: 181px;
+ 			}
+ 		}
+ 	}
+ 	.navbar-nav {
+ 		text-transform: uppercase;
+	 	> li {
+	 		> a {
+	 			color: $c-white;
+	 			font-size: 16px;
+	 			padding: 28px 17px;
+				letter-spacing: -0.04px;
+	 			@include transition(background-color .3s);
+	 			&:hover, &:focus {
+	 				background-color: rgba($c-white, .1);
+	 			}
+	 			> i {
+	 				font-size: 20px;
+	 				font-weight: 700;
+	 			}
+	 		}
+	 		&.user-logout {
+	 			background-color: rgba($c-white, .2);
+	 			> a {
+	 				outline: none !important;
+	 			}
+	 		}
+	 		&.user-login {
+	 			background-color: rgba($c-white, .2);
+	 			> a {
+	 				padding: 14px 19px;
+
+		 			.user-img {
+					    border-radius: 50%;
+					    height: 47px;
+					    width: 47px;
+					    object-fit: cover;
+		 			}
+	 			}
+	 		}
+	 	}
+	 	.form-search {
+	 		padding: 11px;
+	 		position: relative;
+	 		.form-control {
+	 			background-color: transparent;
+			    color: $c-white;
+			    border-color: $c-white;
+			    font-size: 16px;
+			    height: 36px;
+    			padding: 15px 20px;
+    			transition: all .3s;
+    			width: 237px;
+			    &::-webkit-input-placeholder {
+				 	color: $c-white;
+			    	text-transform: uppercase;
+				}
+				&::-moz-placeholder {
+				 	color: $c-white;
+			    	text-transform: uppercase;
+				}
+				&:-ms-input-placeholder {
+				 	color: $c-white;
+			    	text-transform: uppercase;
+				}
+				&:-moz-placeholder {
+				 	color: $c-white;
+			    	text-transform: uppercase;
+				}
+				&:focus {
+					width: 257px;
+					@include box-shadow(inset 2px 2px 4px rgba($c-black, .1));
+				}
+	 		}
+	 		.btn-submit {
+	 			@include position(absolute, $top: 12px, $right: 12px); 
+			    background-color: transparent;
+			    color: $c-white;
+			    padding: 5px 10px;
+			    > i {
+			    	font-size: 20px;
+			    }
+	 		}
+	 	}
+ 	}
+	@media (max-width: $screen-sm-max) {
+		position: fixed;
+		height: auto;
+		.navbar-header {
+			float: none;
+			.navbar-brand {
+				float: none;
+			    display: block;
+			    text-align: center;
+			    padding: 20px 0px;
+			    > img {
+			    	width: 150px;
+			    	margin: 0 auto;
+			    }
+			}
+		}
+ 		.navbar-nav {
+ 			background-color: $c-blue;
+ 			margin: 0px;
+ 			width: 100%;
+			@include position(absolute, $top: 0px, $left: 0px, $right: 0px); 
+			@include transition(all .3s);
+			padding: 55px 40px;
+			@include transform(translateX(-1000px));
+			z-index: 55; 
+
+			> li {
+				background-color: $c-blue;
+				text-align: center;
+				float: none;
+				> a {
+					padding: 15px;
+					&:hover, &:focus {
+						background-color: transparent;
+						color: rgba($c-white, .8);
+					}
+				}
+				&:nth-child(1) {
+					margin-top: 12px;
+					> a {
+						// padding: 23px 17px;
+					}
+				}  
+				&.user-logout {
+					background-color: transparent;
+				}
+				&.user-login {
+					background-color: transparent;
+					display: table;
+					width: 100%;
+					border-top: 1px solid $c-white;
+					margin-top: 15px;
+					> a {
+						display: table-cell;
+					    vertical-align: middle;
+					    position: relative;
+					    text-align: right;
+					    width: 50%;
+						.user-img {
+							width: 70px;
+							height: 70px;
+							position: relative;
+							left: 20px;
+						}
+					}
+					.dropdown-menu {
+						display: table-cell;
+						vertical-align: middle;
+						position: relative;
+						background-color: transparent;
+						box-shadow: 0px 0px 0px transparent;
+						> li {
+							> a {
+								color: $c-white;
+								font-size: 16px;
+								&:hover, &:focus {
+									color: rgba($c-white, .8);
+									background-color: transparent;
+								}
+							}
+						}
+					}
+				}
+				&.form-nav {
+					position: fixed;
+				    z-index: 55;
+				    top: 0px;
+				    left: 0px;
+				    right: 0px;
+				    width: 100%;
+				    margin-top: 0px;
+					.form-search {
+					    box-shadow: 0px 0px transparent;
+					    margin: 0px auto;
+					    padding: 11px 40px;
+					    width: 100%;
+					    .form-group {
+					    	position: relative;
+					    	.form-control {
+					    		width: 100%;
+					    		&:focus {
+					    			width: 100%;
+					    		}
+					    	}
+					    	.btn-submit {
+					    		top: 0px;
+					    		right: 0px;
+					    	}
+					    }
+					}
+				}
+			}
+ 		}
+		.user-not-login {
+			> li {
+				float: left;
+			    width: 50%;
+			    margin-top: 12px;
+			}
+		}
+	}
+}
+
+.dropdown-menu {
+	border: 0;
+	border-radius: 0px;
+	@include box-shadow(0 0 2px 0 rgba(20,60,96,0.12), 
+						0 2px 4px 0 rgba(20,60,96,0.24)); 
+	padding: 15px 0px; 
+	> li {
+		> a {
+			color: #3F5768;
+			padding: 10px 25px;
+			font-size: 14px;
+			text-transform: none;
+		}
+	}
+}
