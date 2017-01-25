@@ -7,6 +7,7 @@
 @import "helpers/variables";
 
 // Base
+@import "base/animate";
 @import "base/normalize";
 @import "base/typography";
 
@@ -21,7 +22,7 @@
 @import "components/buttons";
 @import "components/card";
 @import "components/filter";
-@import "components/loading";
+@import "components/load_more";
 @import "components/modal";
 @import "components/prefix";
 

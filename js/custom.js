@@ -13,15 +13,19 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         // $('#nav-backdrop').fadeToggle(400);
     });
-    console.log($ratingsResult_width);
+
     // Right position button show ratings
     $('.card-2 > .content > .ratings > .action').css('left', 276 - $ratingsResult_width);
       
     
-    // Open Ratings {
-
+    // Open Ratings 
     $('.card-2 > .content > .ratings > .show-rating > .result, .card-2 > .content > .ratings > .action > .star, .card-2 > .content > .ratings > .action > .reset').click(function(event) {
         $(this).parent().parent().parent().toggleClass('open-ratings')
+    });
+
+    // Load more
+    $('.load-more > .action').click(function() {
+        $(this).addClass('active');
     });
 
     $(window).on("resize", function() {

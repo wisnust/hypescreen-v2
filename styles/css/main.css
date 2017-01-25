@@ -5628,6 +5628,94 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@-webkit-keyframes load-more-oval {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes load-more-oval {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-o-keyframes load-more-oval {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes load-more-oval {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes load-more-arrow {
+  0% {
+    margin-top: -5.5px; }
+  25% {
+    margin-top: -10.5px; }
+  50% {
+    margin-top: -5.5px; }
+  75% {
+    margin-top: 0.5px; }
+  100% {
+    margin-top: -5.5px; } }
+@-moz-keyframes load-more-arrow {
+  0% {
+    margin-top: -5.5px; }
+  25% {
+    margin-top: -10.5px; }
+  50% {
+    margin-top: -5.5px; }
+  75% {
+    margin-top: 0.5px; }
+  100% {
+    margin-top: -5.5px; } }
+@-o-keyframes load-more-arrow {
+  0% {
+    margin-top: -5.5px; }
+  25% {
+    margin-top: -10.5px; }
+  50% {
+    margin-top: -5.5px; }
+  75% {
+    margin-top: 0.5px; }
+  100% {
+    margin-top: -5.5px; } }
+@keyframes load-more-arrow {
+  0% {
+    margin-top: -5.5px; }
+  25% {
+    margin-top: -10.5px; }
+  50% {
+    margin-top: -5.5px; }
+  75% {
+    margin-top: 0.5px; }
+  100% {
+    margin-top: -5.5px; } }
+@-webkit-keyframes load-more-dot {
+  from {
+    background-color: #dceef5; }
+  to {
+    background-color: #a6c1dc; } }
+@-moz-keyframes load-more-dot {
+  from {
+    background-color: #dceef5; }
+  to {
+    background-color: #a6c1dc; } }
+@-o-keyframes load-more-dot {
+  from {
+    background-color: #dceef5; }
+  to {
+    background-color: #a6c1dc; } }
+@keyframes load-more-dot {
+  from {
+    background-color: #dceef5; }
+  to {
+    background-color: #a6c1dc; } }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -7286,7 +7374,21 @@ a, .btn-link {
       padding: 20px 20px 0px; }
       .filter > .filter-body > .filter-action .btn-link {
         font-size: 12px;
-        letter-spacing: -0.09px; }
+        letter-spacing: -0.09px;
+        outline: none !important; }
+        .filter > .filter-body > .filter-action .btn-link > .fa-caret-down {
+          font-size: 24px;
+          margin-top: -3px;
+          margin-left: 6px;
+          vertical-align: middle; }
+      .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
+        left: 15px;
+        padding: 5px 0px;
+        min-width: 100%;
+        z-index: 20; }
+        .filter > .filter-body > .filter-action > .pull-right .dropdown-menu > li > a {
+          padding: 5px 13px;
+          font-size: 11px; }
     .filter > .filter-body > .filter-tags {
       padding: 20px 20px 10px;
       text-align: center; }
@@ -7321,6 +7423,8 @@ a, .btn-link {
         text-align: center; }
         .filter > .filter-body > .filter-action > .pull-left, .filter > .filter-body > .filter-action > .pull-right {
           float: none !important; }
+        .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
+          left: 0px; }
       .filter > .filter-body > .filter-tags {
         padding: 10px 5px 10px;
         text-align: center; }
@@ -7330,14 +7434,105 @@ a, .btn-link {
         padding: 10px 5px 10px;
         text-align: center; } }
 
-.loading {
+.load-more {
   text-align: center; }
-  .loading > a {
+  .load-more > .action {
     display: inline-block;
-    opacity: 1;
-    transition: opacity .3s; }
-    .loading > a:hover {
-      opacity: .8; }
+    width: 63px;
+    height: 63px;
+    position: relative;
+    cursor: pointer; }
+    .load-more > .action img.oval {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px; }
+    .load-more > .action img.arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -5.5px;
+      margin-left: -7.5px;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+    .load-more > .action .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #a6c1dc;
+      margin: auto;
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      -moz-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .load-more > .action .dot:before, .load-more > .action .dot:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #a6c1dc; }
+      .load-more > .action .dot:before {
+        right: 10px; }
+      .load-more > .action .dot:after {
+        left: 10px; }
+    .load-more > .action:hover img.arrow {
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+    .load-more > .action:hover .dot {
+      opacity: 1;
+      -webkit-animation: load-more-dot 0.3s 0.3s infinite alternate;
+      -moz-animation: load-more-dot 0.3s 0.3s infinite alternate;
+      -o-animation: load-more-dot 0.3s 0.3s infinite alternate;
+      animation: load-more-dot 0.3s 0.3s infinite alternate; }
+      .load-more > .action:hover .dot:before {
+        -webkit-animation: load-more-dot .7s infinite alternate;
+        -moz-animation: load-more-dot .7s infinite alternate;
+        -o-animation: load-more-dot .7s infinite alternate;
+        animation: load-more-dot .7s infinite alternate; }
+      .load-more > .action:hover .dot:after {
+        -webkit-animation: load-more-dot .7s .7s infinite alternate;
+        -moz-animation: load-more-dot .7s .7s infinite alternate;
+        -o-animation: load-more-dot .7s .7s infinite alternate;
+        animation: load-more-dot .7s .7s infinite alternate; }
+    .load-more > .action.active img.arrow {
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+    .load-more > .action.active img.oval {
+      -webkit-animation: load-more-oval 1s 5 linear;
+      -moz-animation: load-more-oval 1s 5 linear;
+      -o-animation: load-more-oval 1s 5 linear;
+      animation: load-more-oval 1s 5 linear; }
+    .load-more > .action.active .dot {
+      opacity: 1;
+      -webkit-animation: load-more-dot 0.5s 0.5s 5 alternate;
+      -moz-animation: load-more-dot 0.5s 0.5s 5 alternate;
+      -o-animation: load-more-dot 0.5s 0.5s 5 alternate;
+      animation: load-more-dot 0.5s 0.5s 5 alternate; }
+      .load-more > .action.active .dot:before {
+        -webkit-animation: load-more-dot 1s 5 alternate;
+        -moz-animation: load-more-dot 1s 5 alternate;
+        -o-animation: load-more-dot 1s 5 alternate;
+        animation: load-more-dot 1s 5 alternate; }
+      .load-more > .action.active .dot:after {
+        -webkit-animation: load-more-dot 1s 1s 5 alternate;
+        -moz-animation: load-more-dot 1s 1s 5 alternate;
+        -o-animation: load-more-dot 1s 1s 5 alternate;
+        animation: load-more-dot 1s 1s 5 alternate; }
 
 #loginModal .modal-dialog {
   width: 525px; }

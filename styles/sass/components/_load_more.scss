@@ -1,0 +1,79 @@
+// LOAD MORE
+.load-more {
+	text-align: center;
+	> .action {
+		display: inline-block;
+		width: 63px;
+		height: 63px;
+		position: relative;
+		cursor: pointer; 
+		img.oval {
+			@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+		}
+		img.arrow {
+			@include position(absolute, $top: 50%, $left: 50%);
+			margin-top: -5.5px;
+    		margin-left: -7.5px;
+    		@include transition(all .3s);
+		}
+		.dot {
+			width: 6px;
+			height: 6px;
+			border-radius: 6px;
+			background-color: #a6c1dc;
+			margin: auto; 
+			opacity: 0;
+			@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+    		@include transition(opacity .3s);
+
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 6px;
+				height: 6px;
+				border-radius: 6px;
+				background-color: #a6c1dc;
+			}
+			&:before {
+				right: 10px;
+			}
+			&:after { 
+				left: 10px;
+			}
+		}  
+		&:hover {
+			img.arrow {
+				@include transform(scale(0));
+			} 
+			.dot {
+				opacity: 1;
+				@include animation('load-more-dot 0.3s 0.3s infinite alternate');  
+				&:before {
+					@include animation('load-more-dot .7s infinite alternate');
+				}
+				&:after { 
+					@include animation('load-more-dot .7s .7s infinite alternate');
+				}
+			}
+		}
+		&.active {
+			img.arrow {
+				@include transform(scale(0));
+			}
+			img.oval {
+				@include animation('load-more-oval 1s 5 linear'); 
+			}
+			.dot {
+				opacity: 1;
+				@include animation('load-more-dot 0.5s 0.5s 5 alternate');  
+				&:before {
+					@include animation('load-more-dot 1s 5 alternate');
+				}
+				&:after { 
+					@include animation('load-more-dot 1s 1s 5 alternate');
+				}
+			}
+		}
+	}
+}
