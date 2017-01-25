@@ -1,0 +1,40 @@
+// Tabs
+
+.post-tabs {
+	margin-bottom: 20px;
+	> .nav-tabs {
+		@include clearfix;
+		border: 0px;
+		margin-bottom: 30px;
+		margin-left: -10px;
+		> li {
+			line-height: 16px;
+			padding-right: 10px;
+			padding-left: 10px;
+			> a {
+				border: 0px;
+				font-size: 14px;
+				letter-spacing: -0.1px;
+				color: #737C8A;
+				line-height: 16px;
+				text-transform: uppercase;
+				&:hover {
+					opacity: .7;
+				}
+			}
+			&.active {
+				> a {
+					font-weight: 700;
+					border: 0px;
+					color: $c-blue;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+			&:first-of-type {
+					border-right: 1px solid #D8D8D8;
+			}
+		}
+	}
+}

@@ -5,13 +5,17 @@ $(document).ready(function() {
     var $topNav = $('.navbar-hypescreen .navbar-nav'),
         $sideNav = $('.sidenav nav'),
         $logoHeight = $('.navbar-hypescreen').height(),
-        $topNav_height = $topNav.height();
+        $topNav_height = $topNav.height(),
+        $ratingsResult_width = $('.card-2 > .content > .ratings > .show-rating').width();
 
         $('#show-sidenav').click(function(event) {
             $topNav.add($sideNav).toggleClass('nav-open')
             $(this).toggleClass('active');
             // $('#nav-backdrop').fadeToggle(400);
         });
+        console.log($ratingsResult_width);
+        // Right position button show ratings
+        $('.card-2 > .content > .ratings > .action').css('left', 276 - $ratingsResult_width);
           
     $(window).on("resize", function() {
 
