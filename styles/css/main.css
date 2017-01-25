@@ -7033,11 +7033,11 @@ a, .btn-link {
         -webkit-transition: all 0.3s;
         transition: all 0.3s; }
         .card-2 > .content > .ratings > .show-rating > .result {
-          background-image: -webkit-linear-gradient(right, #FFBA81 0%, #FEE37F 100%);
-          background-image: -moz-linear-gradient(right, #FFBA81 0%, #FEE37F 100%);
-          background-image: -ms-linear-gradient(right, #FFBA81 0%, #FEE37F 100%);
-          background-image: -o-linear-gradient(right, #FFBA81 0%, #FEE37F 100%);
-          background-image: linear-gradient(to left, #FFBA81 0%, #FEE37F 100%);
+          background-image: -webkit-linear-gradient(right, #FFBA81 0%, #FEDB7F 100%);
+          background-image: -moz-linear-gradient(right, #FFBA81 0%, #FEDB7F 100%);
+          background-image: -ms-linear-gradient(right, #FFBA81 0%, #FEDB7F 100%);
+          background-image: -o-linear-gradient(right, #FFBA81 0%, #FEDB7F 100%);
+          background-image: linear-gradient(to left, #FFBA81 0%, #FEDB7F 100%);
           border: 0px;
           border-radius: 0 100px 100px 0;
           font-size: 20px;
@@ -7045,7 +7045,11 @@ a, .btn-link {
           letter-spacing: -1.52px;
           line-height: 20px;
           padding: 9px 21px 9px 17px;
-          min-width: 50px; }
+          min-width: 50px;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
           .card-2 > .content > .ratings > .show-rating > .result:before {
             content: " ";
             display: block;
@@ -7059,22 +7063,6 @@ a, .btn-link {
             font-size: 11px;
             line-height: 17px;
             transition: .3s; }
-        .card-2 > .content > .ratings > .show-rating:hover, .card-2 > .content > .ratings > .show-rating:focus {
-          text-align: right; }
-          .card-2 > .content > .ratings > .show-rating:hover > .result, .card-2 > .content > .ratings > .show-rating:focus > .result {
-            padding: 9px 7px; }
-            .card-2 > .content > .ratings > .show-rating:hover > .result > .small, .card-2 > .content > .ratings > .show-rating:focus > .result > .small {
-              margin-right: -17px;
-              opacity: 0; }
-          .card-2 > .content > .ratings > .show-rating:hover ~ .action, .card-2 > .content > .ratings > .show-rating:focus ~ .action {
-            left: 0px !important; }
-            .card-2 > .content > .ratings > .show-rating:hover ~ .action > .star, .card-2 > .content > .ratings > .show-rating:focus ~ .action > .star {
-              margin-left: -100px;
-              left: -100px;
-              -moz-transition: all 0.7s;
-              -o-transition: all 0.7s;
-              -webkit-transition: all 0.7s;
-              transition: all 0.7s; }
       .card-2 > .content > .ratings > .action {
         background-color: #F3F3F3;
         border-radius: 100px;
@@ -7095,11 +7083,11 @@ a, .btn-link {
         -webkit-transition: left 0.5s;
         transition: left 0.5s; }
         .card-2 > .content > .ratings > .action > .star {
-          background-image: -webkit-linear-gradient(left, #FFBA81 0%, #FEE37F 100%);
-          background-image: -moz-linear-gradient(left, #FFBA81 0%, #FEE37F 100%);
-          background-image: -ms-linear-gradient(left, #FFBA81 0%, #FEE37F 100%);
-          background-image: -o-linear-gradient(left, #FFBA81 0%, #FEE37F 100%);
-          background-image: linear-gradient(to right, #FFBA81 0%, #FEE37F 100%);
+          background-image: -webkit-linear-gradient(left, #FEE37F 0%, #FEDB7F 100%);
+          background-image: -moz-linear-gradient(left, #FEE37F 0%, #FEDB7F 100%);
+          background-image: -ms-linear-gradient(left, #FEE37F 0%, #FEDB7F 100%);
+          background-image: -o-linear-gradient(left, #FEE37F 0%, #FEDB7F 100%);
+          background-image: linear-gradient(to right, #FEE37F 0%, #FEDB7F 100%);
           border: 0px;
           border-radius: 100px 0 0 100px;
           color: #fff;
@@ -7128,29 +7116,14 @@ a, .btn-link {
           .card-2 > .content > .ratings > .action > .btn-link:hover {
             opacity: .7; }
         .card-2 > .content > .ratings > .action > .reset {
-          padding: 11px 4px; }
+          cursor: pointer;
+          padding: 11px 6px;
+          transition: opacity .3s; }
           .card-2 > .content > .ratings > .action > .reset > i {
             font-size: 12px;
             color: #bdbdbd; }
           .card-2 > .content > .ratings > .action > .reset:hover {
             opacity: .5; }
-      .card-2 > .content > .ratings:hover {
-        z-index: 10;
-        transition: z-index .1s; }
-        .card-2 > .content > .ratings:hover > .show-rating > .result {
-          padding: 9px 7px; }
-          .card-2 > .content > .ratings:hover > .show-rating > .result > .small {
-            margin-right: -17px;
-            opacity: 0; }
-        .card-2 > .content > .ratings:hover > .action {
-          left: 0px !important; }
-          .card-2 > .content > .ratings:hover > .action > .star {
-            margin-left: -100px;
-            left: -100px;
-            -moz-transition: all 0.7s;
-            -o-transition: all 0.7s;
-            -webkit-transition: all 0.7s;
-            transition: all 0.7s; }
     .card-2 > .content > h2 {
       font-weight: 700;
       font-size: 20px;
@@ -7182,6 +7155,25 @@ a, .btn-link {
       position: absolute;
       right: 10px;
       bottom: 10px; }
+    .card-2 > .content.open-ratings > .ratings {
+      z-index: 10;
+      transition: z-index .1s; }
+      .card-2 > .content.open-ratings > .ratings > .show-rating {
+        text-align: right; }
+        .card-2 > .content.open-ratings > .ratings > .show-rating > .result {
+          padding: 9px 7px; }
+          .card-2 > .content.open-ratings > .ratings > .show-rating > .result > .small {
+            margin-right: -17px;
+            opacity: 0; }
+      .card-2 > .content.open-ratings > .ratings > .action {
+        left: 0px !important; }
+        .card-2 > .content.open-ratings > .ratings > .action > .star {
+          margin-left: -100px;
+          left: -100px;
+          -moz-transition: all 0.7s;
+          -o-transition: all 0.7s;
+          -webkit-transition: all 0.7s;
+          transition: all 0.7s; }
   .card-2:hover {
     -moz-box-shadow: 0 15px 20px 0 rgba(132, 169, 206, 0.17);
     -o-box-shadow: 0 15px 20px 0 rgba(132, 169, 206, 0.17);

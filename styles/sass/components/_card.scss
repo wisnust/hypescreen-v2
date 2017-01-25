@@ -593,8 +593,8 @@
 				z-index: 3;
 			    @include transition(all .3s);
 	    		> .result {
-	    			@include gradient(right, #FFBA81 0%, #FEE37F 100%);
-	    			background-image: linear-gradient(to left, #FFBA81 0%, #FEE37F 100%);
+	    			@include gradient(right, #FFBA81 0%, #FEDB7F 100%);
+	    			background-image: linear-gradient(to left, #FFBA81 0%, #FEDB7F 100%);
 				    border: 0px;
 				    border-radius: 0 100px 100px 0;
 				    font-size: 20px;
@@ -603,6 +603,7 @@
 				    line-height: 20px;
 				    padding: 9px 21px 9px 17px;
 				    min-width: 50px;
+			   		@include transition(all .3s);
 					&:before {
 						content: " ";
 						display: block;
@@ -616,24 +617,6 @@
 						transition: .3s;
 					}
 	    		}
-	    		&:hover, &:focus {
-	    			text-align: right; 
-	    			> .result {
-	    				padding: 9px 7px;
-	    				> .small {
-	    					margin-right: -17px;
-	    					opacity: 0; 
-	    				}
-	    			}
-	    			& ~ .action {
-	    				left: 0px !important;
-	    				> .star {
-	    					margin-left: -100px;
-	    					left: -100px;
-			    			@include transition(all .7s);
-	    				}
-	    			} 
-	    		}
     		}
     		> .action {    
     			background-color: #F3F3F3;
@@ -643,9 +626,9 @@
 			    padding-right: 50px;
 			    @include ellipsis;
 			    @include transition(left .5s);
-	    		> .star {
-	    			@include gradient(left, #FFBA81 0%, #FEE37F 100%);
-	    			background-image: linear-gradient(to right, #FFBA81 0%, #FEE37F 100%);
+	    		> .star { 
+	    			@include gradient(left, #FEE37F 0%, #FEDB7F 100%);
+	    			background-image: linear-gradient(to right, #FEE37F 0%, #FEDB7F 100%);
 				    border: 0px;
 				    border-radius: 100px 0 0 100px;
 				    color: $c-white;
@@ -677,7 +660,9 @@
     				}
     			}
     			> .reset {
-    				padding: 11px 4px;
+    				cursor: pointer;
+    				padding: 11px 6px;
+    				transition: opacity .3s;
 					> i {
 						font-size: 12px;
 						color: #bdbdbd;
@@ -686,28 +671,7 @@
 						opacity: .5;
 					}
     			}
-    		}
-			&:hover { 
-				z-index: 10;
-		    	transition: z-index .1s;
-    			> .show-rating {
-	    			> .result {
-	    				padding: 9px 7px;
-	    				> .small {
-	    					margin-right: -17px;
-	    					opacity: 0; 
-	    				}
-	    			}
-    			}
-	    		> .action {
-					left: 0px !important;
-					> .star {
-						margin-left: -100px;
-						left: -100px;
-		    			@include transition(all .7s);
-					}
-				}
-			}
+    		} 
 		}
 		> h2 {
 			font-weight: 700;
@@ -742,6 +706,31 @@
 		}
 		> .source {
 			@include position(absolute, $right: 10px, $bottom: 10px);
+		}
+		&.open-ratings {
+
+			> .ratings {
+				z-index: 10;
+		    	transition: z-index .1s;
+    			> .show-rating {
+	    			text-align: right; 
+	    			> .result {
+	    				padding: 9px 7px;
+	    				> .small {
+	    					margin-right: -17px;
+	    					opacity: 0; 
+	    				}
+	    			}
+    			}
+	    		> .action {
+					left: 0px !important;
+					> .star {
+						margin-left: -100px;
+						left: -100px;
+		    			@include transition(all .7s);
+					}
+				}
+			} 
 		}
 	}
 	&:hover {
