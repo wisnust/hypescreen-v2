@@ -48,6 +48,15 @@ $(document).ready(function() {
 
             $videoLikes.css('top', $videoHeight - 23);
             $videoLikes.css('opacity', 1);
+
+            // Right position button show ratings mobile screen
+            $('.card-2 > .content > .ratings > .action').css('left', 260 - $ratingsResult_width);
+        }
+        if ($(window).width() < 322 ) {
+
+            // Right position button show ratings mobile screen
+            $('.card-2 > .content > .ratings > .action').css('left', 210 - $ratingsResult_width);
+
         }
 
     });

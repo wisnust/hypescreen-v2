@@ -37,4 +37,26 @@
 			}
 		}
 	}
+	@media (max-width: $screen-xs-max) {
+		> .nav-tabs {
+			display: table;
+			width: 100%;
+			text-align: center;
+			> li {
+				float: none;
+				display: table-cell;
+				vertical-align: middle;
+				&:first-of-type {
+					a {
+						margin-right: -15px;
+					}
+				}
+				&:last-of-type {
+					a {
+						margin-left: -15px;
+					}
+				}
+			}
+		}
+	}
 }
