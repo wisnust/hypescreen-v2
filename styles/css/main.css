@@ -5954,7 +5954,7 @@ a, .btn-link {
   background-color: #5aa9f0;
   border: 0px;
   border-radius: 0px;
-  height: 75px;
+  height: 76px;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -5981,9 +5981,13 @@ a, .btn-link {
       .navbar-hypescreen .navbar-nav > li > a > i {
         font-size: 20px;
         font-weight: 700; }
-    .navbar-hypescreen .navbar-nav > li.user-logout {
+    .navbar-hypescreen .navbar-nav > li.nav-signup {
+      background-color: #469ce7; }
+      .navbar-hypescreen .navbar-nav > li.nav-signup > a {
+        outline: none !important; }
+    .navbar-hypescreen .navbar-nav > li.nav-login {
       background-color: rgba(255, 255, 255, 0.2); }
-      .navbar-hypescreen .navbar-nav > li.user-logout > a {
+      .navbar-hypescreen .navbar-nav > li.nav-login > a {
         outline: none !important; }
     .navbar-hypescreen .navbar-nav > li.user-login {
       background-color: rgba(255, 255, 255, 0.2); }
@@ -6070,14 +6074,25 @@ a, .btn-link {
           text-align: center;
           float: none; }
           .navbar-hypescreen .navbar-nav > li > a {
-            padding: 15px; }
+            padding: 0px 20px; }
             .navbar-hypescreen .navbar-nav > li > a:hover, .navbar-hypescreen .navbar-nav > li > a:focus {
               background-color: transparent;
               color: rgba(255, 255, 255, 0.8); }
           .navbar-hypescreen .navbar-nav > li:nth-child(1) {
             margin-top: 12px; }
-          .navbar-hypescreen .navbar-nav > li.user-logout {
-            background-color: transparent; }
+          .navbar-hypescreen .navbar-nav > li.nav-signup {
+            background-color: transparent;
+            float: left;
+            width: 50%;
+            margin-top: 12px;
+            border-right: 1px solid #fff;
+            text-align: right; }
+          .navbar-hypescreen .navbar-nav > li.nav-login {
+            background-color: transparent;
+            float: left;
+            width: 50%;
+            margin-top: 12px;
+            text-align: left; }
           .navbar-hypescreen .navbar-nav > li.user-login {
             background-color: transparent;
             display: table;
@@ -6128,11 +6143,7 @@ a, .btn-link {
                     width: 100%; }
                 .navbar-hypescreen .navbar-nav > li.form-nav .form-search .form-group .btn-submit {
                   top: 0px;
-                  right: 0px; }
-      .navbar-hypescreen .user-not-login > li {
-        float: left;
-        width: 50%;
-        margin-top: 12px; } }
+                  right: 0px; } }
 
 .dropdown-menu {
   border: 0;

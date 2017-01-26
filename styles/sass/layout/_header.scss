@@ -7,7 +7,7 @@
 	background-color: $c-blue;
  	border: 0px;
  	border-radius: 0px;
- 	height: 75px;
+ 	height: 76px;
 	@include position(fixed, $top: 0px, $right: 0px, $left: 0px); 
 	z-index: 32;
  	.navbar-header {
@@ -36,7 +36,13 @@
 	 				font-weight: 700;
 	 			}
 	 		}
-	 		&.user-logout {
+	 		&.nav-signup {
+	 			background-color: #469ce7;
+	 			> a {
+	 				outline: none !important;
+	 			}
+	 		}
+	 		&.nav-login {
 	 			background-color: rgba($c-white, .2);
 	 			> a {
 	 				outline: none !important;
@@ -131,7 +137,7 @@
 				text-align: center;
 				float: none;
 				> a {
-					padding: 15px;
+					padding: 0px 20px;
 					&:hover, &:focus {
 						background-color: transparent;
 						color: rgba($c-white, .8);
@@ -143,8 +149,20 @@
 						// padding: 23px 17px;
 					}
 				}  
-				&.user-logout {
+				&.nav-signup {
 					background-color: transparent;
+					float: left;
+				    width: 50%; 
+				    margin-top: 12px;
+				    border-right: 1px solid $c-white;
+				    text-align: right;
+				}
+				&.nav-login {
+					background-color: transparent;
+					float: left;
+				    width: 50%; 
+				    margin-top: 12px;
+				    text-align: left;
 				}
 				&.user-login {
 					background-color: transparent;
@@ -212,14 +230,7 @@
 					}
 				}
 			}
- 		}
-		.user-not-login {
-			> li {
-				float: left;
-			    width: 50%;
-			    margin-top: 12px;
-			}
-		}
+ 		} 
 	}
 }
 
