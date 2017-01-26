@@ -6522,6 +6522,19 @@ a, .btn-link {
           opacity: 1; }
       .post-tabs > .nav-tabs > li:first-of-type {
         border-right: 1px solid #D8D8D8; }
+  @media (max-width: 767px) {
+    .post-tabs > .nav-tabs {
+      display: table;
+      width: 100%;
+      text-align: center; }
+      .post-tabs > .nav-tabs > li {
+        float: none;
+        display: table-cell;
+        vertical-align: middle; }
+        .post-tabs > .nav-tabs > li:first-of-type a {
+          margin-right: -15px; }
+        .post-tabs > .nav-tabs > li:last-of-type a {
+          margin-left: -15px; } }
 
 .button-checkbox {
   display: inline-block;
@@ -7278,6 +7291,40 @@ a, .btn-link {
     -o-box-shadow: 0 15px 20px 0 rgba(132, 169, 206, 0.17);
     -webkit-box-shadow: 0 15px 20px 0 rgba(132, 169, 206, 0.17);
     box-shadow: 0 15px 20px 0 rgba(132, 169, 206, 0.17); }
+  @media (max-width: 767px) {
+    .card-2 {
+      padding: 25px 20px;
+      margin-bottom: 35px; }
+      .card-2 > .content > .ratings {
+        height: 30px; }
+        .card-2 > .content > .ratings > .show-rating > .result {
+          font-size: 16px;
+          padding: 5px 10px 5px 8px;
+          min-width: 30px; }
+        .card-2 > .content > .ratings > .action {
+          padding-right: 55px; }
+          .card-2 > .content > .ratings > .action > .star {
+            font-size: 16px;
+            padding: 8.5px 10px;
+            min-width: 30px; }
+          .card-2 > .content > .ratings > .action > .reset {
+            padding: 8.5px 5px;
+            position: relative;
+            left: 5px; }
+          .card-2 > .content > .ratings > .action > .btn-link {
+            padding: 8.5px 5px; }
+            .card-2 > .content > .ratings > .action > .btn-link > img {
+              width: 11px; }
+      .card-2 > .content > h2 {
+        padding-top: 2px;
+        padding-bottom: 15px; }
+      .card-2 > .content > .btn-primary {
+        font-size: 14px; }
+      .card-2 > .content.open-ratings > .ratings > .show-rating > .result {
+        padding: 5px 7px; } }
+  @media (max-width: 325px) {
+    .card-2 > .image > a > img {
+      height: 135px; } }
 
 .subscribe-card {
   background-image: -webkit-linear-gradient(53deg, #6386A9 0%, #60AFFF 100%);
@@ -7424,7 +7471,8 @@ a, .btn-link {
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
       margin-bottom: 30px; }
       .filter > .filter-header > h2 {
-        font-size: 13px; }
+        font-size: 13px;
+        padding: 15.5px; }
       .filter > .filter-body > .filter-filter {
         padding: 15px 20px 0px; }
         .filter > .filter-body > .filter-filter > .pull-left, .filter > .filter-body > .filter-filter > .pull-right {
