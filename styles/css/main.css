@@ -7717,10 +7717,11 @@ a, .btn-link {
 
 .my-favorites-not-login {
   text-align: center;
-  margin-top: -30px;
-  margin-bottom: 430px; }
+  margin-bottom: 430px;
+  padding-top: 50px; }
   .my-favorites-not-login p {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     color: #737C8A;
     letter-spacing: 0;
     margin-bottom: 30px; }
@@ -7736,6 +7737,9 @@ a, .btn-link {
       border-color: #4e91ce; }
   @media (max-width: 767px) {
     .my-favorites-not-login {
-      margin-bottom: 250px; } }
+      margin-bottom: 250px;
+      padding-top: 15px; }
+      .my-favorites-not-login p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
