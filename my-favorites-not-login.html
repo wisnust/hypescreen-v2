@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web TV Worth Watching">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>My Favorites | hypeSCREEN</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="styles/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:400,700" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--==========================================
+                        Header 
+    ===========================================-->
+    <header>
+        <nav class="navbar navbar-hypescreen">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" title="logo"></a> 
+                </div>
+
+                <!-- Navbar menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li class="form-nav">
+                        <form class="form-search navbar-form navbar-left">
+                            <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn btn-submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-twitter"></i></a></li>
+
+                    <!-- User not login -->
+                    <li class="nav-signup"><a href="#">Sign Up</a></li> 
+                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li>
+
+                    <!-- User login -->
+                    <!-- <li class="dropdown user-login">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" class="user-img" alt="user" title="user" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="index.html">Log out</a></li> 
+                        </ul>
+                    </li> -->
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+    <!--==========================================
+                        Main
+    ===========================================-->
+    <main>
+
+
+        <!--==========================================
+                            SIDENAV
+        ===========================================-->
+        <aside class="sidenav">
+            <div class="nav-mobile">
+                <a id="show-sidenav"> 
+                    <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
+                    <img src="images/icon/close_icon.svg" class="close-icon" /> 
+                </a>
+            </div>
+            <nav> 
+
+                <!-- List menu -->
+                <ul class="list-menu">
+                    <li>
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/newsfeed.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/newsfeed_blue.svg"/> 
+                            Newsfeed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/browse_shows.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/browse_shows_blue.svg"/> 
+                            Browse shows
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
+                            My Favorites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/comment.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/comment_blue.svg"/> 
+                            The Hypescreen Report
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Top Shows -->
+                <div class="top-shows">
+                    <h2>TOP SHOWS: </h2>
+                    <div class="top-shows-dropdown"> 
+                        <div class="btn-group clearfix">
+                            <button type="button" class="btn btn-primary">Funny</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul>
+                        <li><a href="#"><img src="images/top_shows/ice_hockey.png" alt="ice hockey" title="ice hockey"></a></li>
+                        <li><a href="#"><img src="images/top_shows/pewdiepie.png" alt="pewdiepie" title="pewdiepie"></a></li>
+                        <li><a href="#"><img src="images/top_shows/klub.png" alt="klub" title="klub"></a></li>
+                        <li><a href="#"><img src="images/top_shows/kontrafakt.png" alt="kontrafakt" title="kontrafakt"></a></li>
+                        <li><a href="#"><img src="images/top_shows/moto.png" alt="moto" title="moto"></a></li>
+                        <li><a href="#"><img src="images/top_shows/camel.png" alt="camel" title="camel"></a></li>
+                    </ul>
+                    <a href="#" class="go-to">GO TO ALL <img src="images/icon/arrow_right_icon.svg"/></a>
+                </div>
+            </nav>
+            <div id="nav-backdrop"></div>
+        </aside>
+
+
+        <!--==========================================
+                        MAIN CONTENT
+        ===========================================-->
+        <div class="main-content">
+            <div class="container">
+                <h2 class="content-heading">MY FAVORITES</h2>
+
+                <div class="my-favorites-not-login">
+                    <p>Log in to view your favorites</p>
+                    <a  href="#" data-toggle="modal" data-target="#loginModalFavorites" class="btn btn-primary">Log in</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!--==========================================
+                        Footer
+    ===========================================-->
+    <footer id="footer" class="footer">
+        <div class="footer-inner container">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="images/logo_footer.png" alt="logo" title="logo" />
+                </a>
+            </div>
+            <div class="footer-links">
+                <ul class="list-inline">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright &copy; 2016 <a href="#">hypeSCREEN</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOG IN Modal -->
+    <div class="modal fade v-middle login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+
+                        <!-- Button Login -->  <!-- <button type="submit" class="btn btn-primary btn-login">Log in</button> -->
+
+                        <!-- For demo page --> <a href="user-login.html" class="btn btn-primary btn-login">Log in</a>
+
+                        <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- LOG IN Favorites Modal -->
+    <div class="modal fade v-middle login-modal" id="loginModalFavorites" tabindex="-1" role="dialog" aria-labelledby="loginModalFavoritesLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+
+                        <!-- Button Login -->  <!-- <button type="submit" class="btn btn-primary btn-login">Log in</button> -->
+
+                        <!-- For demo page --> <a href="my-favorites.html" class="btn btn-primary btn-login">Log in</a>
+
+                        <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!--==========================================
+                  Javascript core
+    ===========================================-->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/modernizr.min.js"></script>   -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

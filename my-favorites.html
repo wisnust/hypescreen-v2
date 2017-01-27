@@ -8,7 +8,7 @@
     <meta name="description" content="Web TV Worth Watching">
     <meta name="author" content="">
     <link rel="icon" href="">
-    <title>Browse | hypeSCREEN</title>
+    <title>My Favorites | hypeSCREEN</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="styles/css/main.css" rel="stylesheet">
@@ -48,14 +48,14 @@
 
                     <!-- User not login -->
                     <!-- <li class="nav-signup"><a href="#">Sign Up</a></li> 
-                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li>
- -->
+                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li> -->
+
                     <!-- User login -->
                     <li class="dropdown user-login">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" class="user-img" alt="user" title="user" /></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">My profile</a></li>
-                            <li><a href="index.html">Log out</a></li> 
+                            <li><a href="my-favorites-not-login.html">Log out</a></li> 
                         </ul>
                     </li>
                 </ul>
@@ -90,14 +90,14 @@
                             Newsfeed
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="browse.html">
                             <img class="is-visible" src="images/icon/sidenav/browse_shows.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/browse_shows_blue.svg"/> 
                             Browse shows
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="my-favorites.html">
                             <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
@@ -152,187 +152,7 @@
         ===========================================-->
         <div class="main-content">
             <div class="container">
-                <h2 class="content-heading">BROWSE SHOWS</h2>
-
-                <!-- Filter -->
-                <div class="filter">
-
-                    <!-- Filter Header -->
-                    <div class="filter-header collapsed" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
-                        <h2><img src="images/icon/filter_icon.svg"/> <span>Apply Filters</span> <img src="images/icon/arrow_up_icon.svg" class="arrow" /></h2>
-                    </div>
-
-                    <!-- Filter Body -->
-                    <div class="filter-body collapse" id="collapseFilter">
-
-                        <!-- Filter Action -->
-                        <div class="filter-action clearfix">
-                            <div class="pull-left">
-                                <a href="#" class="btn btn-link">Clear All</a>
-                                <a href="#" class="btn btn-link">Select All</a>
-                            </div>
-                            <div class="pull-right">
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        All Publishers <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Filter Tags -->
-                        <div class="filter-tags">
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Business &amp; Tech</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Food &amp; Drink</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Human Stories</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Nerd Culture</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Culture</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Science &amp; Nature</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Style &amp; Beauty</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">Web Series</button>
-                                <input type="checkbox" class="hidden" />
-                            </span> 
-                            <span class="button-checkbox">
-                                <button type="button" class="btn btn-tag" data-color="default">YouTubers</button>
-                                <input type="checkbox" class="hidden" />
-                            </span>  
-                        </div>
-
-                        <!-- Filter More Tags -->
-                        <div class="filter-more-tags collapse" id="MoreTags">
-                            <div class="filter-tags">
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Business &amp; Tech</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Food &amp; Drink</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Human Stories</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Nerd Culture</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Culture</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Science &amp; Nature</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Style &amp; Beauty</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Web Series</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">YouTubers</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Business &amp; Tech</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Food &amp; Drink</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Human Stories</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Nerd Culture</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Culture</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Science &amp; Nature</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Style &amp; Beauty</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Web Series</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">YouTubers</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                                <span class="button-checkbox">
-                                    <button type="button" class="btn btn-tag" data-color="default">Funny</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span> 
-                            </div>
-                        </div>
-
-                        <!-- Button Filter More Tags -->
-                        <div class="btn-more-tags">
-                            <a class="btn btn-link" role="button" data-toggle="collapse" href="#MoreTags" aria-expanded="false" aria-controls="MoreTags">
-                                <img src="images/icon/tags_icon.svg"/>&nbsp; <span>More Tags</span>
-                            </a> 
-                        </div> 
-                    </div>
-                </div> 
+                <h2 class="content-heading">MY FAVORITES</h2>
 
                 <!-- Post Tabs -->
                 <div class="post-tabs">
@@ -354,9 +174,9 @@
                         <div role="tabpanel" class="tab-pane fade in active" id="mostpopular">
                             <div class="row">
                                     
-                                <!-- Browse Post 1 -->
+                                <!-- My Favorites post 1 -->
                                 <div class="col-sm-6">
-                                    <div id="browse-post-1" class="card-2">
+                                    <div id="my-favorites-1" class="card-2">
                                         <div class="image">
                                             <a href="">
                                                 <img src="images/browse_shows/post_1.png" alt="image" title="image"/>
@@ -395,7 +215,7 @@
                                             <p>
                                                 Some of the most stylish guys in the world count down the ten items they can’t live without, from Big Boi to Nate Berkus…
                                             </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
+                                            <a href="#" class="btn btn-danger">Remove</a>
                                             <div class="source">
                                                 <a href="#"><img src="images/browse_shows/post_1_source.png"/></a>
                                             </div>
@@ -403,9 +223,9 @@
                                     </div>
                                 </div>
 
-                                <!-- Browse Post 2 -->
+                                <!-- My Favorites post 2 -->
                                 <div class="col-sm-6">
-                                    <div id="browse-post-2" class="card-2">
+                                    <div id="my-favorites-2" class="card-2">
                                         <div class="image">
                                             <a href="">
                                                 <img src="images/browse_shows/post_2.png" alt="image" title="image"/>
@@ -444,7 +264,7 @@
                                             <p>
                                                 The hottest beauty trends made easy. Host Elaine Welteroth, Teen Vogue’s beauty and health director, teams up with top…
                                             </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
+                                            <a href="#" class="btn btn-danger">Remove</a>
                                             <div class="source">
                                                 <a href="#"><img src="images/browse_shows/post_2_source.png"/></a>
                                             </div>
@@ -452,9 +272,9 @@
                                     </div>
                                 </div>
 
-                                <!-- Browse Post 3 -->
+                                <!-- My Favorites post 3 -->
                                 <div class="col-sm-6">
-                                    <div id="browse-post-3" class="card-2">
+                                    <div id="my-favorites-3" class="card-2">
                                         <div class="image">
                                             <a href="">
                                                 <img src="images/browse_shows/post_3.png" alt="image" title="image"/>
@@ -493,161 +313,14 @@
                                             <p>
                                                 Do you want awesome abs, sculpted arms or a better butt? Watch 5 Ways To… In each episode, celebrity trainers..
                                             </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
+                                            <a href="#" class="btn btn-danger">Remove</a>
                                             <div class="source">
                                                 <a href="#"><img src="images/browse_shows/post_3_source.png"/></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Browse Post 4 -->
-                                <div class="col-sm-6">
-                                    <div id="browse-post-4" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_4.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">6.2 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">73 Questions</h2>
-                                            <p>
-                                                Filmed in a single shot, we ask some of our favorite personalities 73 questions to see what they like, what they…
-                                            </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_4_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Browse Post 5 -->
-                                <div class="col-sm-6">
-                                    <div id="browse-post-5" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_5.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">8.1 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">7 Minutes in Heaven</h2>
-                                            <p>
-                                                Host Mike O’Brien (Saturday Night Live) invites celebrities into his closet for an intimate conversation.
-                                            </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_5_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Browse Post 6 -->
-                                <div class="col-sm-6">
-                                    <div id="browse-post-6" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_6.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">9.5 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">7P/10E</h2>
-                                            <p>
-                                                This is a live record of two people getting to know each other from across the country – Cora Gable in New York…
-                                            </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_5_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+ 
                             </div>
                         </div>
 
@@ -655,9 +328,9 @@
                         <div role="tabpanel" class="tab-pane fade" id="mostrecent">
                             <div class="row">
 
-                                <!-- Browse Post 1 -->
+                                <!-- My Favorites post 1 -->
                                 <div class="col-sm-6">
-                                    <div id="browse-post-2" class="card-2">
+                                    <div id="my-favorites-2" class="card-2">
                                         <div class="image">
                                             <a href="">
                                                 <img src="images/browse_shows/post_2.png" alt="image" title="image"/>
@@ -696,7 +369,7 @@
                                             <p>
                                                 The hottest beauty trends made easy. Host Elaine Welteroth, Teen Vogue’s beauty and health director, teams up with top…
                                             </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
+                                            <a href="#" class="btn btn-danger">Remove</a>
                                             <div class="source">
                                                 <a href="#"><img src="images/browse_shows/post_2_source.png"/></a>
                                             </div>
@@ -704,9 +377,9 @@
                                     </div>
                                 </div>
 
-                                 <!-- Browse Post 2 -->
+                                 <!-- My Favorites post 2 -->
                                 <div class="col-sm-6">
-                                    <div id="browse-post-1" class="card-2">
+                                    <div id="my-favorites-1" class="card-2">
                                         <div class="image">
                                             <a href="">
                                                 <img src="images/browse_shows/post_1.png" alt="image" title="image"/>
@@ -745,7 +418,7 @@
                                             <p>
                                                 Some of the most stylish guys in the world count down the ten items they can’t live without, from Big Boi to Nate Berkus…
                                             </p>
-                                            <a href="#" class="btn btn-primary">Add to Favorites</a>
+                                            <a href="#" class="btn btn-danger">Remove</a>
                                             <div class="source">
                                                 <a href="#"><img src="images/browse_shows/post_1_source.png"/></a>
                                             </div>
@@ -758,15 +431,7 @@
                     </div>
 
                 </div> 
-
-                <!-- load more -->
-                <div class="load-more">
-                    <a class="action">
-                        <img class="oval" src="images/icon/loading_oval_icon.png"/>
-                        <img class="arrow" src="images/icon/loading_arrow_icon.png"/>
-                        <div class="dot"></div>
-                    </a>
-                </div>
+ 
 
             </div>
         </div>

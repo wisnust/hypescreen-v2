@@ -704,6 +704,18 @@
 				border-color: $c-blue-dark;
 			}
 		}
+		> .btn-danger {
+			background-color: $c-red;
+			border-color: $c-red;
+			border-radius: 100px;
+			font-size: 16px;
+			padding: 8px 20px;
+			transition: all .3s;
+			&:hover, &:focus {
+				background-color: $c-red-dark;
+				border-color: $c-red-dark;
+			}
+		}
 		> .source {
 			@include position(absolute, $right: 10px, $bottom: 10px);
 		}
