@@ -28,6 +28,14 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    // SideNav Prefix
+    if ($(window).height() < 725) {
+        $sideNav.css({
+            overflow: 'auto',
+            height: '620px'
+        });
+    }
+
     $(window).on("resize", function() {
 
         $topNav.css('top', $logoHeight); 
