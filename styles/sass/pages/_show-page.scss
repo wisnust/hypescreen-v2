@@ -1,0 +1,192 @@
+#show-page {
+	.main-content {
+		padding-left: 0px;
+		> .container {
+			width: 1080px;
+		}
+	}
+	.footer {
+		padding-left: 0px;
+		> .footer-inner {
+			width: 1170px;
+			.footer-logo {
+				left: 45px;
+			}
+			.footer-links {
+				padding-left: 150px;
+			}
+		}
+
+	}
+}
+
+.show-page-details {
+	.title {
+		font-weight: bold;
+		font-size: 30px;
+		color: $c-blue;
+		letter-spacing: 0;
+		line-height: 43px;
+		margin: 0px 0px 20px;
+	}
+	.left-col {
+		float: left;
+	    width: 718px;
+	    margin-right: 25px;
+	    position: relative;
+	    > .playlist {
+	    	width: 51px;
+		    height: 50px;
+		    position: absolute;
+		    top: 0px;
+		    left: -55px;
+		    > a {
+		    	opacity: 0.8;
+			    font-size: 10px;
+			    color: #EB7629;
+			    letter-spacing: 0;
+			    display: block;
+			    text-align: center;
+			    > img {
+			    	display: block;
+			    	margin: 0px auto 5px;
+			    }
+		    }
+	    }
+	    > .details {
+	    	margin-top: 50px;
+	    	position: relative;
+	    	padding-right: 215px;
+	    	> .thumbnail-image {
+	    		float: left;
+			    width: 130px;
+			    height: 80px;
+			    margin-right: 20px;
+			    > a {
+			    	display: block;
+				    border-radius: 4px;
+				    overflow: hidden;
+				    > img {
+				    	width: 100%;
+				    	height: 100%;
+				    	object-fit: cover;
+				    }
+			    }
+	    	}
+		    > .tags-share {
+		    	float: left;
+		    	> .source {
+		    		display: block;
+		    		padding: 15px 0px;
+		    	}
+		    	> .tags {
+		    		> a {
+		    			margin-right: 5px;
+		    		}
+		    	}
+		    	> .share {
+		    		top: 0px;
+		    		right: 215px;
+		    	}
+		    }
+		    > p {
+		    	margin: 25px 0px 0px;
+				font-size: 16px;
+				color: #5B6575;
+				letter-spacing: -0.11px;
+				line-height: 24px;
+		    }
+		    > .ratings-action {
+		    	@include position(absolute, $top: 20px, $right: 0px); 
+		    	width: 150px;
+		    	text-align: right;
+		    	transition: all .3s; 
+		    	&.open-ratings {
+		    		width: 315px;
+		    	}
+		    }
+			.primary-action {
+				@include position(absolute, $top: 88px, $right: 0px);
+				.primary-item {
+					margin-bottom: 20px;
+					.btn-primary {
+						background-color: $c-blue;
+						border-color: $c-blue;
+						width: 150px;
+						@include transition(all .3s);
+						> img {
+							margin: -5px 5px 0px 0px;
+						}
+						&:hover, &:focus {
+							background-color: $c-blue-dark;
+							border-color: $c-blue-dark;
+						}
+						&.btn-large {
+							font-size: 13px;
+							padding: 14px 20px;
+							border-radius: 100px;
+							&.outline {
+								color: $c-blue;
+								background-color: transparent;
+								&:hover, &:focus {
+									background-color: rgba($c-blue, .1);
+								}
+							}
+						}
+					}
+				}
+			}
+	    }
+	}
+	.right-col {
+		float: left;
+		width: 300px;
+
+		.side-post {
+			margin-bottom: 30px;
+			> a {
+				display: block;
+				position: relative;
+				> img {
+					border-radius: 4px;
+					float: left;
+				    width: 160px;
+				    height: 90px;
+				    object-fit: cover;
+				    margin-right: 15px;
+					transition: opacity .3s;
+				}
+				> .content {
+					> h5 {
+						margin: 0px 0px 8px;
+					    font-size: 14px;
+					    color: #5B6575;
+					    letter-spacing: -0.18px;
+					    line-height: 18px;
+						transition: color .3s;
+					}
+					> .date {
+						font-family: Lato-Regular;
+					    font-size: 11px;
+					    color: #C0C4CA;
+					    letter-spacing: -0.36px;
+					    text-transform: uppercase;
+					    > i {
+					    	margin-right: 5px;
+					    }
+					}
+				}
+				&:hover, &:focus {
+					> img {
+						opacity: .8;
+					}
+					> .content {
+						h5 {
+							color: $c-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}

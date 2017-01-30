@@ -19,7 +19,7 @@ $(document).ready(function() {
       
     
     // Open Ratings 
-    $('.card-2 > .content > .ratings > .show-rating > .result, .card-2 > .content > .ratings > .action > .star, .card-2 > .content > .ratings > .action > .reset').click(function(event) {
+    $('.ratings > .show-rating > .result, .ratings > .action > .star, .ratings > .action > .reset').click(function(event) {
         $(this).parent().parent().parent().toggleClass('open-ratings')
     });
 

@@ -1,0 +1,180 @@
+.ratings {
+	@include position(absolute, $top: 0px, $right: 0px);
+	height: 38px;
+    width: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 1;
+    transition: z-index .5s;
+	> .show-rating {
+		@include position(absolute, $top: 0px, $right: 0px);
+		z-index: 3;
+	    @include transition(all .3s);
+		> .result {
+			@include gradient(right, #FFBA81 0%, #FEDB7F 100%);
+			background-image: linear-gradient(to left, #FFBA81 0%, #FEDB7F 100%);
+		    border: 0px;
+		    border-radius: 0 100px 100px 0;
+		    font-size: 20px;
+		    color: $c-white;
+		    letter-spacing: -1.52px;
+		    line-height: 20px;
+		    padding: 9px 21px 9px 17px;
+		    min-width: 50px;
+	   		@include transition(all .3s);
+			&:before {
+				content: " ";
+				display: block;
+				background-color: rgba($c-white, .3);
+				width: 1px;
+				@include position(absolute, $top: 0px, $left: 0px, $bottom: 0px);
+			}
+			> .small {
+				font-size: 11px;
+				line-height: 17px;
+				transition: .3s;
+			}
+		}
+	}
+	> .action {    
+		background-color: #F3F3F3;
+		border-radius: 100px;
+		@include position(absolute, $top: 0px, $right: 0px, $left: 270px);
+	    text-align: right;
+	    padding-right: 50px;
+	    @include ellipsis;
+	    @include transition(left .5s);
+		> .star { 
+			@include gradient(left, #FEE37F 0%, #FEDB7F 100%);
+			background-image: linear-gradient(to right, #FEE37F 0%, #FEDB7F 100%);
+		    border: 0px;
+		    border-radius: 100px 0 0 100px;
+		    color: $c-white;
+		    font-size: 20px;
+		    letter-spacing: -1.52px;
+		    line-height: 20px;
+		    padding: 12.5px 13px;
+		    min-width: 40px;
+		    position: relative; 
+		    left: 0px;
+	    	@include transition(all .3s);
+	    	transition-delay: 0s;
+	    	> img {
+	    		display: block;
+	    	}
+		}
+		> .btn-link {
+			padding: 11.5px 5px;
+		    border: 0px;
+		    margin-right: -5px;
+			> img {
+				display: block;
+			}
+			&:last-of-type {
+				margin-right: 7px;
+			}
+			&:hover {
+				opacity: .7;
+			}
+		}
+		> .reset {
+			cursor: pointer;
+			padding: 11px 6px;
+			transition: opacity .3s;
+			> i {
+				font-size: 12px;
+				color: #bdbdbd;
+			}
+			&:hover {
+				opacity: .5;
+			}
+		}
+	} 
+	&.ratings-large {
+		box-shadow: 0 7px 10px 0 rgba(255,200,129,0.25);
+		height: 48px;
+		> .show-rating {
+			> .result {
+				padding: 13px 33px 13px 26px;
+			}
+		}
+		> .action {
+			left: 0px;
+			> .star {
+				padding: 16px 16px 16px 18px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+
+		height: 30px;
+		> .show-rating { 
+			> .result {
+				font-size: 16px;
+				padding: 5px 10px 5px 8px;
+				min-width: 30px;
+			}
+		}
+		> .action  {
+			padding-right: 55px;
+			> .star {
+				font-size: 16px;
+			    padding: 8.5px 10px;
+			    min-width: 30px;
+			}
+		    > .reset {
+		    	padding: 8.5px 5px;
+		    	position: relative;
+		    	left: 5px;
+		    }
+		    > .btn-link {
+		    	padding: 8.5px 5px;
+		    	> img {
+		    		width: 11px;
+		    	}
+		    }
+		}
+	}
+}
+.open-ratings {
+	> .ratings {
+		z-index: 10;
+    	transition: z-index .1s;
+		> .show-rating {
+			text-align: right; 
+			> .result {
+				padding: 9px 7px;
+				> .small {
+					margin-right: -17px;
+					opacity: 0; 
+				}
+			}
+		}
+		> .action {
+			left: 0px !important;
+			> .star {
+				margin-left: -100px;
+				left: -100px;
+    			@include transition(all .7s);
+			}
+		}
+		&.ratings-large {
+			> .show-rating {
+				> .result {
+					padding: 13px 7px;
+				}
+			}
+		}
+	} 
+
+	@media (max-width: $screen-xs-max) {
+		> .ratings {
+			> .show-rating {
+				> .result {
+					padding: 5px 7px;
+				}
+			} 
+		}
+	}
+}
