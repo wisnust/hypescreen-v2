@@ -1,4 +1,12 @@
 #show-page {
+	.sidenav {
+		nav {
+			display: none;
+		}
+		&:before {
+			display: none;
+		}
+	}
 	.main-content {
 		padding-left: 0px;
 		> .container {
@@ -16,7 +24,24 @@
 				padding-left: 150px;
 			}
 		}
-
+	}
+	@media (max-width: $screen-xs-max) {
+		.sidenav nav {
+			display: block;
+		}
+		.main-content {
+			> .container {
+				width: 100%;
+			}
+		}
+		.footer {
+			> .footer-inner {
+				width: 100%;
+				.footer-links {
+					padding-left: 0px;
+				}
+			}
+		}
 	}
 }
 
@@ -183,6 +208,79 @@
 					> .content {
 						h5 {
 							color: $c-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		.title {
+			font-size: 22px;
+			line-height: 43px;
+			text-align: center;
+		}
+		.left-col {
+			float: none;
+			width: 100%;
+	    	> .details {
+	    		margin-top: 0px;
+	    		padding-right: 0px;
+	    		> .thumbnail-image {
+	    			width: 80px;
+	    			height: 50px;
+	    			margin-right: 15px;
+	    			margin-top: 27px;
+	    		}
+	    		> .tags-share {
+	    			width: 185px;
+	    			> .share {
+	    				top: 5px;
+	    				right: 15px;
+	    			}
+	    		}
+	    		> p {
+	    			font-size: 14px;
+					letter-spacing: -0.11px;
+					line-height: 24px;
+					margin: 10px 0px 40px;
+	    		}
+	    		> .ratings-action {
+	    			position: relative;
+	    			top: 0px;
+	    			height: 48px;
+	    			width: 135px;
+	    			&.open-ratings {
+	    				width: 280px;
+	    			}
+	    			.ratings > .action {
+	    				padding-right: 40px;
+	    			}
+	    		}
+	    		> .primary-action {
+	    			position: relative;
+	    			top: -48px;
+	    			margin-bottom: -20px;
+	    			text-align: right;
+	    			.primary-item {
+		    			&:last-of-type {
+		    				display: none;
+		    			}
+		    			.btn-primary {
+		    				width: 135px;
+		    			}
+	    			}
+	    		}
+	    	}
+		}
+		.right-col {
+			float: none;
+			width: 100%;
+			.side-post {
+				> a {
+					> .content {
+						> h5 {
+							font-size: 12px;
 						}
 					}
 				}

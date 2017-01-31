@@ -135,6 +135,20 @@
 		    	}
 		    }
 		}
+		&.ratings-large {
+			> .show-rating {
+				> .result {
+					padding: 13px 20px 13px 24px;
+					font-size: 20px;
+				}
+			}
+			> .action {
+				left: 0px;
+				> .star {
+					padding: 16px 16px 16px 18px;
+				}
+			}
+		}
 	}
 }
 .open-ratings {

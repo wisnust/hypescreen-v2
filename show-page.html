@@ -68,6 +68,93 @@
     ===========================================-->
     <main>
 
+        <!--==========================================
+                            SIDENAV
+        ===========================================-->
+        <aside class="sidenav">
+            <div class="nav-mobile">
+                <a id="show-sidenav"> 
+                    <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
+                    <img src="images/icon/close_icon.svg" class="close-icon" /> 
+                </a>
+            </div>
+            <nav> 
+
+                <!-- List menu -->
+                <ul class="list-menu">
+                    <li>
+                        <a href="user-login.html">
+                            <img class="is-visible" src="images/icon/sidenav/newsfeed.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/newsfeed_blue.svg"/> 
+                            Newsfeed
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/browse_shows.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/browse_shows_blue.svg"/> 
+                            Browse shows
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-favorites.html">
+                            <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
+                            My Favorites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/comment.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/comment_blue.svg"/> 
+                            The Hypescreen Report
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Top Shows -->
+                <div class="top-shows">
+                    <h2>TOP SHOWS: </h2>
+                    <div class="top-shows-dropdown"> 
+                        <div class="btn-group clearfix">
+                            <button type="button" class="btn btn-primary">Funny</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul>
+                        <li><a href="#"><img src="images/top_shows/ice_hockey.png" alt="ice hockey" title="ice hockey"></a></li>
+                        <li><a href="#"><img src="images/top_shows/pewdiepie.png" alt="pewdiepie" title="pewdiepie"></a></li>
+                        <li><a href="#"><img src="images/top_shows/klub.png" alt="klub" title="klub"></a></li>
+                        <li><a href="#"><img src="images/top_shows/kontrafakt.png" alt="kontrafakt" title="kontrafakt"></a></li>
+                        <li><a href="#"><img src="images/top_shows/moto.png" alt="moto" title="moto"></a></li>
+                        <li><a href="#"><img src="images/top_shows/camel.png" alt="camel" title="camel"></a></li>
+                    </ul>
+                    <a href="#" class="go-to">GO TO ALL <img src="images/icon/arrow_right_icon.svg"/></a>
+                </div>
+
+                <!-- Subscribe form -->
+                <div class="subscribe-form">
+                        <p>Subscribe to our newsletter:</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="email_subscribe" class="form-control" placeholder="Email" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </nav>
+            <div id="nav-backdrop"></div>
+        </aside>
 
         <!--==========================================
                         MAIN CONTENT

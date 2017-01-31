@@ -7675,7 +7675,14 @@ a, .btn-link {
         .ratings > .action > .btn-link {
           padding: 8.5px 5px; }
           .ratings > .action > .btn-link > img {
-            width: 11px; } }
+            width: 11px; }
+      .ratings.ratings-large > .show-rating > .result {
+        padding: 13px 20px 13px 24px;
+        font-size: 20px; }
+      .ratings.ratings-large > .action {
+        left: 0px; }
+        .ratings.ratings-large > .action > .star {
+          padding: 16px 16px 16px 18px; } }
 
 .open-ratings > .ratings {
   z-index: 10;
@@ -7821,7 +7828,30 @@ a, .btn-link {
           left: 13px;
           bottom: 13px;
           font-size: 10px;
-          padding: 5px 10px; } }
+          padding: 5px 10px; }
+      .video.video-large {
+        width: -webkit-calc(100% + 40px);
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: 0px; }
+        .video.video-large > .video-inner {
+          border-radius: 0px; }
+          .video.video-large > .video-inner > .play-time {
+            left: 13px;
+            bottom: 13px;
+            font-size: 10px;
+            padding: 5px 10px; }
+          .video.video-large > .video-inner > .btn-play {
+            margin-top: -22.5px;
+            margin-left: -22.5px; }
+            .video.video-large > .video-inner > .btn-play > a {
+              width: 55px;
+              height: 55px;
+              padding: 15px; }
+              .video.video-large > .video-inner > .btn-play > a > i {
+                font-size: 12px; }
+              .video.video-large > .video-inner > .btn-play > a:hover {
+                opacity: 1; } }
 
 .my-favorites-not-login {
   text-align: center;
@@ -7850,6 +7880,10 @@ a, .btn-link {
       .my-favorites-not-login p {
         font-size: 14px; } }
 
+#show-page .sidenav nav {
+  display: none; }
+#show-page .sidenav:before {
+  display: none; }
 #show-page .main-content {
   padding-left: 0px; }
   #show-page .main-content > .container {
@@ -7862,6 +7896,15 @@ a, .btn-link {
       left: 45px; }
     #show-page .footer > .footer-inner .footer-links {
       padding-left: 150px; }
+@media (max-width: 767px) {
+  #show-page .sidenav nav {
+    display: block; }
+  #show-page .main-content > .container {
+    width: 100%; }
+  #show-page .footer > .footer-inner {
+    width: 100%; }
+    #show-page .footer > .footer-inner .footer-links {
+      padding-left: 0px; } }
 
 .show-page-details .title {
   font-weight: bold;
@@ -7996,5 +8039,54 @@ a, .btn-link {
         opacity: .8; }
       .show-page-details .right-col .side-post > a:hover > .content h5, .show-page-details .right-col .side-post > a:focus > .content h5 {
         color: #5aa9f0; }
+@media (max-width: 767px) {
+  .show-page-details .title {
+    font-size: 22px;
+    line-height: 43px;
+    text-align: center; }
+  .show-page-details .left-col {
+    float: none;
+    width: 100%; }
+    .show-page-details .left-col > .details {
+      margin-top: 0px;
+      padding-right: 0px; }
+      .show-page-details .left-col > .details > .thumbnail-image {
+        width: 80px;
+        height: 50px;
+        margin-right: 15px;
+        margin-top: 27px; }
+      .show-page-details .left-col > .details > .tags-share {
+        width: 185px; }
+        .show-page-details .left-col > .details > .tags-share > .share {
+          top: 5px;
+          right: 15px; }
+      .show-page-details .left-col > .details > p {
+        font-size: 14px;
+        letter-spacing: -0.11px;
+        line-height: 24px;
+        margin: 10px 0px 40px; }
+      .show-page-details .left-col > .details > .ratings-action {
+        position: relative;
+        top: 0px;
+        height: 48px;
+        width: 135px; }
+        .show-page-details .left-col > .details > .ratings-action.open-ratings {
+          width: 280px; }
+        .show-page-details .left-col > .details > .ratings-action .ratings > .action {
+          padding-right: 40px; }
+      .show-page-details .left-col > .details > .primary-action {
+        position: relative;
+        top: -48px;
+        margin-bottom: -20px;
+        text-align: right; }
+        .show-page-details .left-col > .details > .primary-action .primary-item:last-of-type {
+          display: none; }
+        .show-page-details .left-col > .details > .primary-action .primary-item .btn-primary {
+          width: 135px; }
+  .show-page-details .right-col {
+    float: none;
+    width: 100%; }
+    .show-page-details .right-col .side-post > a > .content > h5 {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
