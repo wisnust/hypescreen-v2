@@ -28,13 +28,12 @@ a, .btn-link {
 .content-heading {
 	font: {
 		family: $open-sans;
-		weight: bold;
 		size: 36px;
 	};
 	color: #B6BBC0;
 	letter-spacing: 2.29px;
 	margin: 0px 0px 30px;
-	padding-bottom: 60px;
+	padding-bottom: 65px;
     text-align: center;
     position: relative;
     &:after {
@@ -43,7 +42,7 @@ a, .btn-link {
     	display: block;
     	@include position(absolute, $right: 0px, $bottom: 0px, $left: 0px);
     	height: 1px;
-    	width: 150px;
+    	width: 100px;
     	margin: 0 auto;
     }
 	@media (max-width: $screen-xs-max) {
@@ -51,7 +50,7 @@ a, .btn-link {
 		color: #B6BBC0;
 		letter-spacing: 1.53px;
 		margin-bottom: 5px; 
-		padding-bottom: 55px;
+		padding-bottom: 45px;
 	}
 }
 
@@ -61,7 +60,7 @@ a, .btn-link {
     font-size: 15px;
     font-weight: 300;
     position: relative;
-    top: -75px;
+    top: -85px;
 	@media (max-width: $screen-xs-max) {
 		font-size: 12px;
 		top: -45px;

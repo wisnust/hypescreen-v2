@@ -22,10 +22,10 @@
 		height: 100%;
 		z-index: 55; 
 		.list-menu { 
-		    border-bottom: 1px solid #bdbdbd;
+		    border-bottom: 1px solid #757575;
 		    list-style: none;
-		    margin-bottom: 40px;
-		    padding: 20px 0px;
+		    margin-bottom: 35px;
+    		padding: 20px 0px 30px 7px;
 		    > li {
 			    a {
 			    	display: block;
@@ -96,7 +96,7 @@
 		    }
 		}
 		.top-shows {
-		    border-bottom: 1px solid #bdbdbd;
+		    border-bottom: 1px solid #757575;
 		    padding-bottom: 20px;
 		    margin-bottom: 20px;
 			> h2 {
@@ -288,7 +288,7 @@
 		nav {
 			top: 322.422px;
 			width: 100%;
-			height: auto;
+			height: auto !important;
 			bottom: inherit;
 			@include box-shadow(0px 2px 6px rgba($c-black, .15));
 			@include transition(all .3s);
@@ -296,10 +296,21 @@
 			.list-menu {
 				margin-bottom: 0px;
 				border: 0px;
+				padding-left: 0px;
 			}
 			.top-shows {
 				display: none;
 			} 
+			.subscribe-form {
+				margin: 0px -40px;
+			    padding: 20px 40px 10px;
+			    border-top: 1px solid #757575;
+			}
+		}
+	}
+	@media (max-width: 322px) {
+		nav {
+			padding: 0px 30px;
 		}
 	}
 	@media (min-width: $screen-sm-max) {

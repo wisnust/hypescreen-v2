@@ -232,6 +232,11 @@
 			}
  		} 
 	}
+	@media (max-width: 322px) {
+		.navbar-nav > li.form-nav .form-search {
+			padding: 11px 30px;
+		}
+	}
 }
 
 .dropdown-menu {
