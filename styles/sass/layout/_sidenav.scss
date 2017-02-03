@@ -24,8 +24,8 @@
 		.list-menu { 
 		    border-bottom: 1px solid #757575;
 		    list-style: none;
-		    margin-bottom: 35px;
-    		padding: 20px 0px 30px 7px;
+		    margin-bottom: 45px;
+    		padding: 20px 0px 35px 7px;
 		    > li {
 			    a {
 			    	display: block;
@@ -97,8 +97,8 @@
 		}
 		.top-shows {
 		    border-bottom: 1px solid #757575;
-		    padding-bottom: 20px;
-		    margin-bottom: 20px;
+		    padding-bottom: 30px;
+		    margin-bottom: 30px;
 			> h2 {
 				display: inline-block;
 				font-size: 16px;
@@ -216,7 +216,7 @@
 						box-shadow: 0px 0px 0px transparent;
 					    border-color: transparent;
 					    font-size: 12px;
-					    height: 31px;
+					    height: 25px;
 					}
 				}
 				> .btn-primary {
@@ -224,7 +224,7 @@
 				    border-color: $c-blue;
 				    border-radius: 0px 4px 4px 0px;
 				    font-size: 11px;
-				    padding: 7.5px 10px;
+				    padding: 4px 10px;
 					@include position(absolute, $top: 0px, $right: 0px);
 				}
 			}
