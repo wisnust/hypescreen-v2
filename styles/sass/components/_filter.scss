@@ -38,7 +38,7 @@
 		border-top: 1px solid $c-blue;
 		> .filter-action {
 			margin: -6px -12px 0px;
-			padding: 20px 20px 0px;
+			padding: 12px 15px 0px;
 			.btn-link {
 				font-size: 12px;
 				letter-spacing: -0.09px;
@@ -64,12 +64,13 @@
 			}
 		}
 		> .filter-tags {
-			padding: 20px 20px 10px;
+			margin-bottom: 10px;
+			padding: 2px 20px 0px;
 			text-align: center;
 		}
 		> .filter-more-tags {
 			border-top: 1px solid rgba(137,152,171,0.23);
-			padding: 20px 20px 10px;
+			padding: 15px 20px 10px;
 			text-align: center;
 			.button-checkbox .btn-tag {
 				font-size: 12px;
@@ -82,7 +83,7 @@
 				display: block;
 				font-size: 12px;
 				text-transform: uppercase;
-				padding: 15px;
+				padding: 0px 15px 15px;
 			}
 		} 
 	}
