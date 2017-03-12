@@ -2,16 +2,16 @@
 // Button Checkbox
 .button-checkbox {
 	display: inline-block;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-right: 2px;
+	margin-bottom: 5px;
 	.btn-tag {
-	    font-size: 14px;
-	    color: $c-blue !important;
-	    letter-spacing: -0.11px;
-	    padding: 10px 20px;
-	    background-color: $c-white !important;
-	    border: 1px solid $c-blue;
 	    border-radius: 200px;
+	    border: 1px solid $c-blue;
+	    color: $c-blue !important;
+	    font-size: 12px;
+	    letter-spacing: -0.09px;
+	    padding: 4px 19px;
+	    background-color: $c-white !important;
 	    @include transition(all .3s);
 	    &:hover, &:focus {
 	    	background-color: $c-blue;
@@ -29,8 +29,5 @@
 	    	outline: none !important;
 	    	@include box-shadow(0px 0px 0px transparent);
 	    }
-	}
-	@media (max-width: $screen-sm-max) {
-		margin-right: 5px;
-	}
+	} 
 }
