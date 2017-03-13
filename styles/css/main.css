@@ -6619,6 +6619,13 @@ a, .btn-link {
       -o-box-shadow: 0px 0px 0px transparent;
       -webkit-box-shadow: 0px 0px 0px transparent;
       box-shadow: 0px 0px 0px transparent; }
+  @media (max-width: 767px) {
+    .button-checkbox {
+      margin-bottom: 4px;
+      margin-right: -1px; }
+      .button-checkbox .btn-tag {
+        font-size: 9px;
+        padding: 4px 6px; } }
 
 .card {
   background: #fff;
@@ -7163,7 +7170,7 @@ a, .btn-link {
   border: 1px solid #56A7F3;
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.09);
   border-radius: 4px;
-  margin-bottom: 50px; }
+  margin: -15px 0px 50px; }
   .filter > .filter-header {
     -moz-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
@@ -7177,7 +7184,7 @@ a, .btn-link {
       margin: 0px;
       text-align: center;
       text-transform: uppercase;
-      padding: 14px; }
+      padding: 9px; }
       .filter > .filter-header > h2 > img {
         display: inline-block;
         margin-top: -2px; }
@@ -7220,10 +7227,6 @@ a, .btn-link {
       border-top: 1px solid rgba(137, 152, 171, 0.23);
       padding: 15px 20px 10px;
       text-align: center; }
-      .filter > .filter-body > .filter-more-tags .button-checkbox .btn-tag {
-        font-size: 12px;
-        letter-spacing: -0.09px;
-        padding: 4px 19px; }
     .filter > .filter-body > .btn-more-tags > .btn-link {
       display: block;
       font-size: 12px;
@@ -7235,10 +7238,9 @@ a, .btn-link {
       -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
       -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
-      margin-bottom: 30px; }
+      margin: -10px 0px 30px; }
       .filter > .filter-header > h2 {
-        font-size: 13px;
-        padding: 15.5px; }
+        font-size: 13px; }
       .filter > .filter-body > .filter-filter {
         padding: 15px 20px 0px; }
         .filter > .filter-body > .filter-filter > .pull-left, .filter > .filter-body > .filter-filter > .pull-right {
@@ -7246,18 +7248,25 @@ a, .btn-link {
           text-align: center; }
       .filter > .filter-body > .filter-action {
         text-align: center; }
-        .filter > .filter-body > .filter-action > .pull-left, .filter > .filter-body > .filter-action > .pull-right {
-          float: none !important; }
         .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
-          left: 0px; }
+          left: inherit;
+          right: -2px; }
+        .filter > .filter-body > .filter-action .btn-link {
+          font-size: 11px;
+          padding: 5px; }
+          .filter > .filter-body > .filter-action .btn-link > .fa-caret-down {
+            font-size: 18px;
+            margin-top: -2px; }
       .filter > .filter-body > .filter-tags {
-        padding: 10px 5px 10px;
+        margin-bottom: 6px;
+        padding: 2px 0px 0px;
         text-align: center; }
-        .filter > .filter-body > .filter-tags > .button-checkbox:nth-child(odd) {
-          margin-right: 0px; }
       .filter > .filter-body > .filter-more-tags {
         padding: 10px 5px 10px;
-        text-align: center; } }
+        text-align: center; }
+      .filter > .filter-body > .btn-more-tags > .btn-link {
+        font-size: 10px;
+        padding: 0px 15px 10px; } }
 
 .load-more {
   text-align: center; }

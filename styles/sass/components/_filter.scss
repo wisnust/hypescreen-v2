@@ -3,7 +3,7 @@
 	border: 1px solid #56A7F3;
 	box-shadow: 6px 6px 0 0 rgba($c-black, .09);
 	border-radius: 4px;
-	margin-bottom: 50px;
+	margin: -15px 0px 50px;
 
 	> .filter-header {
 		@include transition(background-color .3s);
@@ -16,7 +16,7 @@
 			margin: 0px;
 			text-align: center;
 		    text-transform: uppercase;
-		    padding: 14px;
+		    padding: 9px;
 		    > img {
 		    	display: inline-block;
 			    margin-top: -2px;
@@ -71,12 +71,7 @@
 		> .filter-more-tags {
 			border-top: 1px solid rgba(137,152,171,0.23);
 			padding: 15px 20px 10px;
-			text-align: center;
-			.button-checkbox .btn-tag {
-				font-size: 12px;
-			    letter-spacing: -0.09px;
-			    padding: 4px 19px;
-			}
+			text-align: center; 
 		}
 		> .btn-more-tags {
 			> .btn-link {
@@ -90,10 +85,9 @@
 	@media (max-width: $screen-xs-max) {
 
 		@include box-shadow(0px 2px 4px rgba($c-black, .11));
-		margin-bottom: 30px;
+		margin: -10px 0px 30px;
 		> .filter-header > h2 {
 			font-size: 13px;
-			padding: 15.5px;
 		}
 
 		> .filter-body {
@@ -105,26 +99,34 @@
 				}
 			}
 			> .filter-action { 
-				text-align: center;
-				> .pull-left, > .pull-right {
-					float: none !important;
+				text-align: center; 
+				> .pull-right .dropdown-menu {
+					left: inherit;
+    				right: -2px;
 				}
-				> .pull-right {
-					.dropdown-menu {
-						left: 0px;
+				.btn-link {
+					font-size: 11px;
+					padding: 5px;
+					> .fa-caret-down {
+					    font-size: 18px;
+					    margin-top: -2px;
 					}
 				}
 			}
 			> .filter-tags {
-				padding: 10px 5px 10px;
-				text-align: center;
-				> .button-checkbox:nth-child(odd) {
-				    margin-right: 0px;
-				}
+				margin-bottom: 6px;
+				padding: 2px 0px 0px;
+				text-align: center; 
 			}
 			> .filter-more-tags {
 				padding: 10px 5px 10px;
     			text-align: center;
+			}
+			> .btn-more-tags {
+    			> .btn-link {
+    				font-size: 10px;
+    				padding: 0px 15px 10px;
+    			}
 			}
 		}
 	}
