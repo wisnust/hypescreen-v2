@@ -186,7 +186,8 @@
 			    margin-bottom: 0px;
 			} 
 			&.comments-form {
-				margin-bottom: 60px;
+				margin-bottom: 0px;
+				padding-top: 4px;
 				padding-right: 0px;
 				> .avatar {
 					top: 2px;
@@ -200,22 +201,26 @@
 					    margin-right: 10px;
 					    height: 36px;
 					}
-					.btn-primary {
-						background-color: $c-blue;
-						border-color: $c-blue;
-						width: 100px; 
-						height: 36px;
-						@include transition(all .3s);
-						&:hover, &:focus {
-							background-color: $c-blue-dark;
-							border-color: $c-blue-dark;
-						}
+				}
+				.btn-primary {
+					background-color: $c-blue;
+					border-color: $c-blue;
+					width: 100px; 
+					height: 36px;
+					@include transition(all .3s);
+					&:hover, &:focus {
+						background-color: $c-blue-dark;
+						border-color: $c-blue-dark;
+					}
+					&.anonymous {
+						width: 150px;
+						margin: 0 auto;
 					}
 				}
 			}
 		}
 		.btn-more-comments {
-			@include position(absolute, $right: 35px, $bottom: 20px);
+			@include position(absolute, $right: 35px, $top: 20px);
 			transition: bottom .3s;
 			> a {
 				border: 1px solid rgba(#5B6575, .14);
@@ -242,12 +247,7 @@
 		.more-comments {
 			.comments {
 				margin-top: 20px;
-			}
-			&.in {
-				~ .btn-more-comments {
-					bottom: 15px;
-				}
-			}
+			} 
 		}
 	}
 	@media (max-width: $screen-xs-max) {
