@@ -6668,14 +6668,20 @@ a, .btn-link {
       width: -ms-calc(100% - 480px);
       width: calc(100% - 480px); }
       .card > .card-body > .content > h3 {
-        display: inline-block;
+        display: block;
+        display: -webkit-box;
         color: #F38D4B;
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 0;
         line-height: 27px;
         margin: -7px 0px 10px;
-        max-width: 180px; }
+        max-width: 180px;
+        max-height: 78px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .card > .card-body > .content > .time {
         font-size: 11px;
         color: #B6BBC0;
@@ -6684,6 +6690,9 @@ a, .btn-link {
         display: block; }
         .card > .card-body > .content > .time > i {
           margin-right: 8px; }
+      .card > .card-body > .content > .tags {
+        max-height: 85px;
+        overflow: hidden; }
       .card > .card-body > .content > .likes {
         position: absolute;
         bottom: 0px;
