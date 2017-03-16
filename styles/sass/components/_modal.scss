@@ -137,3 +137,132 @@
 
 	}
 }
+
+.signup-modal {
+	@extend .login-modal;
+
+	.modal-dialog {
+		color: #616161;
+		font-size: 13px;
+		width: 410px;
+
+		.modal-content {
+
+		    .modal-header {
+		    	padding: 40px 40px 25px;
+		    	text-align: center; 
+		    	> img {
+		    		width: 250px;
+		    	}
+		    	> h2 {
+		    		margin: 10px 0px 0px;
+		    	}
+		    }
+
+		    .modal-body {
+		    	padding: 0px 80px 35px;
+		    	> .auth {
+		    		margin-bottom: 20px;
+		    		> a {
+						display: inline-block; 
+						transition: opacity .3s;
+						&:first-of-type {
+							margin-right: 0px;
+							margin-bottom: 10px;
+						}
+						&:hover, &:focus {
+							opacity: .8;
+						}
+		    		}
+		    	}
+		    	> .divider {
+		    		color: $c-grey;
+		    		margin-bottom: 17px;
+		    	}
+		    	.form-group {
+		    		margin-bottom: 10px;
+		    		.form-control {
+		    			font-size: 13px;
+		    			height: 30px;
+		    			margin-bottom: 0px;
+		    			padding: 6px 10px;
+		    			width: 100%;
+		    		}
+	    		}
+	    		.btn-signup {
+		    		@extend .btn-login;
+	    			font-size: 14px;
+	    			letter-spacing: 0px;
+	    			margin: 25px auto;
+	    			padding: 8px;
+	    			width: 70px;
+	    		}
+		    }
+
+		}
+
+	}
+	@media (max-width: $screen-xs-max) {
+
+		.modal-dialog {
+			margin: 80px 20px 0px;
+			width: auto;
+
+			.modal-content {
+
+				.modal-header {
+					padding: 40px 40px 20px;
+					> h2 {
+						font-size: 24px;
+						margin: 8px 0px 0px;
+					}
+				}
+				.modal-body {
+					padding: 0px 10px 35px;
+					> .auth {
+						margin-bottom: 10px;
+						> a:first-of-type {
+							margin-right: 5px;
+						}
+					}
+					> form {
+						padding: 0px 30px;
+					}
+				}
+
+			}
+
+		}
+
+	}
+	@media (max-width: 322px) {
+
+		.modal-dialog { 
+			.modal-content {
+
+				.modal-header {
+					padding: 30px 40px 20px;
+					> h2 {
+						font-size: 20px;
+					}
+				}
+				.modal-body {
+					padding: 0px 10px 35px;
+					> .auth {
+    					margin-bottom: 0px;
+					}
+					> .divider {
+						font-size: 11px;
+						margin-bottom: 10px;
+					}
+					> form {
+						padding: 0px 20px;
+					}
+				}
+
+			}
+
+		}
+
+	}
+}

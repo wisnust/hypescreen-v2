@@ -7379,42 +7379,42 @@ a, .btn-link {
         -o-animation: load-more-dot 1s 1s 5 alternate;
         animation: load-more-dot 1s 1s 5 alternate; }
 
-.login-modal .modal-dialog {
+.login-modal .modal-dialog, .signup-modal .modal-dialog {
   width: 525px; }
-  .login-modal .modal-dialog .modal-content {
+  .login-modal .modal-dialog .modal-content, .signup-modal .modal-dialog .modal-content {
     border: 0px;
     border-radius: 0px;
     -moz-box-shadow: 0px 0px 0px transparent;
     -o-box-shadow: 0px 0px 0px transparent;
     -webkit-box-shadow: 0px 0px 0px transparent;
     box-shadow: 0px 0px 0px transparent; }
-    .login-modal .modal-dialog .modal-content .modal-header {
+    .login-modal .modal-dialog .modal-content .modal-header, .signup-modal .modal-dialog .modal-content .modal-header {
       border: 0px;
       padding: 60px; }
-      .login-modal .modal-dialog .modal-content .modal-header img {
+      .login-modal .modal-dialog .modal-content .modal-header img, .signup-modal .modal-dialog .modal-content .modal-header img {
         max-width: 100%;
         margin: 0 auto; }
-      .login-modal .modal-dialog .modal-content .modal-header .close {
+      .login-modal .modal-dialog .modal-content .modal-header .close, .signup-modal .modal-dialog .modal-content .modal-header .close {
         position: absolute;
         top: 13px;
         right: 14px;
         opacity: 1;
         transition: opacity .3s; }
-        .login-modal .modal-dialog .modal-content .modal-header .close:hover, .login-modal .modal-dialog .modal-content .modal-header .close:focus {
+        .login-modal .modal-dialog .modal-content .modal-header .close:hover, .signup-modal .modal-dialog .modal-content .modal-header .close:hover, .login-modal .modal-dialog .modal-content .modal-header .close:focus, .signup-modal .modal-dialog .modal-content .modal-header .close:focus {
           opacity: .5; }
-    .login-modal .modal-dialog .modal-content .modal-body {
+    .login-modal .modal-dialog .modal-content .modal-body, .signup-modal .modal-dialog .modal-content .modal-body {
       padding: 0px 50px 60px;
       text-align: center; }
-      .login-modal .modal-dialog .modal-content .modal-body .auth {
+      .login-modal .modal-dialog .modal-content .modal-body .auth, .signup-modal .modal-dialog .modal-content .modal-body .auth {
         margin-bottom: 17px; }
-        .login-modal .modal-dialog .modal-content .modal-body .auth > a {
+        .login-modal .modal-dialog .modal-content .modal-body .auth > a, .signup-modal .modal-dialog .modal-content .modal-body .auth > a {
           display: inline-block;
           transition: opacity .3s; }
-          .login-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type {
+          .login-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type, .signup-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type {
             margin-right: 20px; }
-          .login-modal .modal-dialog .modal-content .modal-body .auth > a:hover, .login-modal .modal-dialog .modal-content .modal-body .auth > a:focus {
+          .login-modal .modal-dialog .modal-content .modal-body .auth > a:hover, .signup-modal .modal-dialog .modal-content .modal-body .auth > a:hover, .login-modal .modal-dialog .modal-content .modal-body .auth > a:focus, .signup-modal .modal-dialog .modal-content .modal-body .auth > a:focus {
             opacity: .8; }
-      .login-modal .modal-dialog .modal-content .modal-body .form-control {
+      .login-modal .modal-dialog .modal-content .modal-body .form-control, .signup-modal .modal-dialog .modal-content .modal-body .form-control {
         border: 1px solid #CCCCCC;
         border-radius: 0px;
         box-shadow: 0px 0px 0px transparent;
@@ -7424,11 +7424,11 @@ a, .btn-link {
         transition: border-color .3s;
         width: 363px;
         padding: 6px 15px; }
-        .login-modal .modal-dialog .modal-content .modal-body .form-control:hover {
+        .login-modal .modal-dialog .modal-content .modal-body .form-control:hover, .signup-modal .modal-dialog .modal-content .modal-body .form-control:hover {
           border-color: #919191; }
-        .login-modal .modal-dialog .modal-content .modal-body .form-control:focus {
+        .login-modal .modal-dialog .modal-content .modal-body .form-control:focus, .signup-modal .modal-dialog .modal-content .modal-body .form-control:focus {
           border-color: #5aa9f0; }
-      .login-modal .modal-dialog .modal-content .modal-body .btn-login {
+      .login-modal .modal-dialog .modal-content .modal-body .btn-login, .signup-modal .modal-dialog .modal-content .modal-body .btn-login, .signup-modal .modal-dialog .modal-content .modal-body .btn-signup {
         background: #5aa9f0;
         display: block;
         margin: 43px auto 15px;
@@ -7438,49 +7438,121 @@ a, .btn-link {
         border: 0px;
         width: 100px;
         transition: background-color .3s; }
-        .login-modal .modal-dialog .modal-content .modal-body .btn-login:hover, .login-modal .modal-dialog .modal-content .modal-body .btn-login:focus {
+        .login-modal .modal-dialog .modal-content .modal-body .btn-login:hover, .signup-modal .modal-dialog .modal-content .modal-body .btn-login:hover, .signup-modal .modal-dialog .modal-content .modal-body .btn-signup:hover, .login-modal .modal-dialog .modal-content .modal-body .btn-login:focus, .signup-modal .modal-dialog .modal-content .modal-body .btn-login:focus, .signup-modal .modal-dialog .modal-content .modal-body .btn-signup:focus {
           background-color: #4e91ce; }
-      .login-modal .modal-dialog .modal-content .modal-body .btn-signup {
+      .login-modal .modal-dialog .modal-content .modal-body .btn-signup, .signup-modal .modal-dialog .modal-content .modal-body .btn-signup {
         font-size: 16px;
         letter-spacing: -0.41px; }
-.login-modal.v-middle {
+.login-modal.v-middle, .v-middle.signup-modal {
   padding: 0px !important;
   text-align: center; }
-  .login-modal.v-middle .modal-dialog {
+  .login-modal.v-middle .modal-dialog, .v-middle.signup-modal .modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle; }
-  .login-modal.v-middle:before {
+  .login-modal.v-middle:before, .v-middle.signup-modal:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     margin-right: -4px; }
 @media (max-width: 767px) {
-  .login-modal .modal-dialog {
+  .login-modal .modal-dialog, .signup-modal .modal-dialog {
     margin: 80px 20px 0px;
     width: auto; }
-    .login-modal .modal-dialog .modal-content .modal-header {
+    .login-modal .modal-dialog .modal-content .modal-header, .signup-modal .modal-dialog .modal-content .modal-header {
       padding: 55px 44px 32px; }
-      .login-modal .modal-dialog .modal-content .modal-header .close {
+      .login-modal .modal-dialog .modal-content .modal-header .close, .signup-modal .modal-dialog .modal-content .modal-header .close {
         top: 10px;
         right: 10px; }
-    .login-modal .modal-dialog .modal-content .modal-body {
+    .login-modal .modal-dialog .modal-content .modal-body, .signup-modal .modal-dialog .modal-content .modal-body {
       padding: 0px 10px 40px; }
-      .login-modal .modal-dialog .modal-content .modal-body .auth > a {
+      .login-modal .modal-dialog .modal-content .modal-body .auth > a, .signup-modal .modal-dialog .modal-content .modal-body .auth > a {
         width: 125px; }
-        .login-modal .modal-dialog .modal-content .modal-body .auth > a > img {
+        .login-modal .modal-dialog .modal-content .modal-body .auth > a > img, .signup-modal .modal-dialog .modal-content .modal-body .auth > a > img {
           width: 100%; }
-        .login-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type {
+        .login-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type, .signup-modal .modal-dialog .modal-content .modal-body .auth > a:first-of-type {
           margin-right: 5px; }
-      .login-modal .modal-dialog .modal-content .modal-body .form-control {
+      .login-modal .modal-dialog .modal-content .modal-body .form-control, .signup-modal .modal-dialog .modal-content .modal-body .form-control {
         width: 235px; }
-      .login-modal .modal-dialog .modal-content .modal-body .btn-login {
+      .login-modal .modal-dialog .modal-content .modal-body .btn-login, .signup-modal .modal-dialog .modal-content .modal-body .btn-login, .signup-modal .modal-dialog .modal-content .modal-body .btn-signup {
         margin: 20px auto 10px; }
-  .login-modal.v-middle .modal-dialog {
+  .login-modal.v-middle .modal-dialog, .v-middle.signup-modal .modal-dialog {
     display: block; }
-  .login-modal.v-middle:before {
+  .login-modal.v-middle:before, .v-middle.signup-modal:before {
     display: none; } }
+
+.signup-modal .modal-dialog {
+  color: #616161;
+  font-size: 13px;
+  width: 410px; }
+  .signup-modal .modal-dialog .modal-content .modal-header {
+    padding: 40px 40px 25px;
+    text-align: center; }
+    .signup-modal .modal-dialog .modal-content .modal-header > img {
+      width: 250px; }
+    .signup-modal .modal-dialog .modal-content .modal-header > h2 {
+      margin: 10px 0px 0px; }
+  .signup-modal .modal-dialog .modal-content .modal-body {
+    padding: 0px 80px 35px; }
+    .signup-modal .modal-dialog .modal-content .modal-body > .auth {
+      margin-bottom: 20px; }
+      .signup-modal .modal-dialog .modal-content .modal-body > .auth > a {
+        display: inline-block;
+        transition: opacity .3s; }
+        .signup-modal .modal-dialog .modal-content .modal-body > .auth > a:first-of-type {
+          margin-right: 0px;
+          margin-bottom: 10px; }
+        .signup-modal .modal-dialog .modal-content .modal-body > .auth > a:hover, .signup-modal .modal-dialog .modal-content .modal-body > .auth > a:focus {
+          opacity: .8; }
+    .signup-modal .modal-dialog .modal-content .modal-body > .divider {
+      color: #8999AB;
+      margin-bottom: 17px; }
+    .signup-modal .modal-dialog .modal-content .modal-body .form-group {
+      margin-bottom: 10px; }
+      .signup-modal .modal-dialog .modal-content .modal-body .form-group .form-control {
+        font-size: 13px;
+        height: 30px;
+        margin-bottom: 0px;
+        padding: 6px 10px;
+        width: 100%; }
+    .signup-modal .modal-dialog .modal-content .modal-body .btn-signup {
+      font-size: 14px;
+      letter-spacing: 0px;
+      margin: 25px auto;
+      padding: 8px;
+      width: 70px; }
+@media (max-width: 767px) {
+  .signup-modal .modal-dialog {
+    margin: 80px 20px 0px;
+    width: auto; }
+    .signup-modal .modal-dialog .modal-content .modal-header {
+      padding: 40px 40px 20px; }
+      .signup-modal .modal-dialog .modal-content .modal-header > h2 {
+        font-size: 24px;
+        margin: 8px 0px 0px; }
+    .signup-modal .modal-dialog .modal-content .modal-body {
+      padding: 0px 10px 35px; }
+      .signup-modal .modal-dialog .modal-content .modal-body > .auth {
+        margin-bottom: 10px; }
+        .signup-modal .modal-dialog .modal-content .modal-body > .auth > a:first-of-type {
+          margin-right: 5px; }
+      .signup-modal .modal-dialog .modal-content .modal-body > form {
+        padding: 0px 30px; } }
+@media (max-width: 322px) {
+  .signup-modal .modal-dialog .modal-content .modal-header {
+    padding: 30px 40px 20px; }
+    .signup-modal .modal-dialog .modal-content .modal-header > h2 {
+      font-size: 20px; }
+  .signup-modal .modal-dialog .modal-content .modal-body {
+    padding: 0px 10px 35px; }
+    .signup-modal .modal-dialog .modal-content .modal-body > .auth {
+      margin-bottom: 0px; }
+    .signup-modal .modal-dialog .modal-content .modal-body > .divider {
+      font-size: 11px;
+      margin-bottom: 10px; }
+    .signup-modal .modal-dialog .modal-content .modal-body > form {
+      padding: 0px 20px; } }
 
 .row.no-gutters {
   margin-right: 0;

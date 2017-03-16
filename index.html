@@ -47,7 +47,7 @@
                     <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-twitter"></i></a></li>
 
                     <!-- User not login -->
-                    <li class="nav-signup"><a href="#">Sign Up</a></li> 
+                    <li class="nav-signup"><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li> 
                     <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li>
 
                     <!-- User login -->
@@ -773,7 +773,7 @@
         </div>
     </footer>
 
-    <!-- LOG IN Modal -->
+    <!-- LOG IN MODAL -->
     <div class="modal fade v-middle login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -798,7 +798,45 @@
 
                         <!-- For demo page --> <a href="user-login.html" class="btn btn-primary btn-login">Log in</a>
 
-                        <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
+                        <a href="#" class="btn btn-link btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SIGN UP MODAL -->
+    <div class="modal fade v-middle signup-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <div class="divider"><span>- OR -</span></div>
+                    <form>
+                        <div class="form-group">
+                            <input type="alias" class="form-control" id="alias" placeholder="Alias">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+                        <div class="form-group">
+                            <input type="confirm-password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                        </div>  
+
+                        <a href="user-login.html" class="btn btn-primary btn-signup">Sign Up</a>
+                        
+                        <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in here</a>.</p>
                     </form>
                 </div> 
             </div>
