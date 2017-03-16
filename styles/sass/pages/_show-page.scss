@@ -120,25 +120,32 @@
 	    	}
 		    > .tags-share {
 		    	float: left;
-		    	height: 90px;
-		    	width: 370px;
-		    	display: flex;
-		    	display: -webkit-flex;
-		    	align-items: center;
-		    	> .source {
-		    		align-self: flex-end;
-		    		display: block;
-		    		margin-right: 15px;
-		    		height: 30px;
-		    		width: 30px;
-		    		object-fit:cover;
-		    	}
-		    	> .tags {
-		    		text-align: center;
-		    		> a {
-		    			margin-right: 5px;
-		    		}
-		    	} 
+				height: 90px;
+				width: 370px;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: flex;
+				-webkit-align-items: center;
+				-moz-align-items: center;
+				align-items: center;
+				> .source {
+					-webkit-align-self: flex-end;
+					-moz-align-self: flex-end;
+					align-self: flex-end;
+					box-sizing: content-box;
+					display: block;
+					margin-right: 15px;
+					height: 30px;
+					width: 30px;
+					object-fit: cover;
+				}
+				> .tags {
+					text-align: center;
+					> a {
+						margin-right: 5px;
+					}
+				}
 		    }
 		    > p {
 		    	margin: 25px 0px 0px;
@@ -264,20 +271,18 @@
 		    	}
 		    }
 	    	> .details {
-	    		margin-top: 0px;
-	    		padding-right: 0px;
-	    		> .thumbnail-image {
-	    			width: 105px;
-				    height: 65px;
-				    margin-right: 10px;
-				    margin-top: 15px;
-	    		}
-	    		> .tags-share {
-	    			width: 185px; 
-	    			.source {
-	    				padding-bottom: 8px;
-	    			}
-	    		}
+				margin-top: 0px;
+				padding-right: 0px;
+				> .thumbnail-image {  
+					margin-right: 10px;
+					margin-top: 15px;
+				}
+				> .tags-share {
+					width: 100%;
+					.source {
+						@include position(absolute, $top: 75px, $left: 175px);
+					}
+				}
 	    		> p {
 	    			font-size: 14px;
 					letter-spacing: -0.11px;
@@ -332,13 +337,22 @@
 			> .share {
 				top: 195px;
 			}
-	    	> .details {
-	    		> .thumbnail-image {
-	    			width: 80px;
-				    height: 60px;
-				    margin-top: 23px;
-	    		}
-	    	}
+			> .details {
+				> .thumbnail-image {
+					width: 120px;
+					height: 67.5px;
+					margin-top: 0px;
+				}
+				> .tags-share {
+					> .source {
+						top: 37.5px;
+						left: 135px;
+					}
+					> .tags {
+						margin-top: 25px;
+					}
+				}
+			}
 	    }
 	}
 	@media (min-width: 1300px) {
