@@ -8255,8 +8255,11 @@ a, .btn-link {
   padding-bottom: 30px; }
 .user-profile .profile-settings {
   float: left;
+  left: 240px;
   margin-bottom: 60px;
-  width: 300px; }
+  position: relative;
+  width: 300px;
+  transition: left .3s; }
   .user-profile .profile-settings > form > .avatar {
     margin-bottom: 30px;
     text-align: center; }
@@ -8308,11 +8311,19 @@ a, .btn-link {
         opacity: .8; }
       .user-profile .profile-settings > .social-account > a > img {
         max-width: 100%; }
+  .user-profile .profile-settings.active {
+    left: 0px; }
+    .user-profile .profile-settings.active #change-avatar {
+      color: #E16F7D !important; }
 .user-profile #change-avatar-box {
   float: left;
   margin: 45px 0px 45px 120px;
   text-align: center;
-  width: 250px; }
+  width: 250px;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: all .2s; }
   .user-profile #change-avatar-box .avatar-list {
     margin-left: -15px;
     margin-right: -15px;
@@ -8370,5 +8381,28 @@ a, .btn-link {
     transition: all .3s; }
     .user-profile #change-avatar-box .btn-primary:hover, .user-profile #change-avatar-box .btn-primary:focus {
       background-color: #2b91ec; }
+  .user-profile #change-avatar-box.active {
+    opacity: 1;
+    height: 100%;
+    overflow: visible; }
+@media (max-width: 767px) {
+  .user-profile h2.content-heading {
+    margin-bottom: 40px;
+    padding-bottom: 20px; }
+  .user-profile .profile-settings {
+    left: 0px !important;
+    width: 100%; }
+    .user-profile .profile-settings > form > .form-group {
+      margin-left: -15px; }
+    .user-profile .profile-settings > .social-account {
+      margin: 50px 0px 0px; }
+      .user-profile .profile-settings > .social-account > a {
+        width: 165px; }
+  .user-profile #change-avatar-box {
+    margin: 0px 0px 45px 0px;
+    width: 100%; } }
+@media (max-width: 322px) {
+  .user-profile .profile-settings > .social-account > a {
+    width: 137px; } }
 
 /*# sourceMappingURL=main.css.map */

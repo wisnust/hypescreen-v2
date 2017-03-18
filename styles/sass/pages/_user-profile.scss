@@ -5,8 +5,11 @@
 	}
 	.profile-settings {
 		float: left;
+		left: 240px;
 		margin-bottom: 60px;
+		position: relative;
 		width: 300px;
+		transition: left .3s;
 		> form {
 			> .avatar {
 				margin-bottom: 30px;
@@ -75,12 +78,22 @@
 				}
 			}
 		}
+		&.active {
+			left: 0px;
+			#change-avatar {
+				color: $c-red !important;
+			}
+		}
 	}
 	#change-avatar-box {
 		float: left;
     	margin: 45px 0px 45px 120px;
     	text-align: center;
 		width: 250px;
+		opacity: 0;
+		height: 0px;
+		overflow: hidden;
+		transition: all .2s;
 		.avatar-list {
 			@include make-row();
 			margin-left: 0px;
@@ -132,6 +145,41 @@
 			&:hover, &:focus {
 				background-color: darken($c-blue, 10%);
 			}
+		}
+		&.active {
+			opacity: 1;
+			height: 100%;
+			overflow: visible;
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		h2.content-heading {
+		    margin-bottom: 40px;
+		    padding-bottom: 20px;
+		}
+		.profile-settings {
+			left: 0px !important;
+			width: 100%;
+			> form { 
+				> .form-group {
+					margin-left: -15px;
+				}
+			}
+			> .social-account {
+			    margin: 50px 0px 0px;
+			    > a {
+			    	width: 165px;
+			    }
+			}
+		}
+		#change-avatar-box {
+			margin: 0px 0px 45px 0px;
+			width: 100%;
+		}
+	}
+	@media (max-width: 322px) {
+		.profile-settings > .social-account > a {
+		    width: 137px;
 		}
 	}
 }

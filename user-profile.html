@@ -170,7 +170,7 @@
                         <form class="form-horizontal">
                             <div class="avatar">
                                 <img src="images/user.png" alt="user" title="user"/>
-                                <a id="change-avatar" role="button" data-toggle="collapse" href="#change-avatar-box" aria-expanded="false" aria-controls="change-avatar-box">Change Avatar</a>
+                                <a id="change-avatar" role="button">Change Avatar</a>
                             </div>
                             <div class="form-group">
                                 <label for="alias" class="col-sm-2 control-label">Alias</label>
@@ -197,7 +197,7 @@
                         </div>
                     </div>
 
-                    <div class="collapse fade out" id="change-avatar-box">
+                    <div id="change-avatar-box">
                         <form>
                             <div class="avatar-list">
                                 <label>
@@ -309,6 +309,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        
+        $('#change-avatar').click(function() {
+
+            $(this).parent().parent().parent().toggleClass('active');
+            $(this).html($(this).text() == 'Undo Change' ? 'Change Avatar' : 'Undo Change');
+            $('#change-avatar-box').toggleClass('active');
+
+        });
+
+    </script>
 </body>
 
 </html>
