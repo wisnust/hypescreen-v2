@@ -1,0 +1,137 @@
+.user-profile {
+	h2.content-heading {
+		margin-bottom: 60px;
+		padding-bottom: 30px;
+	}
+	.profile-settings {
+		float: left;
+		margin-bottom: 60px;
+		width: 300px;
+		> form {
+			> .avatar {
+				margin-bottom: 30px;
+				text-align: center;
+				> img {
+					display: block;
+					margin: 0 auto;
+					height: 90px;
+					width: 90px;
+					object-fit: cover;
+				}
+				> #change-avatar {
+					display: inline-block;
+				    font-size: 13px;
+				    margin-top: 5px;
+				}
+			}
+			> .form-group {
+				margin-left: -60px;
+				.control-label {
+					font-size: 13px;
+					padding-top: 5px;
+					padding-right: 0px;
+				}
+				.form-control {
+					border: 1px solid #CCCCCC;
+				    border-radius: 0px;
+				    box-shadow: 0px 0px 0px transparent;
+					font-size: 13px;
+				    height: 30px;
+				    padding: 6px 10px;
+				    width: 100%;
+				    &:hover {
+				    	border-color: #919191;
+				    }
+				    &:focus {
+				    	border-color: $c-blue;
+				    }
+				}
+			}
+			> .change-link {
+				padding-left: 20px;
+				a {
+					font-size: 12px;
+					display: block;
+					margin-bottom: 2px;
+				}
+			}
+		}
+		> .social-account {
+			margin: 50px -50px 0px;
+			> h2 {
+				color: #616161;
+	    		font-size: 22px;
+				margin: 0px 0px 10px 5px;
+			}
+			> a {
+				display: inline-block;
+				width: 190px;
+				transition: opacity .3s;
+				&:hover, &:focus {
+					opacity: .8;
+				}
+				> img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	#change-avatar-box {
+		float: left;
+    	margin: 45px 0px 45px 120px;
+    	text-align: center;
+		width: 250px;
+		.avatar-list {
+			@include make-row();
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 15px;
+			label {
+				cursor: pointer;
+				@include make-xs-column(4);
+				padding-left: 0px;
+				padding-right: 0px; 
+				margin: 0px;
+				> input{ 
+					margin: 0px;
+					height: 100%;
+					visibility: hidden;
+					width: 100%;
+					@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+					+ img {
+						cursor:pointer; 
+					}
+					&:after {
+						background-color: transparent;
+						content: " ";
+						cursor: pointer;
+						display: block;
+						height: 100%;
+						@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+						visibility: visible;
+						transition: all .2s;
+					}
+					&:hover {
+						&:after {
+							background-color: rgba($c-blue, .2);
+						}
+					}
+					&:checked {
+						&:after {
+							background-color: rgba($c-blue, .8);
+						}
+					}
+				}
+			} 
+		} 
+		.btn-primary {
+			background-color: $c-blue;
+			border: 0px;
+			font-size: 11px;
+			transition: all .3s;
+			&:hover, &:focus {
+				background-color: darken($c-blue, 10%);
+			}
+		}
+	}
+}

@@ -6287,7 +6287,7 @@ a, .btn-link {
           text-align: left;
           font-size: 13px;
           padding: 3px 7px;
-          width: 120px; }
+          width: 100px; }
           .sidenav nav .top-shows .top-shows-dropdown .btn-group .btn-primary.dropdown-toggle {
             color: #fff;
             background-color: #5aa9f0;
@@ -8249,5 +8249,126 @@ a, .btn-link {
     width: 760px; }
   .show-page-details .right-col {
     width: 370px; } }
+
+.user-profile h2.content-heading {
+  margin-bottom: 60px;
+  padding-bottom: 30px; }
+.user-profile .profile-settings {
+  float: left;
+  margin-bottom: 60px;
+  width: 300px; }
+  .user-profile .profile-settings > form > .avatar {
+    margin-bottom: 30px;
+    text-align: center; }
+    .user-profile .profile-settings > form > .avatar > img {
+      display: block;
+      margin: 0 auto;
+      height: 90px;
+      width: 90px;
+      object-fit: cover; }
+    .user-profile .profile-settings > form > .avatar > #change-avatar {
+      display: inline-block;
+      font-size: 13px;
+      margin-top: 5px; }
+  .user-profile .profile-settings > form > .form-group {
+    margin-left: -60px; }
+    .user-profile .profile-settings > form > .form-group .control-label {
+      font-size: 13px;
+      padding-top: 5px;
+      padding-right: 0px; }
+    .user-profile .profile-settings > form > .form-group .form-control {
+      border: 1px solid #CCCCCC;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px transparent;
+      font-size: 13px;
+      height: 30px;
+      padding: 6px 10px;
+      width: 100%; }
+      .user-profile .profile-settings > form > .form-group .form-control:hover {
+        border-color: #919191; }
+      .user-profile .profile-settings > form > .form-group .form-control:focus {
+        border-color: #5aa9f0; }
+  .user-profile .profile-settings > form > .change-link {
+    padding-left: 20px; }
+    .user-profile .profile-settings > form > .change-link a {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 2px; }
+  .user-profile .profile-settings > .social-account {
+    margin: 50px -50px 0px; }
+    .user-profile .profile-settings > .social-account > h2 {
+      color: #616161;
+      font-size: 22px;
+      margin: 0px 0px 10px 5px; }
+    .user-profile .profile-settings > .social-account > a {
+      display: inline-block;
+      width: 190px;
+      transition: opacity .3s; }
+      .user-profile .profile-settings > .social-account > a:hover, .user-profile .profile-settings > .social-account > a:focus {
+        opacity: .8; }
+      .user-profile .profile-settings > .social-account > a > img {
+        max-width: 100%; }
+.user-profile #change-avatar-box {
+  float: left;
+  margin: 45px 0px 45px 120px;
+  text-align: center;
+  width: 250px; }
+  .user-profile #change-avatar-box .avatar-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px; }
+    .user-profile #change-avatar-box .avatar-list::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .user-profile #change-avatar-box .avatar-list label {
+      cursor: pointer;
+      position: relative;
+      float: left;
+      width: 33.33333%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px; }
+      .user-profile #change-avatar-box .avatar-list label > input {
+        margin: 0px;
+        height: 100%;
+        visibility: hidden;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; }
+        .user-profile #change-avatar-box .avatar-list label > input + img {
+          cursor: pointer; }
+        .user-profile #change-avatar-box .avatar-list label > input:after {
+          background-color: transparent;
+          content: " ";
+          cursor: pointer;
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          visibility: visible;
+          transition: all .2s; }
+        .user-profile #change-avatar-box .avatar-list label > input:hover:after {
+          background-color: rgba(90, 169, 240, 0.2); }
+        .user-profile #change-avatar-box .avatar-list label > input:checked:after {
+          background-color: rgba(90, 169, 240, 0.8); }
+  .user-profile #change-avatar-box .btn-primary {
+    background-color: #5aa9f0;
+    border: 0px;
+    font-size: 11px;
+    transition: all .3s; }
+    .user-profile #change-avatar-box .btn-primary:hover, .user-profile #change-avatar-box .btn-primary:focus {
+      background-color: #2b91ec; }
 
 /*# sourceMappingURL=main.css.map */
