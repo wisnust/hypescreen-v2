@@ -15,6 +15,7 @@
 				margin-bottom: 30px;
 				text-align: center;
 				> img {
+					border-radius: 50%;
 					display: block;
 					margin: 0 auto;
 					height: 90px;
@@ -114,6 +115,23 @@
 					+ img {
 						cursor:pointer; 
 					}
+					&:before {
+						color: $c-white;
+						display: flex;
+					    align-items: center;
+					    justify-content: center;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: 20px;
+						text-rendering: auto;
+						content: "\f00c";
+						cursor: pointer;
+						height: 100%;
+						@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+						visibility: visible;
+						transition: all .2s;
+						@include transform(scale(0));
+						z-index: 50;
+					}
 					&:after {
 						background-color: transparent;
 						content: " ";
@@ -130,6 +148,9 @@
 						}
 					}
 					&:checked {
+						&:before {
+							@include transform(scale(1));
+						}
 						&:after {
 							background-color: rgba($c-blue, .8);
 						}

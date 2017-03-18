@@ -8264,6 +8264,7 @@ a, .btn-link {
     margin-bottom: 30px;
     text-align: center; }
     .user-profile .profile-settings > form > .avatar > img {
+      border-radius: 50%;
       display: block;
       margin: 0 auto;
       height: 90px;
@@ -8357,6 +8358,29 @@ a, .btn-link {
         left: 0px; }
         .user-profile #change-avatar-box .avatar-list label > input + img {
           cursor: pointer; }
+        .user-profile #change-avatar-box .avatar-list label > input:before {
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 20px;
+          text-rendering: auto;
+          content: "\f00c";
+          cursor: pointer;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          visibility: visible;
+          transition: all .2s;
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          z-index: 50; }
         .user-profile #change-avatar-box .avatar-list label > input:after {
           background-color: transparent;
           content: " ";
@@ -8372,6 +8396,11 @@ a, .btn-link {
           transition: all .2s; }
         .user-profile #change-avatar-box .avatar-list label > input:hover:after {
           background-color: rgba(90, 169, 240, 0.2); }
+        .user-profile #change-avatar-box .avatar-list label > input:checked:before {
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -webkit-transform: scale(1);
+          transform: scale(1); }
         .user-profile #change-avatar-box .avatar-list label > input:checked:after {
           background-color: rgba(90, 169, 240, 0.8); }
   .user-profile #change-avatar-box .btn-primary {
