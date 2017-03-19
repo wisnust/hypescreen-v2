@@ -8303,7 +8303,8 @@ a, .btn-link {
     .user-profile .profile-settings > .social-account > h2 {
       color: #616161;
       font-size: 22px;
-      margin: 0px 0px 10px 5px; }
+      margin: 0px 0px 15px;
+      text-align: center; }
     .user-profile .profile-settings > .social-account > a {
       display: inline-block;
       width: 190px;
@@ -8420,18 +8421,27 @@ a, .btn-link {
     padding-bottom: 20px; }
   .user-profile .profile-settings {
     left: 0px !important;
+    float: none;
+    margin-bottom: 30px;
     width: 100%; }
     .user-profile .profile-settings > form > .form-group {
       margin-left: -15px; }
+    .user-profile .profile-settings > form > .change-link {
+      margin-left: 5px;
+      padding-left: 16.66667%; }
     .user-profile .profile-settings > .social-account {
       margin: 50px 0px 0px; }
+      .user-profile .profile-settings > .social-account > h2 {
+        font-size: 19px; }
       .user-profile .profile-settings > .social-account > a {
-        width: 165px; }
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%; }
   .user-profile #change-avatar-box {
-    margin: 0px 0px 45px 0px;
-    width: 100%; } }
-@media (max-width: 322px) {
-  .user-profile .profile-settings > .social-account > a {
-    width: 137px; } }
+    margin: 0px;
+    width: 100%; }
+    .user-profile #change-avatar-box form {
+      margin: 30px 0px; } }
 
 /*# sourceMappingURL=main.css.map */
