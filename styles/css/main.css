@@ -8275,7 +8275,9 @@ a, .btn-link {
       font-size: 13px;
       margin-top: 5px; }
   .user-profile .profile-settings > form > .form-group {
-    margin-left: -60px; }
+    margin-left: -60px;
+    position: relative;
+    left: -20px; }
     .user-profile .profile-settings > form > .form-group .control-label {
       font-size: 13px;
       padding-top: 5px;
@@ -8293,7 +8295,7 @@ a, .btn-link {
       .user-profile .profile-settings > form > .form-group .form-control:focus {
         border-color: #5aa9f0; }
   .user-profile .profile-settings > form > .change-link {
-    padding-left: 20px; }
+    padding-left: 30px; }
     .user-profile .profile-settings > form > .change-link a {
       font-size: 12px;
       display: block;
@@ -8425,7 +8427,8 @@ a, .btn-link {
     margin-bottom: 30px;
     width: 100%; }
     .user-profile .profile-settings > form > .form-group {
-      margin-left: -15px; }
+      margin-left: -15px;
+      left: 0px; }
     .user-profile .profile-settings > form > .change-link {
       margin-left: 5px;
       padding-left: 25%; }

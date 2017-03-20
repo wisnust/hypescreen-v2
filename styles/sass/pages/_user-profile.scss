@@ -30,6 +30,8 @@
 			}
 			> .form-group {
 				margin-left: -60px;
+				position: relative;
+				left: -20px;
 				.control-label {
 					font-size: 13px;
 					padding-top: 5px;
@@ -52,7 +54,7 @@
 				}
 			}
 			> .change-link {
-				padding-left: 20px;
+				padding-left: 30px;
 				a {
 					font-size: 12px;
 					display: block;
@@ -187,6 +189,7 @@
 			> form { 
 				> .form-group {
 					margin-left: -15px;
+					left: 0px;
 				}
 				> .change-link {
 					margin-left: 5px;
