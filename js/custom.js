@@ -44,12 +44,12 @@ $(document).ready(function() {
         if ($(window).width() < 669 ) { 
 
             // More comment
-            $('.more-comments').on('shown.bs.collapse', function() {
-                $(this).next().next().addClass('active');
-            });
-            $('.more-comments').on('hidden.bs.collapse', function() {
-                $(this).next().next().removeClass('active');
-            }); 
+            // $('.more-comments').on('shown.bs.collapse', function() {
+            //     $(this).next().next().addClass('active');
+            // });
+            // $('.more-comments').on('hidden.bs.collapse', function() {
+            //     $(this).next().next().removeClass('active');
+            // }); 
 
             var $videoHeight = $('.card > .card-body > .video > .video-inner').height(),
                 $videoLikes = $('.card > .card-body > .content > .likes');

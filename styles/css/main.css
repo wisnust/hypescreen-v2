@@ -6941,6 +6941,9 @@ a, .btn-link {
           width: 100%; }
         .card > .card-footer .comments.comments-form .form-inline .btn-primary {
           float: right; }
+      .card > .card-footer .comments .btn-primary.anonymous {
+        display: block;
+        float: none !important; }
       .card > .card-footer .btn-more-comments {
         left: 0px;
         right: 0px;
@@ -6989,7 +6992,18 @@ a, .btn-link {
           -webkit-transform: scale(0);
           transform: scale(0); }
       .card > .card-footer .more-comments.in ~ .btn-more-comments {
-        bottom: 0px; } }
+        bottom: 0px; }
+        .card > .card-footer .more-comments.in ~ .btn-more-comments > a {
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          margin-bottom: 15px; }
+        .card > .card-footer .more-comments.in ~ .btn-more-comments > a.dot-icon {
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -webkit-transform: scale(0);
+          transform: scale(0); } }
   @media (min-width: 768px) {
     .card > .card-body > .content > .likes {
       top: inherit !important; } }

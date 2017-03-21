@@ -320,7 +320,11 @@
 						}
 					}
 				}
-			}
+				.btn-primary.anonymous {
+					display: block;
+					float: none !important;
+				}
+			} 
 			.btn-more-comments {
 				left: 0px;
 			    right: 0px;
@@ -363,6 +367,13 @@
 			.more-comments.in {
 				~ .btn-more-comments {
 					bottom: 0px;
+			    	> a {
+						@include transform(scale(1));
+			    		margin-bottom: 15px; 
+			    	}
+			    	> a.dot-icon {
+						@include transform(scale(0));
+			    	}
 				}
 			}
 		}
