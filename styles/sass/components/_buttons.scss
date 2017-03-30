@@ -32,7 +32,7 @@
     	border: 0px;
     	border-radius: 0px;
 	    float: left;
-	    height: 50px;
+	    height: 55px;
 	    margin: 0px;
 	    padding: 2px;
     	width: 20%;
@@ -49,7 +49,8 @@
 	    }
 	    > span {
 	    	color: $c-white;
-	    	font-weight: 600;
+	    	font-weight: 900;
+	    	letter-spacing: 0.2px;
 	    	position: relative;
 	    	z-index: 10;
 			transition: all .3s;
@@ -88,6 +89,7 @@
     	font-size: 9px;
 		padding: 4px 6px;
 	    &.btn-tag-image {
+	    	height: 50px;
 	    	width: 50%;
 	    }
     }

@@ -6622,7 +6622,7 @@ a, .btn-link {
     border: 0px;
     border-radius: 0px;
     float: left;
-    height: 50px;
+    height: 55px;
     margin: 0px;
     padding: 2px;
     width: 20%;
@@ -6641,7 +6641,8 @@ a, .btn-link {
         width: 100%; }
     .btn-tag.btn-tag-image > span {
       color: #fff;
-      font-weight: 600;
+      font-weight: 900;
+      letter-spacing: 0.2px;
       position: relative;
       z-index: 10;
       transition: all .3s; }
@@ -6681,6 +6682,7 @@ a, .btn-link {
     font-size: 9px;
     padding: 4px 6px; }
     .btn-tag.btn-tag-image {
+      height: 50px;
       width: 50%; } }
 .card {
   background: #fff;
@@ -7264,7 +7266,7 @@ a, .btn-link {
       padding: 9px; }
   .filter > .filter-body > .filter-action {
     margin: 0px -5px 0px;
-    padding: 0px 55px 0px; }
+    padding: 0px 30px 0px; }
     .filter > .filter-body > .filter-action .btn-link {
       font-size: 12px;
       letter-spacing: -0.09px;
@@ -7285,7 +7287,7 @@ a, .btn-link {
         padding: 5px 13px;
         font-size: 11px; }
   .filter > .filter-body > .filter-tags {
-    padding: 5px 60px 0px;
+    padding: 5px 35px 0px;
     text-align: center; }
     .filter > .filter-body > .filter-tags::after {
       clear: both;
@@ -7294,7 +7296,7 @@ a, .btn-link {
   .filter > .filter-body > .filter-more-tags {
     text-align: center; }
     .filter > .filter-body > .filter-more-tags.active {
-      margin: 10px 60px 0px; }
+      margin: 10px 50px 0px; }
   .filter > .filter-body > .btn-more-tags {
     text-align: center; }
     .filter > .filter-body > .btn-more-tags > .btn-link {
