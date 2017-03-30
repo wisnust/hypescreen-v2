@@ -1,41 +1,94 @@
 
 // Button Checkbox
-.button-checkbox {
+.btn-tag {
+    border-radius: 200px;
+    border: 1px solid $c-blue;
+    color: $c-blue !important;
 	display: inline-block;
+    font-size: 11px;
+    letter-spacing: -0.09px;
 	margin-right: 2px;
 	margin-bottom: 5px;
-	.btn-tag {
-	    border-radius: 200px;
-	    border: 1px solid $c-blue;
-	    color: $c-blue !important;
-	    font-size: 12px;
-	    letter-spacing: -0.09px;
-	    padding: 4px 19px;
-	    background-color: $c-white !important;
-	    @include transition(all .3s);
-	    &:hover, &:focus {
-	    	background-color: $c-blue;
+    padding: 4px 16px;
+    background-color: $c-white !important;
+    @include transition(all .3s);
+    &:hover, &:focus {
+    	background-color: $c-blue;
+    	color: $c-white;
+    	outline: none !important;
+    	@include box-shadow(0px 0px 0px transparent);
+    }
+    &:hover {
+    	background-color: rgba($c-blue, .1) !important;
+    }
+    &.active {
+    	background-color: $c-blue !important;
+    	color: $c-white !important;
+    	border: 1px solid $c-blue !important;
+    	outline: none !important;
+    	@include box-shadow(0px 0px 0px transparent);
+    }
+    &.btn-tag-image {
+    	border: 0px;
+    	border-radius: 0px;
+	    float: left;
+	    height: 50px;
+	    margin: 0px;
+	    padding: 2px;
+    	width: 20%;
+	    position: relative;
+	    > .image {
+	    	padding: 2px;
+	    	height: 100%;
+	    	@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+	    	> img {
+	    		border-radius: 4px;
+		    	height: 100%;
+		    	width: 100%;
+	    	}
+	    }
+	    > span {
 	    	color: $c-white;
-	    	outline: none !important;
-	    	@include box-shadow(0px 0px 0px transparent);
+	    	font-weight: 600;
+	    	position: relative;
+	    	z-index: 10;
+			transition: all .3s;
+	    }
+	    &:before {
+	    	background-color: rgba($c-blue, .6);
+	    	border-radius: 4px;
+	    	content: "";
+	    	z-index: 5;
+	    	@include position(absolute, $top: 2px, $right: 2px, $bottom: 2px, $left: 2px);
+	    	@include transition(background-color .3s);
 	    }
 	    &:hover {
-	    	background-color: rgba($c-blue, .1) !important;
+	    	&:before {
+	    		background-color: rgba($c-blue, .7);
+	    	}
 	    }
 	    &.active {
-	    	background-color: $c-blue !important;
-	    	color: $c-white !important;
-	    	border: 1px solid $c-blue !important;
+	    	background-color: transparent !important;
+	    	border: 0px !important;
 	    	outline: none !important;
 	    	@include box-shadow(0px 0px 0px transparent);
+	    	&:before {
+	    		background-color: transparent;
+	    	}
+	    	> span {
+				text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.79);
+	    	}
 	    }
-	} 
-	@media (max-width: $screen-xs-max) {
-	    margin-bottom: 4px;
-    	margin-right: -1px;
-	    .btn-tag {
-	    	font-size: 9px;
-    		padding: 4px 6px;
+    }
+} 
+@media (max-width: $screen-xs-max) {
+    margin-bottom: 4px;
+	margin-right: -1px;
+    .btn-tag {
+    	font-size: 9px;
+		padding: 4px 6px;
+	    &.btn-tag-image {
+	    	width: 50%;
 	    }
-	}
+    }
 }

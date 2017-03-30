@@ -6584,49 +6584,104 @@ a, .btn-link {
         .post-tabs > .nav-tabs > li:last-of-type a {
           margin-left: -15px; } }
 
-.button-checkbox {
+.btn-tag {
+  border-radius: 200px;
+  border: 1px solid #5aa9f0;
+  color: #5aa9f0 !important;
   display: inline-block;
+  font-size: 11px;
+  letter-spacing: -0.09px;
   margin-right: 2px;
-  margin-bottom: 5px; }
-  .button-checkbox .btn-tag {
-    border-radius: 200px;
-    border: 1px solid #5aa9f0;
-    color: #5aa9f0 !important;
-    font-size: 12px;
-    letter-spacing: -0.09px;
-    padding: 4px 19px;
-    background-color: #fff !important;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-    .button-checkbox .btn-tag:hover, .button-checkbox .btn-tag:focus {
-      background-color: #5aa9f0;
+  margin-bottom: 5px;
+  padding: 4px 16px;
+  background-color: #fff !important;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .btn-tag:hover, .btn-tag:focus {
+    background-color: #5aa9f0;
+    color: #fff;
+    outline: none !important;
+    -moz-box-shadow: 0px 0px 0px transparent;
+    -o-box-shadow: 0px 0px 0px transparent;
+    -webkit-box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0px 0px 0px transparent; }
+  .btn-tag:hover {
+    background-color: rgba(90, 169, 240, 0.1) !important; }
+  .btn-tag.active {
+    background-color: #5aa9f0 !important;
+    color: #fff !important;
+    border: 1px solid #5aa9f0 !important;
+    outline: none !important;
+    -moz-box-shadow: 0px 0px 0px transparent;
+    -o-box-shadow: 0px 0px 0px transparent;
+    -webkit-box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0px 0px 0px transparent; }
+  .btn-tag.btn-tag-image {
+    border: 0px;
+    border-radius: 0px;
+    float: left;
+    height: 50px;
+    margin: 0px;
+    padding: 2px;
+    width: 20%;
+    position: relative; }
+    .btn-tag.btn-tag-image > .image {
+      padding: 2px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px; }
+      .btn-tag.btn-tag-image > .image > img {
+        border-radius: 4px;
+        height: 100%;
+        width: 100%; }
+    .btn-tag.btn-tag-image > span {
       color: #fff;
+      font-weight: 600;
+      position: relative;
+      z-index: 10;
+      transition: all .3s; }
+    .btn-tag.btn-tag-image:before {
+      background-color: rgba(90, 169, 240, 0.6);
+      border-radius: 4px;
+      content: "";
+      z-index: 5;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      -moz-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s; }
+    .btn-tag.btn-tag-image:hover:before {
+      background-color: rgba(90, 169, 240, 0.7); }
+    .btn-tag.btn-tag-image.active {
+      background-color: transparent !important;
+      border: 0px !important;
       outline: none !important;
       -moz-box-shadow: 0px 0px 0px transparent;
       -o-box-shadow: 0px 0px 0px transparent;
       -webkit-box-shadow: 0px 0px 0px transparent;
       box-shadow: 0px 0px 0px transparent; }
-    .button-checkbox .btn-tag:hover {
-      background-color: rgba(90, 169, 240, 0.1) !important; }
-    .button-checkbox .btn-tag.active {
-      background-color: #5aa9f0 !important;
-      color: #fff !important;
-      border: 1px solid #5aa9f0 !important;
-      outline: none !important;
-      -moz-box-shadow: 0px 0px 0px transparent;
-      -o-box-shadow: 0px 0px 0px transparent;
-      -webkit-box-shadow: 0px 0px 0px transparent;
-      box-shadow: 0px 0px 0px transparent; }
-  @media (max-width: 767px) {
-    .button-checkbox {
-      margin-bottom: 4px;
-      margin-right: -1px; }
-      .button-checkbox .btn-tag {
-        font-size: 9px;
-        padding: 4px 6px; } }
+      .btn-tag.btn-tag-image.active:before {
+        background-color: transparent; }
+      .btn-tag.btn-tag-image.active > span {
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.79); }
 
+@media (max-width: 767px) {
+  margin-bottom: 4px;
+  margin-right: -1px;
+  .btn-tag {
+    font-size: 9px;
+    padding: 4px 6px; }
+    .btn-tag.btn-tag-image {
+      width: 50%; } }
 .card {
   background: #fff;
   border: 2px solid #E2EDF7;
@@ -7192,9 +7247,6 @@ a, .btn-link {
 
 .filter {
   background-color: #fff;
-  border: 1px solid #56A7F3;
-  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.09);
-  border-radius: 4px;
   margin: -15px 0px 50px; }
   .filter > .filter-header {
     -moz-transition: background-color 0.3s;
@@ -7210,59 +7262,52 @@ a, .btn-link {
       text-align: center;
       text-transform: uppercase;
       padding: 9px; }
-      .filter > .filter-header > h2 > img {
-        display: inline-block;
-        margin-top: -2px; }
-      .filter > .filter-header > h2 > span {
-        margin: 0px 10px; }
-    .filter > .filter-header.collapsed img.arrow {
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
-    .filter > .filter-header:hover, .filter > .filter-header:focus {
-      background-color: rgba(90, 169, 240, 0.05); }
-  .filter > .filter-body {
-    border-top: 1px solid #5aa9f0; }
-    .filter > .filter-body > .filter-action {
-      margin: -6px -12px 0px;
-      padding: 12px 15px 0px; }
-      .filter > .filter-body > .filter-action .btn-link {
-        font-size: 12px;
-        letter-spacing: -0.09px;
-        outline: none !important; }
-        .filter > .filter-body > .filter-action .btn-link > .fa-caret-down {
-          font-size: 24px;
-          margin-top: -3px;
-          margin-left: 6px;
-          vertical-align: middle; }
-      .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
-        left: 15px;
-        padding: 5px 0px;
-        min-width: 100%;
-        z-index: 20; }
-        .filter > .filter-body > .filter-action > .pull-right .dropdown-menu > li > a {
-          padding: 5px 13px;
-          font-size: 11px; }
-    .filter > .filter-body > .filter-tags {
-      margin-bottom: 10px;
-      padding: 2px 20px 0px;
-      text-align: center; }
-    .filter > .filter-body > .filter-more-tags {
-      border-top: 1px solid rgba(137, 152, 171, 0.23);
-      padding: 15px 20px 10px;
-      text-align: center; }
+  .filter > .filter-body > .filter-action {
+    margin: 0px -5px 0px;
+    padding: 0px 55px 0px; }
+    .filter > .filter-body > .filter-action .btn-link {
+      font-size: 12px;
+      letter-spacing: -0.09px;
+      outline: none !important;
+      padding: 0px 12px;
+      line-height: 14px; }
+      .filter > .filter-body > .filter-action .btn-link > .fa-caret-down {
+        font-size: 24px;
+        margin-top: -3px;
+        margin-left: 6px;
+        vertical-align: middle; }
+    .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
+      left: 15px;
+      padding: 5px 0px;
+      min-width: 100%;
+      z-index: 20; }
+      .filter > .filter-body > .filter-action > .pull-right .dropdown-menu > li > a {
+        padding: 5px 13px;
+        font-size: 11px; }
+  .filter > .filter-body > .filter-tags {
+    padding: 5px 60px 0px;
+    text-align: center; }
+    .filter > .filter-body > .filter-tags::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .filter > .filter-body > .filter-more-tags {
+    text-align: center; }
+    .filter > .filter-body > .filter-more-tags.active {
+      margin: 10px 60px 0px; }
+  .filter > .filter-body > .btn-more-tags {
+    text-align: center; }
     .filter > .filter-body > .btn-more-tags > .btn-link {
-      display: block;
+      display: inline-block;
       font-size: 12px;
       text-transform: uppercase;
-      padding: 0px 15px 15px; }
+      padding: 10px 15px 15px; }
+      .filter > .filter-body > .btn-more-tags > .btn-link.collapsed {
+        position: relative;
+        top: -8px;
+        padding-top: 0px; }
   @media (max-width: 767px) {
     .filter {
-      -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
-      -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
-      -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11);
       margin: -10px 0px 30px; }
       .filter > .filter-header > h2 {
         font-size: 13px; }
@@ -7272,6 +7317,7 @@ a, .btn-link {
           float: none !important;
           text-align: center; }
       .filter > .filter-body > .filter-action {
+        padding: 0px 40px 0px;
         text-align: center; }
         .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
           left: inherit;
@@ -7283,15 +7329,23 @@ a, .btn-link {
             font-size: 18px;
             margin-top: -2px; }
       .filter > .filter-body > .filter-tags {
-        margin-bottom: 6px;
-        padding: 2px 0px 0px;
+        padding: 2px 40px 0px;
         text-align: center; }
       .filter > .filter-body > .filter-more-tags {
-        padding: 10px 5px 10px;
         text-align: center; }
+        .filter > .filter-body > .filter-more-tags.active {
+          margin: 10px 0px 0px; }
       .filter > .filter-body > .btn-more-tags > .btn-link {
-        font-size: 10px;
-        padding: 0px 15px 10px; } }
+        font-size: 10px; }
+        .filter > .filter-body > .btn-more-tags > .btn-link.collapsed {
+          top: 5px; } }
+  @media (max-width: 322px) {
+    .filter > .filter-body > .filter-tags {
+      padding: 2px 30px 0px; }
+    .filter > .filter-body > .filter-action {
+      padding: 0px 30px 0px; }
+    .filter > .filter-body > .btn-more-tags > .btn-link {
+      padding: 10px 15px 15px; } }
 
 .load-more {
   text-align: center; }

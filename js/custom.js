@@ -137,4 +137,8 @@ $(document).ready(function() {
     });
 
     $('[data-toggle="popover"]').popover()
+
+    $('.btn-tag').click(function() {
+        $(this).toggleClass('active');
+    });
 });
