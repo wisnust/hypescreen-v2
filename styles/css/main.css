@@ -6622,7 +6622,8 @@ a, .btn-link {
     border: 0px;
     border-radius: 0px;
     float: left;
-    height: 55px;
+    font-size: 12px;
+    height: 50px;
     margin: 0px;
     padding: 2px;
     width: 20%;
@@ -6682,6 +6683,7 @@ a, .btn-link {
     font-size: 9px;
     padding: 4px 6px; }
     .btn-tag.btn-tag-image {
+      font-size: 11px;
       height: 50px;
       width: 50%; } }
 .card {
@@ -7249,7 +7251,7 @@ a, .btn-link {
 
 .filter {
   background-color: #fff;
-  margin: -15px 0px 50px; }
+  margin: -25px 0px 40px; }
   .filter > .filter-header {
     -moz-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
@@ -7343,9 +7345,9 @@ a, .btn-link {
           top: 5px; } }
   @media (max-width: 322px) {
     .filter > .filter-body > .filter-tags {
-      padding: 2px 30px 0px; }
+      padding: 2px 20px 0px; }
     .filter > .filter-body > .filter-action {
-      padding: 0px 30px 0px; }
+      padding: 0px 20px 0px; }
     .filter > .filter-body > .btn-more-tags > .btn-link {
       padding: 10px 15px 15px; } }
 

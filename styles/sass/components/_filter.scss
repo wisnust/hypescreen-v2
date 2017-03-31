@@ -1,6 +1,6 @@
 .filter {
 	background-color: $c-white;
-	margin: -15px 0px 50px;
+	margin: -25px 0px 40px;
 
 	> .filter-header {
 		@include transition(background-color .3s);
@@ -126,10 +126,10 @@
 	@media (max-width: 322px) {
 		> .filter-body {
 			> .filter-tags {
-				padding: 2px 30px 0px;
+				padding: 2px 20px 0px;
 			}
 			> .filter-action { 
-				padding: 0px 30px 0px;
+				padding: 0px 20px 0px;
 			}
 			> .btn-more-tags {
 				> .btn-link {
