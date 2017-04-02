@@ -6645,24 +6645,26 @@ a, .btn-link {
       font-weight: 900;
       letter-spacing: 0.2px;
       position: relative;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49);
       z-index: 10;
       transition: all .3s; }
     .btn-tag.btn-tag-image:before {
-      background-color: rgba(90, 169, 240, 0.6);
+      background-color: #228ceb;
       border-radius: 4px;
       content: "";
+      opacity: .6;
       z-index: 5;
       position: absolute;
       top: 2px;
       right: 2px;
       bottom: 2px;
       left: 2px;
-      -moz-transition: background-color 0.3s;
-      -o-transition: background-color 0.3s;
-      -webkit-transition: background-color 0.3s;
-      transition: background-color 0.3s; }
+      -moz-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
     .btn-tag.btn-tag-image:hover:before {
-      background-color: rgba(90, 169, 240, 0.7); }
+      opacity: .8; }
     .btn-tag.btn-tag-image.active {
       background-color: transparent !important;
       border: 0px !important;
@@ -6672,7 +6674,7 @@ a, .btn-link {
       -webkit-box-shadow: 0px 0px 0px transparent;
       box-shadow: 0px 0px 0px transparent; }
       .btn-tag.btn-tag-image.active:before {
-        background-color: transparent; }
+        opacity: 0; }
       .btn-tag.btn-tag-image.active > span {
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.79); }
 
