@@ -109,6 +109,7 @@
 	@media (max-width: $screen-sm-max) {
 		position: fixed;
 		height: auto;
+		z-index: 99;
 		.navbar-header {
 			float: none;
 			.navbar-brand {
@@ -128,7 +129,7 @@
  			width: 100%;
 			@include position(absolute, $top: 0px, $left: 0px, $right: 0px); 
 			@include transition(all .3s);
-			padding: 55px 40px;
+			padding: 15px 40px 95px;
 			@include transform(translateX(-1000px));
 			z-index: 55; 
 
@@ -170,6 +171,7 @@
 					width: 100%;
 					border-top: 1px solid $c-white;
 					margin-top: 15px;
+					margin-bottom: -25px;
 					> a {
 						display: table-cell;
 					    vertical-align: middle;
@@ -204,7 +206,7 @@
 				&.form-nav {
 					position: fixed;
 				    z-index: 55;
-				    top: 0px;
+				    bottom: 15px;
 				    left: 0px;
 				    right: 0px;
 				    width: 100%;

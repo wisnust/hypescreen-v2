@@ -27,6 +27,14 @@
         <nav class="navbar navbar-hypescreen">
             <div class="container-fluid">
 
+                <!-- Nav mobile -->
+                <div class="nav-mobile">
+                    <a id="show-sidenav"> 
+                        <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
+                        <img src="images/icon/close_icon.svg" class="close-icon" /> 
+                    </a>
+                </div>
+
                 <!-- Logo -->
                 <div class="navbar-header"> 
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" title="logo"></a> 
@@ -74,12 +82,6 @@
                             SIDENAV
         ===========================================-->
         <aside class="sidenav">
-            <div class="nav-mobile">
-                <a id="show-sidenav"> 
-                    <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
-                    <img src="images/icon/close_icon.svg" class="close-icon" /> 
-                </a>
-            </div>
             <nav> 
 
                 <!-- List menu -->
@@ -421,7 +423,7 @@
                                     Travel
                                 </button>
                             
-                        </div>
+                            </div>
                         </div>
 
                         <!-- Button Filter More Tags -->
@@ -695,8 +697,8 @@
                     </div>
                 </div>
 
-                <!-- Newsfeed Post 2 -->
-                <div id="newsfeed-post-2" class="card">
+                <!-- Newsfeed Post 3 -->
+                <div id="newsfeed-post-3" class="card">
 
                     <!-- Header -->
                     <div class="card-header">
@@ -777,7 +779,7 @@
                         </div>
 
                         <!-- More comments -->
-                        <div class="more-comments collapse" id="MoreComments-2">
+                        <div class="more-comments collapse" id="MoreComments-3">
 
                             <!-- Comments -->
                             <div class="comments">
@@ -809,17 +811,17 @@
 
                         <!-- Btn more comments -->
                         <div class="btn-more-comments">
-                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
                                 <img src="images/icon/arrow_down_icon.svg" />
                             </a> 
                         </div>
 
                         <!-- Btn more comments mobile -->
                         <div class="btn-more-comments visible-xs">
-                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
                                 <img src="images/newsfeed/dot_icon.png" />
                             </a> 
-                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
                                 <img src="images/icon/arrow_down_icon.svg" />
                             </a> 
                         </div>
@@ -946,6 +948,34 @@
                     $(this).removeClass('active');
                 })
             })
+
+
+        $('.card').each(function() {
+            var $CommentText = $('.card-footer .comment > p'),
+                $CommentTextFound = $(this).find($CommentText);
+
+            if ($CommentTextFound.height() > 57) {
+                $CommentTextFound.addClass('ellipsis');
+                if ($CommentTextFound.hasClass('ellipsis')) {
+                    $CommentTextFound.parent().parent().prepend(
+                        $('<div/>', {'class': 'btn-more-comments'}).append(
+                            $('<a/>', {'class': 'dot-icon act-toggle-more-comments', 'href': '#'}).append(
+                                $('<img/>', {'src': '/static/base/images/newsfeed/dot_icon.png'})
+                            )
+                        )
+                        .append(
+                            $('<a/>', {'class': 'arrow-icon act-toggle-more-comments', 'href': '#'}).append(
+                                $('<img/>', {'src': '/static/base/images/icon/arrow_down_icon.svg'})
+                            )
+                        )
+                    );
+                }
+            } else {
+                $CommentTextFound.removeClass('ellipsis');
+            }
+        });
+
+
         });
     </script>
 </body>

@@ -6051,7 +6051,8 @@ a, .btn-link {
   @media (max-width: 991px) {
     .navbar-hypescreen {
       position: fixed;
-      height: auto; }
+      height: auto;
+      z-index: 99; }
       .navbar-hypescreen .navbar-header {
         float: none; }
         .navbar-hypescreen .navbar-header .navbar-brand {
@@ -6074,7 +6075,7 @@ a, .btn-link {
         -o-transition: all 0.3s;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-        padding: 55px 40px;
+        padding: 15px 40px 95px;
         -moz-transform: translateX(-1000px);
         -o-transform: translateX(-1000px);
         -webkit-transform: translateX(-1000px);
@@ -6109,7 +6110,8 @@ a, .btn-link {
             display: table;
             width: 100%;
             border-top: 1px solid #fff;
-            margin-top: 15px; }
+            margin-top: 15px;
+            margin-bottom: -25px; }
             .navbar-hypescreen .navbar-nav > li.user-login > a {
               display: table-cell;
               vertical-align: middle;
@@ -6136,7 +6138,7 @@ a, .btn-link {
           .navbar-hypescreen .navbar-nav > li.form-nav {
             position: fixed;
             z-index: 55;
-            top: 0px;
+            bottom: 15px;
             left: 0px;
             right: 0px;
             width: 100%;
@@ -6184,8 +6186,6 @@ a, .btn-link {
   bottom: 0px;
   left: 0px;
   z-index: 10; }
-.sidenav .nav-mobile {
-  display: none; }
 .sidenav nav {
   background-color: #f0f0f0;
   position: fixed;
@@ -6387,46 +6387,6 @@ a, .btn-link {
 @media (max-width: 991px) {
   .sidenav:before {
     display: none; }
-  .sidenav .nav-mobile {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 35; }
-    .sidenav .nav-mobile > a {
-      display: block;
-      text-decoration: none;
-      color: #fff;
-      padding: 30px 20px;
-      width: 75px;
-      height: 82px; }
-      .sidenav .nav-mobile > a > img {
-        width: 28px;
-        position: absolute;
-        top: 32px;
-        left: 24px;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-        .sidenav .nav-mobile > a > img.close-icon {
-          width: 24px;
-          top: 30px;
-          left: 25px;
-          -moz-transform: scale(0);
-          -o-transform: scale(0);
-          -webkit-transform: scale(0);
-          transform: scale(0); }
-      .sidenav .nav-mobile > a.active > img.bars-icon {
-        -moz-transform: scale(0);
-        -o-transform: scale(0);
-        -webkit-transform: scale(0);
-        transform: scale(0); }
-      .sidenav .nav-mobile > a.active > img.close-icon {
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1); }
   .sidenav nav {
     top: 322.422px;
     width: 100%;
@@ -6445,7 +6405,7 @@ a, .btn-link {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px); }
     .sidenav nav .list-menu {
-      margin-bottom: 0px;
+      margin-bottom: 173px;
       border: 0px;
       padding-left: 0px;
       padding-bottom: 20px; }
@@ -6453,14 +6413,58 @@ a, .btn-link {
       display: none; }
     .sidenav nav .subscribe-form {
       margin: 0px -40px;
-      padding: 30px 40px 20px;
-      border-top: 1px solid #757575; } }
+      padding: 23px 40px 10px;
+      border-top: 0px; } }
 @media (max-width: 322px) {
   .sidenav nav {
     padding: 0px 30px; } }
 @media (min-width: 991px) {
   .sidenav nav {
     top: 76px !important; } }
+
+.nav-mobile {
+  display: none; }
+  @media (max-width: 991px) {
+    .nav-mobile {
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 35; }
+      .nav-mobile > a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 30px 20px;
+        width: 75px;
+        height: 82px; }
+        .nav-mobile > a > img {
+          width: 28px;
+          position: absolute;
+          top: 32px;
+          left: 24px;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+          .nav-mobile > a > img.close-icon {
+            width: 24px;
+            top: 30px;
+            left: 25px;
+            -moz-transform: scale(0);
+            -o-transform: scale(0);
+            -webkit-transform: scale(0);
+            transform: scale(0); }
+        .nav-mobile > a.active > img.bars-icon {
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -webkit-transform: scale(0);
+          transform: scale(0); }
+        .nav-mobile > a.active > img.close-icon {
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -webkit-transform: scale(1);
+          transform: scale(1); } }
 
 .nav-open {
   -moz-transform: translateX(0px) !important;

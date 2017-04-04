@@ -11,9 +11,6 @@
 		@include position(fixed, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px); 
 		z-index: 10;
 	}
-	.nav-mobile {
-		display: none;
-	}
 	nav {
 		background-color: #f0f0f0;
 		@include position(fixed, $top: 0px, $bottom: 0px, $left: 0px); 
@@ -235,44 +232,6 @@
 		&:before {
 			display: none;
 		}
-		.nav-mobile { 
-			display: block;
-			@include position(fixed, $top: 0px, $left: 0px);
-		    z-index: 35;
-
-		    > a { 
-		    	display: block;
-		    	text-decoration: none;
-	    		color: $c-white;
-				padding: 30px 20px;
-				width: 75px;
-				height: 82px;
-	    		> img {
-	    			width: 28px;
-					@include position(absolute, $top: 32px, $left: 24px);
-					@include transition(all .3s);
-					&.bars-icon {
-
-					}
-					&.close-icon {
-						width: 24px;
-					    top: 30px;
-					    left: 25px;
-					    @include transform(scale(0));
-					}
-	    		}
-	    		&.active {
-	    			> img {
-	    				&.bars-icon {
-					    	@include transform(scale(0));
-	    				}
-	    				&.close-icon {
-					    	@include transform(scale(1));
-	    				}
-	    			}
-	    		}
-		    }
-		}
 		// #nav-backdrop {
 		// 	display: none;
 		// 	width: 100%;
@@ -294,7 +253,7 @@
 			@include transition(all .3s);
 			@include transform(translateX(-1000px));
 			.list-menu {
-				margin-bottom: 0px;
+				margin-bottom: 173px;
 				border: 0px;
 				padding-left: 0px;
 				padding-bottom: 20px;
@@ -304,8 +263,8 @@
 			} 
 			.subscribe-form {
 				margin: 0px -40px;
-			    padding: 30px 40px 20px;
-			    border-top: 1px solid #757575;
+			    padding: 23px 40px 10px;
+			    border-top: 0px;
 			}
 		}
 	}
@@ -320,6 +279,49 @@
 		}
 	}
 }
+
+.nav-mobile {
+	display: none;
+	@media (max-width: $screen-sm-max) {
+		display: block;
+		@include position(fixed, $top: 0px, $left: 0px);
+	    z-index: 35;
+
+	    > a { 
+	    	display: block;
+	    	text-decoration: none;
+			color: $c-white;
+			padding: 30px 20px;
+			width: 75px;
+			height: 82px;
+			> img {
+				width: 28px;
+				@include position(absolute, $top: 32px, $left: 24px);
+				@include transition(all .3s);
+				&.bars-icon {
+
+				}
+				&.close-icon {
+					width: 24px;
+				    top: 30px;
+				    left: 25px;
+				    @include transform(scale(0));
+				}
+			}
+			&.active {
+				> img {
+					&.bars-icon {
+				    	@include transform(scale(0));
+					}
+					&.close-icon {
+				    	@include transform(scale(1));
+					}
+				}
+			}
+	    }
+	}
+}
+
 .nav-open {
 	@include transform(translateX(0px) !important);
 }

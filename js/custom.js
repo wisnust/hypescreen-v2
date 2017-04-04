@@ -35,11 +35,11 @@ $(document).ready(function() {
             height: '620px'
         });
     }
-
     $(window).on("resize", function() {
 
-        $topNav.css('top', $logoHeight); 
-        $sideNav.css('top', $topNav_height + $logoHeight + 75);
+        $topNav.css('top', $logoHeight + $('.list-menu').height() + 40); // 40 is padding of .list-menu 
+        $sideNav.css('top', $logoHeight);
+        // $sideNav.css('top', $topNav_height + $logoHeight + 75);
 
         if ($(window).width() < 669 ) { 
 
