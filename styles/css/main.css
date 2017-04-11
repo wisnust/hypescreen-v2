@@ -6198,6 +6198,43 @@ a, .btn-link {
   z-index: 55; }
   .sidenav nav:hover, .sidenav nav:focus {
     overflow: auto; }
+  .sidenav nav .sidenav-tab {
+    border-bottom: 1px solid #757575;
+    height: 360px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative; }
+    .sidenav nav .sidenav-tab > ul {
+      border-radius: 4px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      margin: 0px 0px 10px;
+      overflow: hidden; }
+      .sidenav nav .sidenav-tab > ul::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .sidenav nav .sidenav-tab > ul > li {
+        padding: 0px;
+        width: 100%; }
+        .sidenav nav .sidenav-tab > ul > li > a {
+          background-color: #AFAFAF;
+          color: #fff;
+          display: block;
+          font-weight: 300;
+          letter-spacing: 0.1px;
+          padding: 5px;
+          transition: all .3s;
+          text-align: center; }
+          .sidenav nav .sidenav-tab > ul > li > a:hover, .sidenav nav .sidenav-tab > ul > li > a:active {
+            background-color: #9E9E9E; }
+        .sidenav nav .sidenav-tab > ul > li.active > a {
+          background-color: #5aa9f0;
+          pointer-events: none; }
   .sidenav nav .list-menu {
     border-bottom: 1px solid #757575;
     list-style: none;
@@ -6261,38 +6298,6 @@ a, .btn-link {
       opacity: 0; }
     .sidenav nav .list-menu > li.active img.is-hidden {
       opacity: 1; }
-  .sidenav nav .sidenav-tab {
-    border-bottom: 1px solid #757575;
-    height: 360px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    position: relative; }
-    .sidenav nav .sidenav-tab > ul {
-      border-radius: 4px;
-      margin: 0px 0px 10px;
-      overflow: hidden; }
-      .sidenav nav .sidenav-tab > ul::after {
-        clear: both;
-        content: "";
-        display: block; }
-      .sidenav nav .sidenav-tab > ul > li {
-        float: left;
-        padding: 0px;
-        width: 50%; }
-        .sidenav nav .sidenav-tab > ul > li > a {
-          background-color: #AFAFAF;
-          color: #fff;
-          display: block;
-          font-weight: 300;
-          letter-spacing: 0.1px;
-          padding: 5px;
-          transition: all .3s;
-          text-align: center; }
-          .sidenav nav .sidenav-tab > ul > li > a:hover, .sidenav nav .sidenav-tab > ul > li > a:active {
-            background-color: #9E9E9E; }
-        .sidenav nav .sidenav-tab > ul > li.active > a {
-          background-color: #5aa9f0;
-          pointer-events: none; }
   .sidenav nav .top-shows {
     margin-top: 15px;
     text-align: center; }
@@ -7315,8 +7320,14 @@ a, .btn-link {
   .filter > .filter-body > .filter-action > .pull-right .btn-link {
     padding-right: 0px; }
   .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
-    padding: 5px 0px;
+    bottom: 100%;
+    left: inherit;
+    height: 135px;
     min-width: 100%;
+    overflow: auto;
+    padding: 5px 0px;
+    right: 1px;
+    top: inherit;
     z-index: 20; }
     .filter > .filter-body > .filter-action > .pull-right .dropdown-menu > li > a {
       padding: 5px 13px;
