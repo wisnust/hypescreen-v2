@@ -18,11 +18,14 @@
 		width: $left-335px;
 		height: 100%;
 		z-index: 55; 
+		&:hover, &:focus {
+			overflow: auto;
+		}
 		.list-menu { 
 		    border-bottom: 1px solid #757575;
 		    list-style: none;
-		    margin-bottom: 45px;
-    		padding: 20px 0px 35px 7px;
+		    margin-bottom: 30px;
+    		padding: 20px 0px 20px 7px;
 		    > li {
 			    a {
 			    	display: block;
@@ -92,10 +95,43 @@
 			    }
 		    }
 		}
+		.sidenav-tab {
+			> ul {
+				border-radius: 4px;
+				@include clearfix();
+				margin: 0px 0px 10px;
+				overflow: hidden;
+				> li {
+					float: left;
+					padding: 0px;
+					width: 50%;
+					> a {
+						background-color: $c-blue;
+						color: $c-white;
+						display: block;
+						font-weight: 300;
+						letter-spacing: 0.1px;
+						padding: 5px;
+						transition: all .3s;
+						text-align: center;
+						&:hover, &:active {
+							background-color: darken($c-blue, 10%);
+						}
+					}
+					&.active {
+						> a {
+							background-color: #B9B9B9;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
 		.top-shows {
 		    border-bottom: 1px solid #757575;
 		    padding-bottom: 30px;
 		    margin-bottom: 30px;
+		    text-align: center;
 			> h2 {
 				display: inline-block;
 				font-size: 16px;
@@ -106,9 +142,8 @@
 				float: left;
 			}
 			.top-shows-dropdown {
-				margin-top: -3px;
 				display: inline-block;
-				float: right;
+				margin: 0 0px 15px;
 				.btn-group {
 					display: inline-block;
 					width: 100%;
@@ -257,6 +292,9 @@
 				border: 0px;
 				padding-left: 0px;
 				padding-bottom: 20px;
+			}
+			.sidenav-tab {
+				display: none;
 			}
 			.top-shows {
 				display: none;

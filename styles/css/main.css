@@ -6196,11 +6196,13 @@ a, .btn-link {
   width: 335px;
   height: 100%;
   z-index: 55; }
+  .sidenav nav:hover, .sidenav nav:focus {
+    overflow: auto; }
   .sidenav nav .list-menu {
     border-bottom: 1px solid #757575;
     list-style: none;
-    margin-bottom: 45px;
-    padding: 20px 0px 35px 7px; }
+    margin-bottom: 30px;
+    padding: 20px 0px 20px 7px; }
     .sidenav nav .list-menu > li a {
       display: block;
       text-decoration: none;
@@ -6259,10 +6261,37 @@ a, .btn-link {
       opacity: 0; }
     .sidenav nav .list-menu > li.active img.is-hidden {
       opacity: 1; }
+  .sidenav nav .sidenav-tab > ul {
+    border-radius: 4px;
+    margin: 0px 0px 10px;
+    overflow: hidden; }
+    .sidenav nav .sidenav-tab > ul::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .sidenav nav .sidenav-tab > ul > li {
+      float: left;
+      padding: 0px;
+      width: 50%; }
+      .sidenav nav .sidenav-tab > ul > li > a {
+        background-color: #5aa9f0;
+        color: #fff;
+        display: block;
+        font-weight: 300;
+        letter-spacing: 0.1px;
+        padding: 5px;
+        transition: all .3s;
+        text-align: center; }
+        .sidenav nav .sidenav-tab > ul > li > a:hover, .sidenav nav .sidenav-tab > ul > li > a:active {
+          background-color: #2b91ec; }
+      .sidenav nav .sidenav-tab > ul > li.active > a {
+        background-color: #B9B9B9;
+        pointer-events: none; }
   .sidenav nav .top-shows {
     border-bottom: 1px solid #757575;
     padding-bottom: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
     .sidenav nav .top-shows > h2 {
       display: inline-block;
       font-size: 16px;
@@ -6272,9 +6301,8 @@ a, .btn-link {
       text-transform: uppercase;
       float: left; }
     .sidenav nav .top-shows .top-shows-dropdown {
-      margin-top: -3px;
       display: inline-block;
-      float: right; }
+      margin: 0 0px 15px; }
       .sidenav nav .top-shows .top-shows-dropdown .btn-group {
         display: inline-block;
         width: 100%; }
@@ -6409,6 +6437,8 @@ a, .btn-link {
       border: 0px;
       padding-left: 0px;
       padding-bottom: 20px; }
+    .sidenav nav .sidenav-tab {
+      display: none; }
     .sidenav nav .top-shows {
       display: none; }
     .sidenav nav .subscribe-form {
@@ -6593,9 +6623,9 @@ a, .btn-link {
   display: inline-block;
   font-size: 11px;
   letter-spacing: -0.09px;
-  margin-right: 2px;
+  margin-right: -1px;
   margin-bottom: 5px;
-  padding: 4px 16px;
+  padding: 4px 10px;
   background-color: #fff !important;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -6621,6 +6651,7 @@ a, .btn-link {
     -webkit-box-shadow: 0px 0px 0px transparent;
     box-shadow: 0px 0px 0px transparent; }
   .btn-tag.btn-tag-image {
+    background-color: transparent !important;
     border: 0px;
     border-radius: 0px;
     float: left;
@@ -6628,7 +6659,7 @@ a, .btn-link {
     height: 50px;
     margin: 0px;
     padding: 2px;
-    width: 20%;
+    width: 50%;
     position: relative; }
     .btn-tag.btn-tag-image > .image {
       padding: 2px;
@@ -7254,8 +7285,8 @@ a, .btn-link {
         font-size: 12px; } }
 
 .filter {
-  background-color: #fff;
-  margin: -25px 0px 40px; }
+  border-bottom: 1px solid #757575;
+  margin-bottom: 30px; }
   .filter > .filter-header {
     -moz-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
@@ -7271,21 +7302,19 @@ a, .btn-link {
       text-transform: uppercase;
       padding: 9px; }
   .filter > .filter-body > .filter-action {
-    margin: 0px -5px 0px;
-    padding: 0px 30px 0px; }
+    margin: 0px -13px 15px;
+    padding: 0px 5px 0px; }
     .filter > .filter-body > .filter-action .btn-link {
-      font-size: 12px;
-      letter-spacing: -0.09px;
+      font-size: 11px;
       outline: none !important;
-      padding: 0px 12px;
+      padding: 0px 5px;
       line-height: 14px; }
       .filter > .filter-body > .filter-action .btn-link > .fa-caret-down {
-        font-size: 24px;
+        font-size: 18px;
         margin-top: -3px;
-        margin-left: 6px;
+        margin-left: 4px;
         vertical-align: middle; }
     .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {
-      left: 15px;
       padding: 5px 0px;
       min-width: 100%;
       z-index: 20; }
@@ -7293,7 +7322,7 @@ a, .btn-link {
         padding: 5px 13px;
         font-size: 11px; }
   .filter > .filter-body > .filter-tags {
-    padding: 5px 35px 0px;
+    margin: 0px -2px;
     text-align: center; }
     .filter > .filter-body > .filter-tags::after {
       clear: both;
@@ -7302,12 +7331,12 @@ a, .btn-link {
   .filter > .filter-body > .filter-more-tags {
     text-align: center; }
     .filter > .filter-body > .filter-more-tags.active {
-      margin: 10px 50px 0px; }
+      margin: 10px -5px 0px; }
   .filter > .filter-body > .btn-more-tags {
     text-align: center; }
     .filter > .filter-body > .btn-more-tags > .btn-link {
       display: inline-block;
-      font-size: 12px;
+      font-size: 11px;
       text-transform: uppercase;
       padding: 10px 15px 15px; }
       .filter > .filter-body > .btn-more-tags > .btn-link.collapsed {
@@ -7316,6 +7345,7 @@ a, .btn-link {
         padding-top: 0px; }
   @media (max-width: 767px) {
     .filter {
+      border-bottom: 0px;
       margin: -10px 0px 30px; }
       .filter > .filter-header > h2 {
         font-size: 13px; }
@@ -7325,6 +7355,7 @@ a, .btn-link {
           float: none !important;
           text-align: center; }
       .filter > .filter-body > .filter-action {
+        margin: 0px -5px 0px;
         padding: 0px 40px 0px;
         text-align: center; }
         .filter > .filter-body > .filter-action > .pull-right .dropdown-menu {

@@ -1,7 +1,6 @@
 .filter {
-	background-color: $c-white;
-	margin: -25px 0px 40px;
-
+	border-bottom: 1px solid #757575;
+    margin-bottom: 30px;
 	> .filter-header {
 		@include transition(background-color .3s);
 
@@ -18,24 +17,22 @@
 	}
 	> .filter-body {
 		> .filter-action {
-			margin: 0px -5px 0px;
-			padding: 0px 30px 0px;
+			margin: 0px -13px 15px;
+			padding: 0px 5px 0px;
 			.btn-link {
-				font-size: 12px;
-				letter-spacing: -0.09px;
+				font-size: 11px;
 				outline: none !important;
-				padding: 0px 12px;
+				padding: 0px 5px;
 				line-height: 14px;
 				> .fa-caret-down {
-					font-size: 24px;
+					font-size: 18px;
 				    margin-top: -3px;
-				    margin-left: 6px;
+				    margin-left: 4px;
 				    vertical-align: middle;
 				}
 			}
 			> .pull-right { 
 				.dropdown-menu {
-					left: 15px;
 					padding: 5px 0px;
 					min-width: 100%;
 					z-index: 20;
@@ -48,20 +45,20 @@
 		}
 		> .filter-tags {
 			@include clearfix();
-			padding: 5px 35px 0px;
+			margin: 0px -2px;
 			text-align: center;
 		}
 		> .filter-more-tags {
 			text-align: center; 
 			&.active {
-				margin: 10px 50px 0px;
+				margin: 10px -5px 0px;
 			}
 		}
 		> .btn-more-tags {
 			text-align: center;
 			> .btn-link {
 				display: inline-block;
-				font-size: 12px;
+				font-size: 11px;
 				text-transform: uppercase;
 				padding: 10px 15px 15px;
 				&.collapsed {
@@ -73,7 +70,7 @@
 		} 
 	}
 	@media (max-width: $screen-xs-max) {
-
+		border-bottom: 0px;
 		margin: -10px 0px 30px;
 		> .filter-header > h2 {
 			font-size: 13px;
@@ -88,6 +85,7 @@
 				}
 			}
 			> .filter-action { 
+				margin: 0px -5px 0px;
 				padding: 0px 40px 0px;
 				text-align: center; 
 				> .pull-right .dropdown-menu {

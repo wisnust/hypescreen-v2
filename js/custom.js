@@ -35,6 +35,14 @@ $(document).ready(function() {
             height: '620px'
         });
     }
+
+    // SideNav on hover overflow
+    $sideNav.hover(function() {
+        $('html, body').css('overflow', 'hidden');
+    }, function() {
+        $('html, body').css('overflow', 'auto');
+    });
+
     $(window).on("resize", function() {
 
         $topNav.css('top', $logoHeight + $('.list-menu').height() + 40); // 40 is padding of .list-menu 
@@ -59,6 +67,9 @@ $(document).ready(function() {
 
             // Right position button show ratings mobile screen
             $('.card-2 > .content > .ratings > .action').css('left', 260 - $ratingsResult_width);
+
+            // Move filter tags on mobile
+            $('.filter').insertAfter('.content-subheading');
         }
         if ($(window).width() < 322 ) {
 
@@ -141,4 +152,22 @@ $(document).ready(function() {
     $('.btn-tag').click(function() {
         $(this).toggleClass('active');
     });
+
+    // Filter more tags
+    $('#MoreTags').on('show.bs.collapse', function () {
+
+        // Toggle class active
+        $(this).addClass('active');
+        $(this).on('hidden.bs.collapse', function () {
+            $(this).removeClass('active');
+        })
+
+        // Toggle Filter Tags
+        $('.filter-tags').slideUp(350);
+        $(this).on('hide.bs.collapse', function () {
+            $('.filter-tags').slideDown(350);
+        })
+
+    });
+
 });

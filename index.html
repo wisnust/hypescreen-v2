@@ -116,34 +116,312 @@
                     </li>
                 </ul>
 
-                <!-- Top Shows -->
-                <div class="top-shows">
-                    <h2>TOP SHOWS: </h2>
-                    <div class="top-shows-dropdown"> 
-                        <div class="btn-group clearfix">
-                            <button type="button" class="btn btn-primary">Funny</button>
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <ul>
-                        <li><a href="#"><img src="images/top_shows/ice_hockey.png" alt="ice hockey" title="ice hockey"></a></li>
-                        <li><a href="#"><img src="images/top_shows/pewdiepie.png" alt="pewdiepie" title="pewdiepie"></a></li>
-                        <li><a href="#"><img src="images/top_shows/klub.png" alt="klub" title="klub"></a></li>
-                        <li><a href="#"><img src="images/top_shows/kontrafakt.png" alt="kontrafakt" title="kontrafakt"></a></li>
-                        <li><a href="#"><img src="images/top_shows/moto.png" alt="moto" title="moto"></a></li>
-                        <li><a href="#"><img src="images/top_shows/camel.png" alt="camel" title="camel"></a></li>
+                <div class="sidenav-tab">
+                    
+                    <ul class="list-inline">
+                        <li class="active"><a href="#categories" data-toggle="tab">Categories</a></li>
+                        <li><a href="#top-shows" data-toggle="tab">Top Shows</a></li>
                     </ul>
-                    <a href="#" class="go-to">GO TO ALL <img src="images/icon/arrow_right_icon.svg"/></a>
+
+                    <div class="tab-content">
+
+                        <!-- Filter -->
+                        <div id="categories" class="filter tab-pane active fade in">
+
+                            <!-- Filter Header -->
+                            <div class="filter-header visible-xs visible-sm">
+                                <h2>- CHOOSE YOUR CATEGORIES -</h2>
+                            </div>
+
+                            <!-- Filter Body -->
+                            <div class="filter-body">
+
+                                <!-- Filter Tags -->
+                                <div class="filter-tags">
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="business-tech">
+                                        <div class="image">
+                                            <img src="images/tags/business_technology.jpg" alt="Business & tech" 
+                                            title="Business & tech"/>
+                                        </div>
+                                        <span>BUSINESS &amp; TECH</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="food-drink">
+                                        <div class="image">
+                                            <img src="images/tags/food_drink.jpg" alt="Food & Drink" title="Food & Drink"/>
+                                        </div>
+                                        <span>FOOD &amp; DRINK</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="funny">
+                                        <div class="image">
+                                            <img src="images/tags/funny.jpg" alt="Funny" title="Funny"/>
+                                        </div>
+                                        <span>FUNNY</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="nerd-culture">
+                                        <div class="image">
+                                            <img src="images/tags/nerd_culture.jpg" alt="Nerd Culture" title="Nerd Culture"/>
+                                        </div>
+                                        <span>NERD CULTURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="pop-culture">
+                                        <div class="image">
+                                            <img src="images/tags/pop_culture.jpg" alt="Pop Culture" title="Pop Culture"/>
+                                        </div>
+                                        <span>POP CULTURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="real-stories">
+                                        <div class="image">
+                                            <img src="images/tags/real_stories.jpg" alt="Real Stories" title="Real Stories"/>
+                                        </div>
+                                        <span>REAL STORIES</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="science-nature">
+                                        <div class="image">
+                                            <img src="images/tags/science_nature.jpg" alt="Science Nature" title="Science Nature"/>
+                                        </div>
+                                        <span>SCIENCE &amp; NATURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="style-beauty">
+                                        <div class="image">
+                                            <img src="images/tags/style_beauty.jpg" alt="Style Beauty" title="Style Beauty"/>
+                                        </div>
+                                        <span>STYLE &amp; BEAUTY</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="web-series">
+                                        <div class="image">
+                                            <img src="images/tags/web_series.jpg" alt="Web Series" title="Web Series"/>
+                                        </div>
+                                        <span>WEB SERIES</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="youtubers">
+                                        <div class="image">
+                                            <img src="images/tags/youtubers.jpg" alt="Youtubers" title="Youtubers"/>
+                                        </div>
+                                        <span>YOUTUBERS</span>
+                                    </button>
+
+                                </div>
+
+                                <!-- Filter Action -->
+                                <div class="filter-action clearfix">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-link">Clear All</a>
+                                        <a href="#" class="btn btn-link">Select All</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                All Publishers <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Filter More Tags -->
+                                <div class="filter-more-tags collapse" id="MoreTags">
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="animation">
+                                            Animation
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="art-dance">
+                                            Art &amp; Dance
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="automotive">
+                                            Automotive
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="celebs">
+                                            Celebs
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="classics">
+                                            Classics
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="diy-life-hacks">
+                                            DIY &amp; Life Hacks
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="documentary">
+                                            Documentary
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="drama">
+                                            Drama
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="game-shows">
+                                            Game Shows
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="gaming">
+                                            Gaming
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="health-wellness">
+                                            Health &amp; Wellness
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="history">
+                                            History
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="home-hospitality">
+                                            Home &amp; Hospitality
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="informational">
+                                            Informational
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="instructional">
+                                            Instructional
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="interviews">
+                                            Interviews
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="jokes-sketch-comedy">
+                                            Jokes &amp; Sketch Comedy
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="lgbt">
+                                            LGBT
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="love-dating">
+                                            Love &amp; Dating
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="movies-tv">
+                                            Movies &amp; TV
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="music">
+                                            Music
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="news">
+                                            News
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="our-faves">
+                                            Our Faves
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="parenthood">
+                                            Parenthood
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="pranks">
+                                            Pranks
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="reality">
+                                            Reality
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="reviews">
+                                            Reviews
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="sci-fi">
+                                            Sci Fi
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="sports">
+                                            Sports
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="talk-shows">
+                                            Talk Shows
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="teens">
+                                            Teens
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="thriller">
+                                            Thriller
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="travel">
+                                            Travel
+                                        </button>
+                                    
+                                </div>
+
+                                <!-- Button Filter More Tags -->
+                                <div class="btn-more-tags">
+                                    <a class="btn btn-link collapsed" role="button" data-toggle="collapse" href="#MoreTags" aria-expanded="false" aria-controls="MoreTags">
+                                        <img src="images/icon/tags_icon.svg"/>&nbsp; <span>More Tags</span>
+                                    </a> 
+                                </div> 
+                            </div>
+                        </div> 
+
+                        <!-- Top Shows -->
+                        <div id="top-shows" class="top-shows tab-pane fade">
+                            <h2 class="visible-xs visible-sm">TOP SHOWS: </h2>
+                            <div class="top-shows-dropdown"> 
+                                <div class="btn-group clearfix">
+                                    <button type="button" class="btn btn-primary">Funny</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul>
+                                <li><a href="#"><img src="images/top_shows/ice_hockey.png" alt="ice hockey" title="ice hockey"></a></li>
+                                <li><a href="#"><img src="images/top_shows/pewdiepie.png" alt="pewdiepie" title="pewdiepie"></a></li>
+                                <li><a href="#"><img src="images/top_shows/klub.png" alt="klub" title="klub"></a></li>
+                                <li><a href="#"><img src="images/top_shows/kontrafakt.png" alt="kontrafakt" title="kontrafakt"></a></li>
+                                <li><a href="#"><img src="images/top_shows/moto.png" alt="moto" title="moto"></a></li>
+                                <li><a href="#"><img src="images/top_shows/camel.png" alt="camel" title="camel"></a></li>
+                            </ul>
+                            <a href="#" class="go-to">GO TO ALL <img src="images/icon/arrow_right_icon.svg"/></a>
+                        </div>
+                        
+                    </div>
+
                 </div>
 
                 <!-- Subscribe form -->
@@ -167,273 +445,6 @@
             <div class="container">
                 <h2 class="content-heading">HERE'S WHAT'S NEW</h2>
                 <p class="content-subheading">The newest &amp; best of web TV</p>
-
-                <!-- Filter -->
-                <div class="filter">
-
-                    <!-- Filter Header -->
-                    <div class="filter-header">
-                        <h2>- CHOOSE YOUR CATEGORIES -</h2>
-                    </div>
-
-                    <!-- Filter Body -->
-                    <div class="filter-body">
-
-                        <!-- Filter Tags -->
-                        <div class="filter-tags">
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="business-tech">
-                                <div class="image">
-                                    <img src="images/tags/business_technology.jpg" alt="Business & tech" 
-                                    title="Business & tech"/>
-                                </div>
-                                <span>BUSINESS &amp; TECH</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="food-drink">
-                                <div class="image">
-                                    <img src="images/tags/food_drink.jpg" alt="Food & Drink" title="Food & Drink"/>
-                                </div>
-                                <span>FOOD &amp; DRINK</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="funny">
-                                <div class="image">
-                                    <img src="images/tags/funny.jpg" alt="Funny" title="Funny"/>
-                                </div>
-                                <span>FUNNY</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="nerd-culture">
-                                <div class="image">
-                                    <img src="images/tags/nerd_culture.jpg" alt="Nerd Culture" title="Nerd Culture"/>
-                                </div>
-                                <span>NERD CULTURE</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="pop-culture">
-                                <div class="image">
-                                    <img src="images/tags/pop_culture.jpg" alt="Pop Culture" title="Pop Culture"/>
-                                </div>
-                                <span>POP CULTURE</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="real-stories">
-                                <div class="image">
-                                    <img src="images/tags/real_stories.jpg" alt="Real Stories" title="Real Stories"/>
-                                </div>
-                                <span>REAL STORIES</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="science-nature">
-                                <div class="image">
-                                    <img src="images/tags/science_nature.jpg" alt="Science Nature" title="Science Nature"/>
-                                </div>
-                                <span>SCIENCE &amp; NATURE</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="style-beauty">
-                                <div class="image">
-                                    <img src="images/tags/style_beauty.jpg" alt="Style Beauty" title="Style Beauty"/>
-                                </div>
-                                <span>STYLE &amp; BEAUTY</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="web-series">
-                                <div class="image">
-                                    <img src="images/tags/web_series.jpg" alt="Web Series" title="Web Series"/>
-                                </div>
-                                <span>WEB SERIES</span>
-                            </button>
-
-                            <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
-                                data-slug="youtubers">
-                                <div class="image">
-                                    <img src="images/tags/youtubers.jpg" alt="Youtubers" title="Youtubers"/>
-                                </div>
-                                <span>YOUTUBERS</span>
-                            </button>
-
-                        </div>
-
-                        <!-- Filter Action -->
-                        <div class="filter-action clearfix">
-                            <div class="pull-left">
-                                <a href="#" class="btn btn-link">Clear All</a>
-                                <a href="#" class="btn btn-link">Select All</a>
-                            </div>
-                            <div class="pull-right">
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        All Publishers <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Filter More Tags -->
-                        <div class="filter-more-tags collapse" id="MoreTags">
-                            <div class="filter-tags">
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="animation">
-                                    Animation
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="art-dance">
-                                    Art &amp; Dance
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="automotive">
-                                    Automotive
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="celebs">
-                                    Celebs
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="classics">
-                                    Classics
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="diy-life-hacks">
-                                    DIY &amp; Life Hacks
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="documentary">
-                                    Documentary
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="drama">
-                                    Drama
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="game-shows">
-                                    Game Shows
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="gaming">
-                                    Gaming
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="health-wellness">
-                                    Health &amp; Wellness
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="history">
-                                    History
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="home-hospitality">
-                                    Home &amp; Hospitality
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="informational">
-                                    Informational
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="instructional">
-                                    Instructional
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="interviews">
-                                    Interviews
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="jokes-sketch-comedy">
-                                    Jokes &amp; Sketch Comedy
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="lgbt">
-                                    LGBT
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="love-dating">
-                                    Love &amp; Dating
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="movies-tv">
-                                    Movies &amp; TV
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="music">
-                                    Music
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="news">
-                                    News
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="our-faves">
-                                    Our Faves
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="parenthood">
-                                    Parenthood
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="pranks">
-                                    Pranks
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="reality">
-                                    Reality
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="reviews">
-                                    Reviews
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="sci-fi">
-                                    Sci Fi
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="sports">
-                                    Sports
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="talk-shows">
-                                    Talk Shows
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="teens">
-                                    Teens
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="thriller">
-                                    Thriller
-                                </button>
-                            
-                                <button type="button" class="btn btn-tag" data-color="default" data-slug="travel">
-                                    Travel
-                                </button>
-                            
-                            </div>
-                        </div>
-
-                        <!-- Button Filter More Tags -->
-                        <div class="btn-more-tags">
-                            <a class="btn btn-link collapsed" role="button" data-toggle="collapse" href="#MoreTags" aria-expanded="false" aria-controls="MoreTags">
-                                <img src="images/icon/tags_icon.svg"/>&nbsp; <span>More Tags</span>
-                            </a> 
-                        </div> 
-                    </div>
-                </div> 
 
                 <!-- Newsfeed Post 1 -->
                 <div id="newsfeed-post-1" class="card">
@@ -942,12 +953,6 @@
     <script src="js/custom.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#MoreTags').on('show.bs.collapse', function () {
-                $(this).addClass('active');
-                $(this).on('hidden.bs.collapse', function () {
-                    $(this).removeClass('active');
-                })
-            })
 
 
         $('.card').each(function() {
