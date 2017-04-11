@@ -95,7 +95,12 @@
 			    }
 		    }
 		}
-		.sidenav-tab {
+		.sidenav-tab {    
+			border-bottom: 1px solid #757575;
+		    height: 360px;
+		    margin-bottom: 30px;
+		    overflow: hidden;
+		    position: relative;
 			> ul {
 				border-radius: 4px;
 				@include clearfix();
@@ -106,7 +111,7 @@
 					padding: 0px;
 					width: 50%;
 					> a {
-						background-color: $c-blue;
+						background-color: #AFAFAF;
 						color: $c-white;
 						display: block;
 						font-weight: 300;
@@ -115,12 +120,12 @@
 						transition: all .3s;
 						text-align: center;
 						&:hover, &:active {
-							background-color: darken($c-blue, 10%);
+							background-color: #9E9E9E;
 						}
 					}
 					&.active {
 						> a {
-							background-color: #B9B9B9;
+							background-color: $c-blue;
 							pointer-events: none;
 						}
 					}
@@ -128,9 +133,7 @@
 			}
 		}
 		.top-shows {
-		    border-bottom: 1px solid #757575;
-		    padding-bottom: 30px;
-		    margin-bottom: 30px;
+			margin-top: 15px;
 		    text-align: center;
 			> h2 {
 				display: inline-block;

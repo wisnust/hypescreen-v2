@@ -162,11 +162,13 @@ $(document).ready(function() {
             $(this).removeClass('active');
         })
 
-        // Toggle Filter Tags
-        $('.filter-tags').slideUp(350);
-        $(this).on('hide.bs.collapse', function () {
-            $('.filter-tags').slideDown(350);
-        })
+        // Toggle Filter Tags Desktop only
+        if ($(window).width() > 669 ) {
+            $('.filter-tags').slideUp(350);
+            $(this).on('hide.bs.collapse', function () {
+                $('.filter-tags').slideDown(350);
+            })
+        }
 
     });
 

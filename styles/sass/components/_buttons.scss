@@ -7,9 +7,9 @@
 	display: inline-block;
     font-size: 11px;
     letter-spacing: -0.09px;
-	margin-right: -1px;
-	margin-bottom: 5px;
-    padding: 4px 10px;
+	margin-right: -2px;
+	margin-bottom: 2px;
+    padding: 2px 9px;
     background-color: $c-white !important;
     @include transition(all .3s);
     &:hover, &:focus {
@@ -85,17 +85,13 @@
 	    	}
 	    }
     }
-} 
-@media (max-width: $screen-xs-max) {
-    margin-bottom: 4px;
-	margin-right: -1px;
-    .btn-tag {
-    	font-size: 9px;
+	@media (max-width: $screen-xs-max) {
+    	font-size: 10px;
 		padding: 4px 6px;
 	    &.btn-tag-image {
 	    	font-size: 11px;
 	    	height: 50px;
 	    	width: 50%;
 	    }
-    }
-}
+	}
+} 
