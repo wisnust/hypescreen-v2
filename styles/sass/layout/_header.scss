@@ -21,14 +21,14 @@
  		.tagline {
 			color: $c-white;
 			float: left;
-			font-size: 16px;
-			font-weight: 300;
+			font-size: 15px;
+			font-weight: 400;
 			line-height: 18px;
 			margin-left: 40px;
 			margin-top: 18px;
 			padding-left: 35px;
 			position: relative;
-			width: 270px;
+			text-transform: uppercase;
 			&:before {
 				background-color: $c-white;
 				content: " ";
@@ -142,12 +142,11 @@
 			}
 			.tagline {
 				float: none;
-				font-size: 12px;
+				font-size: 10px;
 				line-height: 14px;
-				margin: 2px auto 10px;
+				margin: 5px auto 8px;
 				padding: 0px;
 				text-align: center;
-				width: 170px;
 				&:before {
 					display: none;
 				}
