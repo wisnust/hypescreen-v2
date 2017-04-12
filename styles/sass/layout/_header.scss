@@ -13,10 +13,28 @@
  	.navbar-header {
  		.navbar-brand {
  			height: 100%;
- 			padding: 13px 0px 0px 40px;
+ 			padding: 20px 0px 0px 40px;
  			> img {
- 				width: 181px;
+ 				width: 220px;
  			}
+ 		}
+ 		.tagline {
+			color: $c-white;
+			float: left;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 18px;
+			margin-left: 40px;
+			margin-top: 18px;
+			padding-left: 35px;
+			position: relative;
+			width: 270px;
+			&:before {
+				background-color: $c-white;
+				content: " ";
+				width: 1px;
+				@include position(absolute, $top: 3px, $bottom: 3px, $left: 0px);
+			}
  		}
  	}
  	.navbar-nav {
@@ -116,11 +134,23 @@
 				float: none;
 			    display: block;
 			    text-align: center;
-			    padding: 20px 0px;
+			    padding: 17px 0px 0px;
 			    > img {
 			    	width: 150px;
 			    	margin: 0 auto;
 			    }
+			}
+			.tagline {
+				float: none;
+				font-size: 12px;
+				line-height: 14px;
+				margin: 2px auto 10px;
+				padding: 0px;
+				text-align: center;
+				width: 170px;
+				&:before {
+					display: none;
+				}
 			}
 		}
  		.navbar-nav {
