@@ -431,9 +431,9 @@
                 <div class="subscribe-form"> 
                     <form>
                         <div class="form-group">
-                            <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter" />
+                            <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter"/>
                         </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscriberModal">Subscribe</button>
                     </form>
                 </div>
             </nav>
@@ -940,6 +940,38 @@
                         
                         <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in here</a>.</p>
                     </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBER MODAL -->
+    <div class="modal fade v-middle subscriber-modal" id="subscriberModal" tabindex="-1" role="dialog" aria-labelledby="subscriberModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <h2>
+                        Get the best shows online <br/>
+                        Delivered straight to your inbox.
+                    </h2>
+                    <!-- Subscribe form -->
+                    <div class="subscribe-form"> 
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                    <h3>
+                        Or sign up. <br/>
+                        For newsletter + full access to site.
+                    </h3>
+                    <a href="#" class="btn btn-primary btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
                 </div> 
             </div>
         </div>
