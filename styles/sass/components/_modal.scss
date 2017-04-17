@@ -303,10 +303,17 @@
 				.subscribe-form {
 					margin: 0 auto 120px;
 					width: 270px;
-					> form > .form-group > .form-control {
-						border-color: #bdbdbd;
-						&:focus {
-							border-color: $c-blue;
+					> form {
+						> .form-group > .form-control {
+							border-color: #bdbdbd;
+							height: 34.5px;
+							&:focus {
+								border-color: $c-blue;
+							}
+						}
+						> .btn-primary {
+							font-size: 11px;
+							padding: 9px 15px;
 						}
 					}
 				}

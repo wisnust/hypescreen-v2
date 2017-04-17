@@ -361,6 +361,7 @@
 		    padding: 6px 10px;
 		    text-transform: uppercase;
 			@include position(absolute, $top: 0px, $right: 0px);
+			@include transition(all .3s);
 		    &:hover, &:focus {
 		    	background-color: $c-blue-dark;
 		    }

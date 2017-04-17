@@ -6532,7 +6532,11 @@ a, .btn-link {
     text-transform: uppercase;
     position: absolute;
     top: 0px;
-    right: 0px; }
+    right: 0px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
     .subscribe-form > form > .btn-primary:hover, .subscribe-form > form > .btn-primary:focus {
       background-color: #4e91ce; }
 @media (max-width: 991px) {
@@ -7747,9 +7751,13 @@ a, .btn-link {
         margin: 0 auto 120px;
         width: 270px; }
         .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control {
-          border-color: #bdbdbd; }
+          border-color: #bdbdbd;
+          height: 34.5px; }
           .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control:focus {
             border-color: #5aa9f0; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
+          font-size: 11px;
+          padding: 9px 15px; }
       .subscriber-modal .modal-dialog .modal-content .modal-body h3 {
         color: #919191;
         font-size: 20px;
