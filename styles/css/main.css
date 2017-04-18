@@ -7726,10 +7726,10 @@ a, .btn-link {
     box-shadow: 0px 0px 0px transparent; }
     .subscriber-modal .modal-dialog .modal-content .modal-header {
       border: 0px;
-      padding: 50px 50px 80px;
+      padding: 40px 0px 30px;
       text-align: center; }
       .subscriber-modal .modal-dialog .modal-content .modal-header > img {
-        width: 250px; }
+        width: 210px; }
       .subscriber-modal .modal-dialog .modal-content .modal-header .close {
         position: absolute;
         top: 13px;
@@ -7738,21 +7738,23 @@ a, .btn-link {
         transition: opacity .3s; }
         .subscriber-modal .modal-dialog .modal-content .modal-header .close:hover, .subscriber-modal .modal-dialog .modal-content .modal-header .close:focus {
           opacity: .5; }
+      .subscriber-modal .modal-dialog .modal-content .modal-header .subscribe-img {
+        margin-top: 35px; }
     .subscriber-modal .modal-dialog .modal-content .modal-body {
       padding: 0px 50px 20px;
       text-align: center; }
       .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
-        color: #757575;
+        color: #f59c63;
         font-size: 26px;
         font-weight: 600;
         line-height: 32px;
         margin: 0px 0px 30px; }
       .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
-        margin: 0 auto 120px;
-        width: 270px; }
+        margin: 0 auto 60px;
+        width: 300px; }
         .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control {
           border-color: #bdbdbd;
-          height: 34.5px; }
+          height: 35.5px; }
           .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control:focus {
             border-color: #5aa9f0; }
         .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
@@ -7781,10 +7783,12 @@ a, .btn-link {
     margin: 80px 20px 0px;
     width: auto; }
     .subscriber-modal .modal-dialog .modal-content .modal-header {
-      padding: 40px 40px 20px; }
+      padding: 40px 0px 20px; }
       .subscriber-modal .modal-dialog .modal-content .modal-header .close {
         top: 10px;
         right: 10px; }
+      .subscriber-modal .modal-dialog .modal-content .modal-header .subscriber-img {
+        margin-top: 30px; }
     .subscriber-modal .modal-dialog .modal-content .modal-body {
       padding: 0px 10px 40px; }
       .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
@@ -7801,9 +7805,9 @@ a, .btn-link {
         margin: 20px auto 0px; } }
 @media (max-width: 322px) {
   .subscriber-modal .modal-dialog .modal-content .modal-header {
-    padding: 30px 40px 20px; }
-    .subscriber-modal .modal-dialog .modal-content .modal-header > img {
-      width: 100%; }
+    padding: 30px 0px 20px; }
+    .subscriber-modal .modal-dialog .modal-content .modal-header .subscriber-img {
+      margin-top: 20px; }
   .subscriber-modal .modal-dialog .modal-content .modal-body {
     padding: 0px 10px 35px; }
     .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {

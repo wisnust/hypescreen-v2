@@ -172,4 +172,9 @@ $(document).ready(function() {
 
     });
 
+    // Subscriber Modal on show input focus
+    $('#subscriberModal').on('shown.bs.modal', function () {
+        $('#email_subscribe').focus()
+    })
+
 });
