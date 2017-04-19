@@ -430,9 +430,9 @@
                 <div class="subscribe-form"> 
                     <form>
                         <div class="form-group">
-                            <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter" />
+                            <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter"/>
                         </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscriberModal">Subscribe</button>
                     </form>
                 </div>
             </nav>
@@ -707,7 +707,7 @@
                                 <img src="images/newsfeed/dot_icon.png" />
                             </a> 
                             <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
-                                <img src="images/icon/arrow_down_icon.svg" />
+								<img src="images/icon/arrow_down_icon.svg" />
                             </a> 
                         </div>
                     </div>
@@ -783,6 +783,41 @@
                         
                         <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
                     </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBER MODAL -->
+    <div class="modal fade v-middle subscriber-modal" id="subscriberModal" tabindex="-1" role="dialog" aria-labelledby="subscriberModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                    <div class="subscribe-img">
+                        <img src="images/subscribe_img.png" class="img-responsive" alt="subscribe" title="subscribe"/>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>
+                        Get the best shows online <br/>
+                        delivered straight to your inbox.
+                    </h2>
+                    <!-- Subscribe form -->
+                    <div class="subscribe-form"> 
+                        <form>
+                            <div class="form-group">
+                                <input id="email_subscribe" type="email" name="email_subscribe" class="form-control" placeholder="Enter your email address"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                    <h3>
+                        Or sign up, <br/>
+                        to get the newsletter + full access to site.
+                    </h3>
+                    <a href="#" class="btn btn-primary btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
                 </div> 
             </div>
         </div>
