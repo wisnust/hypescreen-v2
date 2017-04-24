@@ -6662,41 +6662,45 @@ a, .btn-link {
         margin: 0 auto 30px;
         top: -7px; } }
 
-.favorites-tabs > .nav-tabs {
-  border: 0px;
-  margin-bottom: 50px; }
-  .favorites-tabs > .nav-tabs::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .favorites-tabs > .nav-tabs > li {
-    width: 50%; }
-    .favorites-tabs > .nav-tabs > li > a {
-      border: 0px !important;
-      display: block;
-      padding: 10px 0px; }
-      .favorites-tabs > .nav-tabs > li > a > .content-heading {
-        font-size: 28px;
-        margin-bottom: 0px;
-        padding: 0px;
-        transition: color .3s; }
-        .favorites-tabs > .nav-tabs > li > a > .content-heading:after {
-          display: none; }
-    .favorites-tabs > .nav-tabs > li:first-of-type {
-      border-right: 1px solid #bdbdbd; }
-    .favorites-tabs > .nav-tabs > li:last-of-type {
-      border-left: 1px solid #bdbdbd; }
-    .favorites-tabs > .nav-tabs > li:hover > a > .content-heading, .favorites-tabs > .nav-tabs > li:focus > a > .content-heading {
-      color: #919191; }
-    .favorites-tabs > .nav-tabs > li.active > a > .content-heading {
-      color: #616161; }
-.favorites-tabs > .tab-content #mywatchlist {
-  padding-top: 45px; }
-@media (max-width: 767px) {
+.favorites-tabs {
+  margin-top: 15px; }
   .favorites-tabs > .nav-tabs {
-    margin-bottom: 30px; }
-    .favorites-tabs > .nav-tabs > li > a > .content-heading {
-      font-size: 16px; } }
+    border: 0px;
+    margin-bottom: 50px; }
+    .favorites-tabs > .nav-tabs::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .favorites-tabs > .nav-tabs > li {
+      width: 50%; }
+      .favorites-tabs > .nav-tabs > li > a {
+        border: 0px !important;
+        display: block;
+        padding: 10px 0px; }
+        .favorites-tabs > .nav-tabs > li > a > .content-heading {
+          font-size: 28px;
+          margin-bottom: 0px;
+          padding: 0px;
+          transition: color .3s; }
+          .favorites-tabs > .nav-tabs > li > a > .content-heading:after {
+            display: none; }
+      .favorites-tabs > .nav-tabs > li:first-of-type {
+        border-right: 1px solid #bdbdbd; }
+      .favorites-tabs > .nav-tabs > li:last-of-type {
+        border-left: 1px solid #bdbdbd; }
+      .favorites-tabs > .nav-tabs > li:hover > a > .content-heading, .favorites-tabs > .nav-tabs > li:focus > a > .content-heading {
+        color: #919191; }
+      .favorites-tabs > .nav-tabs > li.active > a > .content-heading {
+        color: #616161; }
+  .favorites-tabs > .tab-content #mywatchlist {
+    padding-top: 45px; }
+  @media (max-width: 767px) {
+    .favorites-tabs {
+      margin-top: 0px; }
+      .favorites-tabs > .nav-tabs {
+        margin-bottom: 30px; }
+        .favorites-tabs > .nav-tabs > li > a > .content-heading {
+          font-size: 16px; } }
 
 .post-tabs {
   margin-bottom: 20px; }

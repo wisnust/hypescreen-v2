@@ -1,5 +1,6 @@
 // Tabs
 .favorites-tabs {
+	margin-top: 15px;
 	> .nav-tabs {
 		@include clearfix;
 		border: 0px;
@@ -48,6 +49,7 @@
 		}
 	}
 	@media (max-width: $screen-xs-max) {
+		margin-top: 0px;
 		> .nav-tabs {
 			margin-bottom: 30px;
 			> li {
