@@ -1,5 +1,6 @@
 .share {
-	@include position(absolute, $top: 24px, $right: 35px);
+	float: right;
+	margin-top: 5px;
 	> a {
 		background: rgba(#699CCD, .1);
 	    border-radius: 100px;
@@ -73,7 +74,6 @@
 
 	@media (max-width: $screen-xs-max) {
 		
-		right: 20px;
 		.popover.top {
 			min-width: 300px; 
 		    margin-left: -100px;  
@@ -81,6 +81,22 @@
 				padding: 0px; 
 				.share-arrow { 
 				    left: 73.5%; 
+				}
+			}
+		}
+	}
+	@media (max-width: 322px) {
+		
+		.popover.top {
+			min-width: 260px; 
+			.popover-content {
+				padding: 0px; 
+				a {
+					font-size: 11px;
+					padding: 12px 8px;
+				    > i {
+				    	margin-right: 5px;
+				    }
 				}
 			}
 		}

@@ -17,8 +17,32 @@
 			letter-spacing: 0;
 			margin: 0px;
 			line-height: 27px;
+			> a.pull-left img {
+				border-radius: 4px;
+				height: 52px;
+				margin-top: 1px;
+				width: 92px;
+			}
+			> div.pull-left {
+				> p {
+					margin: 0;
+					left: 10px;
+					position: relative;
+					a {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.add-watchlist {
+			@extend .share;
+			margin-left: 5px;
 			> a {
-				font-weight: bold;
+				padding-top: 7px !important;
+				> i {
+					color: #bf61a7 !important;
+					font-size: 18px !important;
+				}
 			}
 		}
 	}
@@ -270,7 +294,11 @@
 			    > a {
 			    	display: block;
 			    }
-			} 
+			}
+			.share-watchlist {
+				@include position(absolute, $top: 325px, $right: 20px);
+				z-index: 30;
+			}
 		}
 		> .card-body {
 			padding: 0px 20px;
@@ -378,6 +406,14 @@
 			}
 		}
 	} 
+	@media (max-width: 322px) {
+		> .card-header {
+			.share-watchlist {
+				top: 335px;
+				right: 15px;
+			}
+		}
+	}
 	@media (min-width: $screen-sm-min) {
 		> .card-body {  
 			> .content {
