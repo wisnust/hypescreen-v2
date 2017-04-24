@@ -215,9 +215,9 @@
 							display: flex;
 							display: -webkit-flex;
 							display: -moz-flex;
-							-webkit-align-items: center;
-							-moz-align-items: center;
-							align-items: center;
+							-webkit-align-items: flex-start;
+							-moz-align-items: flex-start;
+							align-items: flex-start;
 							-webkit-justify-content: center;
 							-moz-justify-content: center;
 							justify-content: center;
@@ -225,27 +225,28 @@
 							letter-spacing: 0.4px;
 							margin: 0px;
 							opacity: 0;
-							padding: 10px;
-							text-align: center;
+							padding: 7px;
+							text-align: left;
 							text-transform: capitalize;
 							width: 100%;
 							z-index: 5;
 							@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
-							@include transform(scale(0.65));
+							@include transform(translateX(20px));
 							@include transition(all .3s);
 							> span {
 								display: -webkit-box;
 								max-height: 53px;
-								-webkit-line-clamp: 4;
+								-webkit-line-clamp: 3;
 								-webkit-box-orient: vertical;
 								overflow: hidden;
 								text-overflow: ellipsis;
-								font-size: 12px;
+								font-size: 11px;
 							}
 						}
 						&:before {
 							content: " ";
-							background-color: $c-black;
+							@include gradient(left, #925AF7 -75%, $c-blue 100%);
+							background-image: linear-gradient(to right, #925AF7 -75%, $c-blue 100%);
 							display: block;
 							width: 100%;
 							height: 100%;
@@ -254,13 +255,25 @@
 			    			opacity: 0;
 			    			@include transition(opacity .3s);
 						}
+						&:after {
+							display: inline-block;
+  							color: $c-white;
+  							content: "\f138";
+							font: normal normal normal 14px/1 FontAwesome;
+							font-size: 14px;
+							opacity: 0;
+			    			z-index: 5;
+			    			@include position(absolute, $right: 7px, $bottom: 7px);
+							@include transform(translateX(-20px));
+							@include transition(all .5s);
+						}
 						&:hover, &:focus {
-							> h5 {
+							> h5, &:after {
 								opacity: 1;
-								@include transform(scale(1));
+								@include transform(translateX(0px));
 							}
 							&:before {
-								opacity: .6;
+								opacity: .9;
 							}
 						}
 					}
