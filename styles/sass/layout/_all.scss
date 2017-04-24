@@ -81,3 +81,14 @@ a, .btn-link {
 		}
 	}
 }
+
+#mostpopular > .row > .col-sm-6 {
+	opacity: 1;
+	@include transition(all .3s);
+	&.unselected {
+		.card-2 {
+			background-color: #eee;
+			opacity: .8;
+		}
+	}
+}
