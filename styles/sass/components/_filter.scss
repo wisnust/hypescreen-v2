@@ -36,8 +36,9 @@
 				    bottom: 100%;
 				    left: inherit;
 				    height: 135px;
-					min-width: 100%;
-				    overflow: auto;
+					min-width: 100%;					
+					overflow: scroll;
+					-webkit-overflow-scrolling: touch;
 					padding: 5px 0px;
 				    right: 1px;
 					top: inherit;

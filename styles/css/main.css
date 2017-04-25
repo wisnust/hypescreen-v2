@@ -7563,7 +7563,8 @@ a, .btn-link {
     left: inherit;
     height: 135px;
     min-width: 100%;
-    overflow: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     padding: 5px 0px;
     right: 1px;
     top: inherit;
