@@ -38,12 +38,15 @@
 			@extend .share;
 			margin-left: 5px;
 			> a {
-				padding-top: 7px !important;
 				> i {
 					color: #bf61a7 !important;
-					font-size: 18px !important;
+					font-size: 13px !important;
+					display: block;
 				}
 			}
+		}
+		.tooltip {
+			z-index: 1000;
 		}
 	}
 	> .card-body {

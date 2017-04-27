@@ -107,7 +107,7 @@
                         <a href="my-favorites-not-login.html">
                             <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
-                            My Favorites | Watchlist
+                            Favorites | Watchlist
                         </a>
                     </li>
                     <li>
@@ -783,7 +783,12 @@
                         </h2>
                         <div class="share-watchlist">
                             <div class="add-watchlist">
-                                <a href="" class="btn"><i class="fa fa-plus"></i></a>
+                                <a class="btn">
+                                    <i class="fa fa-plus"
+                                       data-placement="top"
+                                       data-toggle="tooltip"  
+                                       title="Add to Watchlist"></i>
+                                </a>
                             </div>
                             <div class="share">
                                 <a tabindex="0"
@@ -794,7 +799,12 @@
                                    data-trigger="focus"
                                    role="button"
                                    title="false" 
-                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>"><i class="fa fa-share"></i></a>
+                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                        <i  class="fa fa-share"
+                                            data-placement="top"
+                                            data-toggle="tooltip"  
+                                            title="Share"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1350,30 +1360,34 @@
         $(document).ready(function() {
 
 
-        $('.card').each(function() {
-            var $CommentText = $('.card-footer .comment > p'),
-                $CommentTextFound = $(this).find($CommentText);
+            $('.card').each(function() {
+                var $CommentText = $('.card-footer .comment > p'),
+                    $CommentTextFound = $(this).find($CommentText);
 
-            if ($CommentTextFound.height() > 57) {
-                $CommentTextFound.addClass('ellipsis');
-                if ($CommentTextFound.hasClass('ellipsis')) {
-                    $CommentTextFound.parent().parent().prepend(
-                        $('<div/>', {'class': 'btn-more-comments'}).append(
-                            $('<a/>', {'class': 'dot-icon act-toggle-more-comments', 'href': '#'}).append(
-                                $('<img/>', {'src': '/static/base/images/newsfeed/dot_icon.png'})
+                if ($CommentTextFound.height() > 57) {
+                    $CommentTextFound.addClass('ellipsis');
+                    if ($CommentTextFound.hasClass('ellipsis')) {
+                        $CommentTextFound.parent().parent().prepend(
+                            $('<div/>', {'class': 'btn-more-comments'}).append(
+                                $('<a/>', {'class': 'dot-icon act-toggle-more-comments', 'href': '#'}).append(
+                                    $('<img/>', {'src': '/static/base/images/newsfeed/dot_icon.png'})
+                                )
                             )
-                        )
-                        .append(
-                            $('<a/>', {'class': 'arrow-icon act-toggle-more-comments', 'href': '#'}).append(
-                                $('<img/>', {'src': '/static/base/images/icon/arrow_down_icon.svg'})
+                            .append(
+                                $('<a/>', {'class': 'arrow-icon act-toggle-more-comments', 'href': '#'}).append(
+                                    $('<img/>', {'src': '/static/base/images/icon/arrow_down_icon.svg'})
+                                )
                             )
-                        )
-                    );
+                        );
+                    }
+                } else {
+                    $CommentTextFound.removeClass('ellipsis');
                 }
-            } else {
-                $CommentTextFound.removeClass('ellipsis');
-            }
-        });
+            });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
 
 
         });

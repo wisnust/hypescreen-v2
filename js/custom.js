@@ -178,13 +178,13 @@ $(document).ready(function() {
     })
 
     // Browse post
-    $('.card-2').each(function(index, el) {
-        $(this).hover(function() {
-            $(this).parent().prevAll().addClass('unselected');
-            $(this).parent().nextAll().addClass('unselected');
-        }, function() {
-            $(this).parent().prevAll().removeClass('unselected');
-            $(this).parent().nextAll().removeClass('unselected');
-        });
-    });
+    // $('.card-2').each(function(index, el) {
+    //     $(this).hover(function() {
+    //         $(this).parent().prevAll().addClass('unselected');
+    //         $(this).parent().nextAll().addClass('unselected');
+    //     }, function() {
+    //         $(this).parent().prevAll().removeClass('unselected');
+    //         $(this).parent().nextAll().removeClass('unselected');
+    //     });
+    // });
 });
