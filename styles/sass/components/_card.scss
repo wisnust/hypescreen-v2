@@ -44,11 +44,11 @@
 					display: block;
 					& + .tooltip > {
 						.tooltip-inner {
-							background-color: lighten(#bf61a7, 10%) !important;
+							background-color: #bf61a7 !important;
 							width: 115px;
 						}
 						.tooltip-arrow { 
-							border-top-color: lighten(#bf61a7, 10%) !important; 
+							border-top-color: #bf61a7 !important; 
 						}
 					}
 				}
@@ -306,9 +306,13 @@
 			    > a {
 			    	display: block;
 			    }
+				> a.pull-left img {
+					height: auto;
+					width: 80px;
+				}
 			}
 			.share-watchlist {
-				@include position(absolute, $top: 325px, $right: 20px);
+				@include position(absolute, $top: 318px, $right: 20px);
 				z-index: 30;
 			}
 		}
@@ -421,7 +425,7 @@
 	@media (max-width: 322px) {
 		> .card-header {
 			.share-watchlist {
-				top: 335px;
+				top: 285px;
 				right: 15px;
 			}
 		}

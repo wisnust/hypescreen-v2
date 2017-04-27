@@ -6979,10 +6979,10 @@ a, .btn-link {
         font-size: 13px !important;
         display: block; }
         .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-inner {
-          background-color: #ce85bb !important;
+          background-color: #bf61a7 !important;
           width: 115px; }
         .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-arrow {
-          border-top-color: #ce85bb !important; }
+          border-top-color: #bf61a7 !important; }
     .card > .card-header .tooltip {
       z-index: 1000; }
   .card > .card-body {
@@ -7239,9 +7239,12 @@ a, .btn-link {
         line-height: 20px; }
         .card > .card-header h2.episode > a {
           display: block; }
+        .card > .card-header h2.episode > a.pull-left img {
+          height: auto;
+          width: 80px; }
       .card > .card-header .share-watchlist {
         position: absolute;
-        top: 325px;
+        top: 318px;
         right: 20px;
         z-index: 30; }
     .card > .card-body {
@@ -7343,7 +7346,7 @@ a, .btn-link {
           transform: scale(0); } }
   @media (max-width: 322px) {
     .card > .card-header .share-watchlist {
-      top: 335px;
+      top: 285px;
       right: 15px; } }
   @media (min-width: 768px) {
     .card > .card-body > .content > .likes {
@@ -8057,7 +8060,7 @@ a, .btn-link {
       font-size: 10px;
       padding: 10px; }
       .share > a > i + .tooltip > .tooltip-inner, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-inner {
-        background-color: #89c1f4;
+        background-color: #5aa9f0;
         border-radius: 100px;
         color: #fff;
         font-size: 12px;
@@ -8065,7 +8068,7 @@ a, .btn-link {
         padding: 4px 12px;
         max-width: 400px !important; }
       .share > a > i + .tooltip > .tooltip-arrow, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-arrow {
-        border-top-color: #89c1f4; }
+        border-top-color: #5aa9f0; }
     .share > a:hover, .card > .card-header .add-watchlist > a:hover, .share > a:focus, .card > .card-header .add-watchlist > a:focus {
       background: rgba(90, 169, 240, 0.2); }
       .share > a:hover > i, .card > .card-header .add-watchlist > a:hover > i, .share > a:focus > i, .card > .card-header .add-watchlist > a:focus > i {
