@@ -10,9 +10,9 @@
 			> a {
 				border: 0px !important;
 				display: block;
-				padding: 10px 0px;
+				padding: 5px 0px;
 				> .content-heading {
-					font-size: 28px;
+					font-size: 32px;
 					margin-bottom: 0px;
 					padding: 0px;
 					transition: color .3s;
@@ -41,11 +41,6 @@
 					}
 				}
 			}
-		}
-	}
-	> .tab-content {
-		#mywatchlist {
-			padding-top: 45px;
 		}
 	}
 	@media (max-width: $screen-xs-max) {

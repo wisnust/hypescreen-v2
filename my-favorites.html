@@ -106,8 +106,9 @@
                         <a href="my-favorites.html">
                             <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
-                            Favorites | Watchlist
+                            Favorites | 
                         </a>
+                        <a href="">Watchlist</a>
                     </li>
                     <li>
                         <a href="#">
@@ -492,19 +493,19 @@
                     <ul class="nav-tabs list-inline clearfix" role="tablist">
                         <li class="active">
                             <a href="#myfavorites" aria-controls="myfavorites" role="tab" data-toggle="tab">
-                            	<h2 class="content-heading">Favorites</h2>
+                            	<h2 class="content-heading">FAVORITES</h2>
                             </a>
                         </li>
                         <li>
                             <a href="#mywatchlist" aria-controls="mywatchlist" role="tab" data-toggle="tab">
-                            	<h2 class="content-heading">MY WATCHLIST</h2>
+                            	<h2 class="content-heading">WATCHLIST</h2>
                             </a>
                         </li> 
                     </ul>
                     <!-- Tab Content -->
                     <div class="tab-content">
 
-                        <!-- Favorites TAB -->
+                        <!-- FAVORITES TAB -->
                         <div role="tabpanel" class="tab-pane fade in active" id="myfavorites">
 
 			                <!-- Post Tabs -->
@@ -835,316 +836,663 @@
 
                         </div>
 
-                        <!-- MY WATCHLIST TAB -->
+                        <!-- WATCHLIST TAB -->
                         <div role="tabpanel" class="tab-pane fade" id="mywatchlist">
 
+                            <!-- Post Tabs -->
+                            <div class="post-tabs">
 
-			                <!-- Newsfeed Post 1 -->
-			                <div id="newsfeed-post-1" class="card">
+                                <!-- Nav tabs -->
+                                <ul class="nav-tabs list-inline" role="tablist">
+                                    <li class="active">
+                                        <a href="#mostpopular-watchlist" aria-controls="mostpopular-watchlist" role="tab" data-toggle="tab">most popular</a>
+                                    </li>
+                                    <li>
+                                        <a href="#mostrecent-watchlist" aria-controls="mostrecent-watchlist" role="tab" data-toggle="tab">most recent</a>
+                                    </li> 
+                                </ul>
 
-			                    <!-- Header -->
-			                    <div class="card-header">
-			                        <h2 class="episode">
-			                            <a class="pull-left" href="#" target="_blank">
-			                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
-			                            </a>
-			                            <div class="pull-left">
-			                                <p>New Episode:</p>
-			                                <p>
-			                                    <a href="#" target="_blank">Journeyman Pictures</a>
-			                                </p>
-			                            </div>
-			                        </h2>
-                                    <div class="share-watchlist">
-                                        <div class="add-watchlist">
-                                            <a class="btn">
-                                                <i class="fa fa-plus"
-                                                   data-placement="top"
-                                                   data-toggle="tooltip"  
-                                                   title="Add to Watchlist"></i>
-                                            </a>
-                                        </div>
-                                        <div class="share">
-                                            <a tabindex="0"
-                                               class="btn share-popover"   
-                                               data-placement="top"
-                                               data-html="true" 
-                                               data-toggle="popover"  
-                                               data-trigger="focus"
-                                               role="button"
-                                               title="false" 
-                                               data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
-                                                    <i  class="fa fa-share"
-                                                        data-placement="top"
-                                                        data-toggle="tooltip"  
-                                                        title="Share"></i>
-                                            </a>
+                                <!-- Tab Content -->
+                                <div class="tab-content">
+
+                                    <!-- MOST POPULAR TAB -->
+                                    <div role="tabpanel" class="tab-pane fade in active" id="mostpopular-watchlist">
+                                        <div class="row">
+
+                                            <!-- Newsfeed Post 1 -->
+                                            <div class="col-sm-12">
+                                                <div id="newsfeed-post-1" class="card">
+
+                                                    <!-- Header -->
+                                                    <div class="card-header">
+                                                        <h2 class="episode">
+                                                            <a class="pull-left" href="#" target="_blank">
+                                                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                            </a>
+                                                            <div class="pull-left">
+                                                                <p>New Episode:</p>
+                                                                <p>
+                                                                    <a href="#" target="_blank">Journeyman Pictures</a>
+                                                                </p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="share-watchlist">
+                                                            <div class="add-watchlist">
+                                                                <a class="btn">
+                                                                    <i class="fa fa-plus"
+                                                                       data-placement="top"
+                                                                       data-toggle="tooltip"  
+                                                                       title="Add to Watchlist"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="share">
+                                                                <a tabindex="0"
+                                                                   class="btn share-popover"   
+                                                                   data-placement="top"
+                                                                   data-html="true" 
+                                                                   data-toggle="popover"  
+                                                                   data-trigger="focus"
+                                                                   role="button"
+                                                                   title="false" 
+                                                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                                        <i  class="fa fa-share"
+                                                                            data-placement="top"
+                                                                            data-toggle="tooltip"  
+                                                                            title="Share"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Body -->
+                                                    <div class="card-body clearfix">
+
+                                                        <!-- Video -->
+                                                        <div class="video">
+                                                            <div class="video-inner">
+                                                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                                <div class="play-time">
+                                                                    <span>01:23:23</span>
+                                                                </div>
+                                                                <div class="btn-play">
+                                                                    <a href=""><i class="fa fa-play"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="content">
+                                                            <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                            <!-- Tags -->
+                                                            <div class="tags">
+                                                                <a href="" class="btn tag-item">Sports</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Funny</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                            </div>
+
+                                                            <!-- Likes -->
+                                                            <div class="likes clearfix">
+                                                                <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                                <span class="count">23</span>
+                                                                <span class="text">Likes</span>
+                                                            </div>
+
+                                                            <!-- Source -->
+                                                            <div class="source">
+                                                                <img src="images/newsfeed/youtube_logo.svg"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+
+                                                        <!-- Comments -->
+                                                        <div class="comments">
+                                                            <a href="#">
+                                                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                                <h5>Ollie Pena</h5>
+                                                                <span class="time">3 hours ago</span>
+                                                            </a>
+                                                            <p>
+                                                                Astronomy Binoculars A Great Alternative
+                                                            </p>
+                                                        </div>
+
+                                                        <!-- More comments -->
+                                                        <div class="more-comments collapse" id="MoreComments-1">
+
+                                                            <!-- Comments -->
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Isaiah Delgado</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Edward Hayes</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Las Vegas How To Have Non Gambling Related Fun
+                                                                </p>  
+                                                            </div> 
+                                                            <div class="comments comments-form clearfix">
+                                                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                                    Leave a comment
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Btn more comments -->
+                                                        <div class="btn-more-comments hidden-xs">
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+
+                                                        <!-- Btn more comments mobile -->
+                                                        <div class="btn-more-comments visible-xs">
+                                                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                                <img src="images/newsfeed/dot_icon.png" />
+                                                            </a> 
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Newsfeed Post 2 -->
+                                            <div class="col-sm-12">
+                                                <div id="newsfeed-post-2" class="card">
+
+                                                    <!-- Header -->
+                                                    <div class="card-header">
+                                                        <h2 class="episode">
+                                                            <a class="pull-left" href="#" target="_blank">
+                                                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                            </a>
+                                                            <div class="pull-left">
+                                                                <p>New Episode:</p>
+                                                                <p>
+                                                                    <a href="#" target="_blank">7 Minutes in Heaven</a>
+                                                                </p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="share-watchlist">
+                                                            <div class="add-watchlist">
+                                                                <a class="btn">
+                                                                    <i class="fa fa-plus"
+                                                                       data-placement="top"
+                                                                       data-toggle="tooltip"  
+                                                                       title="Add to Watchlist"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="share">
+                                                                <a tabindex="0"
+                                                                   class="btn share-popover"   
+                                                                   data-placement="top"
+                                                                   data-html="true" 
+                                                                   data-toggle="popover"  
+                                                                   data-trigger="focus"
+                                                                   role="button"
+                                                                   title="false" 
+                                                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                                        <i  class="fa fa-share"
+                                                                            data-placement="top"
+                                                                            data-toggle="tooltip"  
+                                                                            title="Share"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Body -->
+                                                    <div class="card-body clearfix">
+
+                                                        <!-- Video -->
+                                                        <div class="video">
+                                                            <div class="video-inner">
+                                                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                                <div class="play-time">
+                                                                    <span>01:23:23</span>
+                                                                </div>
+                                                                <div class="btn-play">
+                                                                    <a href=""><i class="fa fa-play"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="content">
+                                                            <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                            <!-- Tags -->
+                                                            <div class="tags">
+                                                                <a href="" class="btn tag-item">Sports</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Funny</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                            </div>
+
+                                                            <!-- Likes -->
+                                                            <div class="likes clearfix">
+                                                                <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                                <span class="count">23</span>
+                                                                <span class="text">Likes</span>
+                                                            </div>
+
+                                                            <!-- Source -->
+                                                            <div class="source">
+                                                                <img src="images/newsfeed/youtube_logo.svg"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+
+                                                        <!-- Comments -->
+                                                        <div class="comments">
+                                                            <a href="#">
+                                                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                                <h5>Ollie Pena</h5>
+                                                                <span class="time">3 hours ago</span>
+                                                            </a>
+                                                            <p>
+                                                                Astronomy Binoculars A Great Alternative
+                                                            </p>
+                                                        </div>
+
+                                                        <!-- More comments -->
+                                                        <div class="more-comments collapse" id="MoreComments-2">
+
+                                                            <!-- Comments -->
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Isaiah Delgado</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Edward Hayes</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Las Vegas How To Have Non Gambling Related Fun
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments comments-form clearfix">
+                                                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                                    Leave a comment
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Btn more comments -->
+                                                        <div class="btn-more-comments">
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+
+                                                        <!-- Btn more comments mobile -->
+                                                        <div class="btn-more-comments visible-xs">
+                                                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/newsfeed/dot_icon.png" />
+                                                            </a> 
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-			                    </div>
 
-			                    <!-- Body -->
-			                    <div class="card-body clearfix">
+                                    <!-- MOST RECENT TAB -->
+                                    <div role="tabpanel" class="tab-pane fade" id="mostrecent-watchlist">
+                                        <div class="row">
 
-			                        <!-- Video -->
-			                        <div class="video">
-			                            <div class="video-inner">
-			                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
-			                                <div class="play-time">
-			                                    <span>01:23:23</span>
-			                                </div>
-			                                <div class="btn-play">
-			                                    <a href=""><i class="fa fa-play"></i></a>
-			                                </div>
-			                            </div>
-			                        </div>
+                                            <!-- Newsfeed Post 1 -->
+                                            <div class="col-sm-12">
+                                                <div id="newsfeed-post-1" class="card">
 
-			                        <!-- Content -->
-			                        <div class="content">
-			                            <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
-			                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+                                                    <!-- Header -->
+                                                    <div class="card-header">
+                                                        <h2 class="episode">
+                                                            <a class="pull-left" href="#" target="_blank">
+                                                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                            </a>
+                                                            <div class="pull-left">
+                                                                <p>New Episode:</p>
+                                                                <p>
+                                                                    <a href="#" target="_blank">Deep Look</a>
+                                                                </p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="share-watchlist">
+                                                            <div class="add-watchlist">
+                                                                <a class="btn">
+                                                                    <i class="fa fa-plus"
+                                                                       data-placement="top"
+                                                                       data-toggle="tooltip"  
+                                                                       title="Add to Watchlist"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="share">
+                                                                <a tabindex="0"
+                                                                   class="btn share-popover"   
+                                                                   data-placement="top"
+                                                                   data-html="true" 
+                                                                   data-toggle="popover"  
+                                                                   data-trigger="focus"
+                                                                   role="button"
+                                                                   title="false" 
+                                                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                                        <i  class="fa fa-share"
+                                                                            data-placement="top"
+                                                                            data-toggle="tooltip"  
+                                                                            title="Share"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-			                            <!-- Tags -->
-			                            <div class="tags">
-			                                <a href="" class="btn tag-item">Sports</a>
-			                                <a href="" class="btn tag-item">Football</a>
-			                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
-			                                <a href="" class="btn tag-item">Funny</a>
-			                                <a href="" class="btn tag-item">Football</a>
-			                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
-			                            </div>
+                                                    <!-- Body -->
+                                                    <div class="card-body clearfix">
 
-			                            <!-- Likes -->
-			                            <div class="likes clearfix">
-			                                <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
-			                                <span class="count">23</span>
-			                                <span class="text">Likes</span>
-			                            </div>
+                                                        <!-- Video -->
+                                                        <div class="video">
+                                                            <div class="video-inner">
+                                                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                                <div class="play-time">
+                                                                    <span>01:23:23</span>
+                                                                </div>
+                                                                <div class="btn-play">
+                                                                    <a href=""><i class="fa fa-play"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-			                            <!-- Source -->
-			                            <div class="source">
-			                                <img src="images/newsfeed/youtube_logo.svg"/>
-			                            </div>
-			                        </div>
-			                    </div>
-			                    <div class="card-footer">
+                                                        <!-- Content -->
+                                                        <div class="content">
+                                                            <h3 title="Why Does Your Cat's Tongue Feel Like Sandpaper? | Deep Look">Why Does Your Cat's Tongue Feel Like Sandpaper? | Deep Look</h3>
+                                                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
 
-			                        <!-- Comments -->
-			                        <div class="comments">
-			                            <a href="#">
-			                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
-			                                <h5>Ollie Pena</h5>
-			                                <span class="time">3 hours ago</span>
-			                            </a>
-			                            <p>
-			                                Astronomy Binoculars A Great Alternative
-			                            </p>
-			                        </div>
+                                                            <!-- Tags -->
+                                                            <div class="tags">
+                                                                <a href="" class="btn tag-item">Sports</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Funny</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Funny</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                            </div>
 
-			                        <!-- More comments -->
-			                        <div class="more-comments collapse" id="MoreComments-1">
+                                                            <!-- Likes -->
+                                                            <div class="likes clearfix">
+                                                                <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                                <span class="count">23</span>
+                                                                <span class="text">Likes</span>
+                                                            </div>
 
-			                            <!-- Comments -->
-			                            <div class="comments">
-			                                <a href="#">
-			                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-			                                    <h5>Isaiah Delgado</h5>
-			                                    <span class="time">3 days ago</span>
-			                                </a>
-			                                <p>
-			                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
-			                                </p>  
-			                            </div>
-			                            <div class="comments">
-			                                <a href="#">
-			                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-			                                    <h5>Edward Hayes</h5>
-			                                    <span class="time">3 days ago</span>
-			                                </a>
-			                                <p>
-			                                    Las Vegas How To Have Non Gambling Related Fun
-			                                </p>  
-			                            </div> 
-			                            <div class="comments comments-form clearfix">
-			                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
-			                                    Leave a comment
-			                                </button>
-			                            </div>
-			                        </div>
+                                                            <!-- Source -->
+                                                            <div class="source">
+                                                                <img src="images/newsfeed/youtube_logo.svg"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
 
-			                        <!-- Btn more comments -->
-			                        <div class="btn-more-comments hidden-xs">
-			                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
-			                                <img src="images/icon/arrow_down_icon.svg" />
-			                            </a> 
-			                        </div>
+                                                        <!-- Comments -->
+                                                        <div class="comments">
+                                                            <a href="#">
+                                                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                                <h5>Ollie Pena</h5>
+                                                                <span class="time">3 hours ago</span>
+                                                            </a>
+                                                            <p>
+                                                                Astronomy Binoculars A Great Alternative
+                                                            </p>
+                                                        </div>
 
-			                        <!-- Btn more comments mobile -->
-			                        <div class="btn-more-comments visible-xs">
-			                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
-			                                <img src="images/newsfeed/dot_icon.png" />
-			                            </a> 
-			                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
-			                                <img src="images/icon/arrow_down_icon.svg" />
-			                            </a> 
-			                        </div>
-			                    </div>
-			                </div>
+                                                        <!-- More comments -->
+                                                        <div class="more-comments collapse" id="MoreComments-3">
 
-			                <!-- Newsfeed Post 2 -->
-			                <div id="newsfeed-post-2" class="card">
+                                                            <!-- Comments -->
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Isaiah Delgado</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Edward Hayes</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Las Vegas How To Have Non Gambling Related Fun
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments comments-form clearfix">
+                                                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                                    Leave a comment
+                                                                </button>
+                                                            </div>
+                                                        </div>
 
-			                    <!-- Header -->
-			                    <div class="card-header">
-			                        <h2 class="episode">
-			                            <a class="pull-left" href="#" target="_blank">
-			                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
-			                            </a>
-			                            <div class="pull-left">
-			                                <p>New Episode:</p>
-			                                <p>
-			                                    <a href="#" target="_blank">7 Minutes in Heaven</a>
-			                                </p>
-			                            </div>
-			                        </h2>
-                                    <div class="share-watchlist">
-                                        <div class="add-watchlist">
-                                            <a class="btn">
-                                                <i class="fa fa-plus"
-                                                   data-placement="top"
-                                                   data-toggle="tooltip"  
-                                                   title="Add to Watchlist"></i>
-                                            </a>
-                                        </div>
-                                        <div class="share">
-                                            <a tabindex="0"
-                                               class="btn share-popover"   
-                                               data-placement="top"
-                                               data-html="true" 
-                                               data-toggle="popover"  
-                                               data-trigger="focus"
-                                               role="button"
-                                               title="false" 
-                                               data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
-                                                    <i  class="fa fa-share"
-                                                        data-placement="top"
-                                                        data-toggle="tooltip"  
-                                                        title="Share"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-			                    </div>
+                                                        <!-- Btn more comments -->
+                                                        <div class="btn-more-comments">
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
 
-			                    <!-- Body -->
-			                    <div class="card-body clearfix">
+                                                        <!-- Btn more comments mobile -->
+                                                        <div class="btn-more-comments visible-xs">
+                                                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                                <img src="images/newsfeed/dot_icon.png" />
+                                                            </a> 
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-			                        <!-- Video -->
-			                        <div class="video">
-			                            <div class="video-inner">
-			                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
-			                                <div class="play-time">
-			                                    <span>01:23:23</span>
-			                                </div>
-			                                <div class="btn-play">
-			                                    <a href=""><i class="fa fa-play"></i></a>
-			                                </div>
-			                            </div>
-			                        </div>
+                                            <!-- Newsfeed Post 2 -->
+                                            <div class="col-sm-12">
+                                                <div id="newsfeed-post-2" class="card">
 
-			                        <!-- Content -->
-			                        <div class="content">
-			                            <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
-			                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+                                                    <!-- Header -->
+                                                    <div class="card-header">
+                                                        <h2 class="episode">
+                                                            <a class="pull-left" href="#" target="_blank">
+                                                                <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                            </a>
+                                                            <div class="pull-left">
+                                                                <p>New Episode:</p>
+                                                                <p>
+                                                                    <a href="#" target="_blank">7 Minutes in Heaven</a>
+                                                                </p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="share-watchlist">
+                                                            <div class="add-watchlist">
+                                                                <a class="btn">
+                                                                    <i class="fa fa-plus"
+                                                                       data-placement="top"
+                                                                       data-toggle="tooltip"  
+                                                                       title="Add to Watchlist"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="share">
+                                                                <a tabindex="0"
+                                                                   class="btn share-popover"   
+                                                                   data-placement="top"
+                                                                   data-html="true" 
+                                                                   data-toggle="popover"  
+                                                                   data-trigger="focus"
+                                                                   role="button"
+                                                                   title="false" 
+                                                                   data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                                        <i  class="fa fa-share"
+                                                                            data-placement="top"
+                                                                            data-toggle="tooltip"  
+                                                                            title="Share"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-			                            <!-- Tags -->
-			                            <div class="tags">
-			                                <a href="" class="btn tag-item">Sports</a>
-			                                <a href="" class="btn tag-item">Football</a>
-			                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
-			                                <a href="" class="btn tag-item">Funny</a>
-			                                <a href="" class="btn tag-item">Football</a>
-			                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
-			                            </div>
+                                                    <!-- Body -->
+                                                    <div class="card-body clearfix">
 
-			                            <!-- Likes -->
-			                            <div class="likes clearfix">
-			                                <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
-			                                <span class="count">23</span>
-			                                <span class="text">Likes</span>
-			                            </div>
+                                                        <!-- Video -->
+                                                        <div class="video">
+                                                            <div class="video-inner">
+                                                                <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                                <div class="play-time">
+                                                                    <span>01:23:23</span>
+                                                                </div>
+                                                                <div class="btn-play">
+                                                                    <a href=""><i class="fa fa-play"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-			                            <!-- Source -->
-			                            <div class="source">
-			                                <img src="images/newsfeed/youtube_logo.svg"/>
-			                            </div>
-			                        </div>
-			                    </div>
-			                    <div class="card-footer">
+                                                        <!-- Content -->
+                                                        <div class="content">
+                                                            <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                            <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
 
-			                        <!-- Comments -->
-			                        <div class="comments">
-			                            <a href="#">
-			                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
-			                                <h5>Ollie Pena</h5>
-			                                <span class="time">3 hours ago</span>
-			                            </a>
-			                            <p>
-			                                Astronomy Binoculars A Great Alternative
-			                            </p>
-			                        </div>
+                                                            <!-- Tags -->
+                                                            <div class="tags">
+                                                                <a href="" class="btn tag-item">Sports</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                                <a href="" class="btn tag-item">Funny</a>
+                                                                <a href="" class="btn tag-item">Football</a>
+                                                                <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                            </div>
 
-			                        <!-- More comments -->
-			                        <div class="more-comments collapse" id="MoreComments-2">
+                                                            <!-- Likes -->
+                                                            <div class="likes clearfix">
+                                                                <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                                <span class="count">23</span>
+                                                                <span class="text">Likes</span>
+                                                            </div>
 
-			                            <!-- Comments -->
-			                            <div class="comments">
-			                                <a href="#">
-			                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-			                                    <h5>Isaiah Delgado</h5>
-			                                    <span class="time">3 days ago</span>
-			                                </a>
-			                                <p>
-			                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
-			                                </p>  
-			                            </div>
-			                            <div class="comments">
-			                                <a href="#">
-			                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
-			                                    <h5>Edward Hayes</h5>
-			                                    <span class="time">3 days ago</span>
-			                                </a>
-			                                <p>
-			                                    Las Vegas How To Have Non Gambling Related Fun
-			                                </p>  
-			                            </div>
-			                            <div class="comments comments-form clearfix">
-			                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
-			                                    Leave a comment
-			                                </button>
-			                            </div>
-			                        </div>
+                                                            <!-- Source -->
+                                                            <div class="source">
+                                                                <img src="images/newsfeed/youtube_logo.svg"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
 
-			                        <!-- Btn more comments -->
-			                        <div class="btn-more-comments">
-			                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
-			                                <img src="images/icon/arrow_down_icon.svg" />
-			                            </a> 
-			                        </div>
+                                                        <!-- Comments -->
+                                                        <div class="comments">
+                                                            <a href="#">
+                                                                <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                                <h5>Ollie Pena</h5>
+                                                                <span class="time">3 hours ago</span>
+                                                            </a>
+                                                            <p>
+                                                                Astronomy Binoculars A Great Alternative
+                                                            </p>
+                                                        </div>
 
-			                        <!-- Btn more comments mobile -->
-			                        <div class="btn-more-comments visible-xs">
-			                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
-			                                <img src="images/newsfeed/dot_icon.png" />
-			                            </a> 
-			                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
-			                                <img src="images/icon/arrow_down_icon.svg" />
-			                            </a> 
-			                        </div>
-			                    </div>
-			                </div>
+                                                        <!-- More comments -->
+                                                        <div class="more-comments collapse" id="MoreComments-2">
 
+                                                            <!-- Comments -->
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Isaiah Delgado</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments">
+                                                                <a href="#">
+                                                                    <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                                    <h5>Edward Hayes</h5>
+                                                                    <span class="time">3 days ago</span>
+                                                                </a>
+                                                                <p>
+                                                                    Las Vegas How To Have Non Gambling Related Fun
+                                                                </p>  
+                                                            </div>
+                                                            <div class="comments comments-form clearfix">
+                                                                <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                                    Leave a comment
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Btn more comments -->
+                                                        <div class="btn-more-comments">
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+
+                                                        <!-- Btn more comments mobile -->
+                                                        <div class="btn-more-comments visible-xs">
+                                                            <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/newsfeed/dot_icon.png" />
+                                                            </a> 
+                                                            <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                                <img src="images/icon/arrow_down_icon.svg" />
+                                                            </a> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div> 
+                                    </div> 
+                                </div>
+                            </div><!-- end./ Post Tabs -->
 
                         </div>
+
                     </div>
 	                
 

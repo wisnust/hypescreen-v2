@@ -6765,9 +6765,9 @@ a, .btn-link {
       .favorites-tabs > .nav-tabs > li > a {
         border: 0px !important;
         display: block;
-        padding: 10px 0px; }
+        padding: 5px 0px; }
         .favorites-tabs > .nav-tabs > li > a > .content-heading {
-          font-size: 28px;
+          font-size: 32px;
           margin-bottom: 0px;
           padding: 0px;
           transition: color .3s; }
@@ -6781,8 +6781,6 @@ a, .btn-link {
         color: #919191; }
       .favorites-tabs > .nav-tabs > li.active > a > .content-heading {
         color: #616161; }
-  .favorites-tabs > .tab-content #mywatchlist {
-    padding-top: 45px; }
   @media (max-width: 767px) {
     .favorites-tabs {
       margin-top: 0px; }
