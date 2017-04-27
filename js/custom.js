@@ -177,6 +177,11 @@ $(document).ready(function() {
         $('#email_subscribe').focus()
     })
 
+    // Tooltip init
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
     // Browse post
     // $('.card-2').each(function(index, el) {
     //     $(this).hover(function() {
