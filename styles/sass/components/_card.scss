@@ -42,6 +42,15 @@
 					color: #bf61a7 !important;
 					font-size: 13px !important;
 					display: block;
+					& + .tooltip > {
+						.tooltip-inner {
+							background-color: lighten(#bf61a7, 10%) !important;
+							width: 115px;
+						}
+						.tooltip-arrow { 
+							border-top-color: lighten(#bf61a7, 10%) !important; 
+						}
+					}
 				}
 			}
 		}

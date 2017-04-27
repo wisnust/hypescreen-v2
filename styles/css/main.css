@@ -6980,6 +6980,11 @@ a, .btn-link {
         color: #bf61a7 !important;
         font-size: 13px !important;
         display: block; }
+        .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-inner {
+          background-color: #ce85bb !important;
+          width: 115px; }
+        .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-arrow {
+          border-top-color: #ce85bb !important; }
     .card > .card-header .tooltip {
       z-index: 1000; }
   .card > .card-body {
@@ -8053,13 +8058,16 @@ a, .btn-link {
     .share > a > i, .card > .card-header .add-watchlist > a > i {
       font-size: 10px;
       padding: 10px; }
-      .share > a > i + .tooltip >, .card > .card-header .add-watchlist > a > i + .tooltip > {
-        min-width: 400px; }
-        .share > a > i + .tooltip > .tooltip-inner, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-inner {
-          background-color: #f00;
-          max-width: 400px !important; }
-        .share > a > i + .tooltip > .tooltip-arrow, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-arrow {
-          border-top-color: #f00; }
+      .share > a > i + .tooltip > .tooltip-inner, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-inner {
+        background-color: #89c1f4;
+        border-radius: 100px;
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: -0.09px;
+        padding: 4px 12px;
+        max-width: 400px !important; }
+      .share > a > i + .tooltip > .tooltip-arrow, .card > .card-header .add-watchlist > a > i + .tooltip > .tooltip-arrow {
+        border-top-color: #89c1f4; }
     .share > a:hover, .card > .card-header .add-watchlist > a:hover, .share > a:focus, .card > .card-header .add-watchlist > a:focus {
       background: rgba(90, 169, 240, 0.2); }
       .share > a:hover > i, .card > .card-header .add-watchlist > a:hover > i, .share > a:focus > i, .card > .card-header .add-watchlist > a:focus > i {
