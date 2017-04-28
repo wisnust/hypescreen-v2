@@ -1,57 +1,54 @@
 // Tabs
-.favorites-tabs {
+.nav-heading {
+	@include clearfix;
+	border: 0px;
+	margin-bottom: 50px;
 	margin-top: 15px;
-	> .nav-tabs {
-		@include clearfix;
-		border: 0px;
-		margin-bottom: 50px;
-		> li {
-			width: 50%;
+	> li {
+		width: 50%;
+		> a {
+			border: 0px !important;
+			display: block;
+			padding: 5px 0px;
+			> .content-heading {
+				font-size: 32px;
+				margin-bottom: 0px;
+				padding: 0px;
+				transition: color .3s;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		&:first-of-type {
+			border-right: 1px solid #bdbdbd;
+		}
+		&:last-of-type {
+			border-left: 1px solid #bdbdbd;
+		}
+		&:hover, &:focus {
 			> a {
-				border: 0px !important;
-				display: block;
-				padding: 5px 0px;
 				> .content-heading {
-					font-size: 32px;
-					margin-bottom: 0px;
-					padding: 0px;
-					transition: color .3s;
-					&:after {
-						display: none;
-					}
+					color: #919191;
 				}
 			}
-			&:first-of-type {
-				border-right: 1px solid #bdbdbd;
-			}
-			&:last-of-type {
-				border-left: 1px solid #bdbdbd;
-			}
-			&:hover, &:focus {
-				> a {
-					> .content-heading {
-						color: #919191;
-					}
-				}
-			}
-			&.active {
-				> a {
-					> .content-heading {
-						color: #616161;
-					}
+		}
+		&.active {
+			> a {
+				pointer-events: none;
+				> .content-heading {
+					color: #616161;
 				}
 			}
 		}
 	}
 	@media (max-width: $screen-xs-max) {
+		margin-bottom: 30px;
 		margin-top: 0px;
-		> .nav-tabs {
-			margin-bottom: 30px;
-			> li {
-				> a {
-					> .content-heading {
-						font-size: 16px;
-					}
+		> li {
+			> a {
+				> .content-heading {
+					font-size: 16px;
 				}
 			}
 		}

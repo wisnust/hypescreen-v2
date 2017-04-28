@@ -8,7 +8,7 @@
     <meta name="description" content="Web TV Worth Watching">
     <meta name="author" content="">
     <link rel="icon" href="">
-    <title>My Favorites | hypeSCREEN</title>
+    <title>My Watchlist | hypeSCREEN</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="styles/css/main.css" rel="stylesheet">
@@ -37,7 +37,7 @@
 
                 <!-- Logo -->
                 <div class="navbar-header"> 
-                    <a class="navbar-brand" href="user-login.html"><img src="images/logo.svg" alt="logo" title="logo"></a> 
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo" title="logo"></a> 
                     <p class="tagline">
                         The best shows on the internet. <br/>In one place.
                     </p>
@@ -58,17 +58,17 @@
                     <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-twitter"></i></a></li>
 
                     <!-- User not login -->
-                    <!-- <li class="nav-signup"><a href="#">Sign Up</a></li> 
-                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li> -->
+                    <li class="nav-signup"><a href="#">Sign Up</a></li> 
+                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li>
 
                     <!-- User login -->
-                    <li class="dropdown user-login">
+                    <!-- <li class="dropdown user-login">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" class="user-img" alt="user" title="user" /></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">My profile</a></li>
-                            <li><a href="my-favorites-not-login.html">Log out</a></li> 
+                            <li><a href="index.html">Log out</a></li> 
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div> 
         </nav>
@@ -89,7 +89,7 @@
                 <!-- List menu -->
                 <ul class="list-menu">
                     <li>
-                        <a href="user-login.html">
+                        <a href="index.html">
                             <img class="is-visible" src="images/icon/sidenav/newsfeed.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/newsfeed_blue.svg"/> 
                             Newsfeed
@@ -102,14 +102,14 @@
                             Browse shows
                         </a>
                     </li>
-                    <li class="active active-favorites">
-                        <a href="my-favorites.html">
+                    <li class="active active-watchlist">
+                        <a href="my-favorites-not-login.html">
                             <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
                             <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
                             Favorites
                         </a>
                         <div class="separate">|</div>
-                        <a href="my-watchlist.html">Watchlist</a>
+                        <a href="my-watchlist-not-login.html">Watchlist</a>
                     </li>
                     <li>
                         <a href="#">
@@ -469,7 +469,7 @@
                     </div>
 
                 </div>
-
+                
                 <!-- Subscribe form -->
                 <div class="subscribe-form"> 
                     <form>
@@ -489,345 +489,12 @@
         ===========================================-->
         <div class="main-content">
             <div class="container">
-                <!-- Nav heading -->
-                <ul class="nav-heading list-inline clearfix nav-tabs" role="tablist">
-                    <li class="active">
-                        <a href="my-favorites.html">
-                            <h2 class="content-heading">FAVORITES</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="my-watchlist.html">
-                            <h2 class="content-heading">WATCHLIST</h2>
-                        </a>
-                    </li> 
-                </ul>
+                <h2 class="content-heading">WATCHLIST</h2>
 
-                <!-- FAVORITES TAB -->
-                <div class="post-tabs">
-
-                    <!-- Nav tabs -->
-                    <ul class="nav-tabs list-inline" role="tablist">
-                        <li class="active">
-                            <a href="#mostpopular" aria-controls="mostpopular" role="tab" data-toggle="tab">most popular</a>
-                        </li>
-                        <li>
-                            <a href="#mostrecent" aria-controls="mostrecent" role="tab" data-toggle="tab">most recent</a>
-                        </li> 
-                    </ul>
-
-                    <!-- Tab Content -->
-                    <div class="tab-content">
-
-                        <!-- MOST POPULAR TAB -->
-                        <div role="tabpanel" class="tab-pane fade in active" id="mostpopular">
-                            <div class="row">
-                                    
-                                <!-- Favorites post 1 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-1" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_1.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">6.1 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">10 Essentials</h2>
-                                            <p>
-                                                Some of the most stylish guys in the world count down the ten items they can’t live without, from Big Boi to Nate Berkus…
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_1_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Favorites post 2 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-2" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_2.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">2.1 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">3 Steps To…</h2>
-                                            <p>
-                                                The hottest beauty trends made easy. Host Elaine Welteroth, Teen Vogue’s beauty and health director, teams up with top…
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_2_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Favorites post 3 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-3" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_3.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">5.2 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">5 Ways To…</h2>
-                                            <p>
-                                                Do you want awesome abs, sculpted arms or a better butt? Watch 5 Ways To… In each episode, celebrity trainers..
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_3_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Favorites post 4 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-3" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_1.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">7.8 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">10 Essentials</h2>
-                                            <p>
-                                                Some of the most stylish guys in the world count down the ten items they can’t live without, from Big Boi to Nate Berkus…
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_3_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
- 
-                            </div>
-                        </div>
-
-                        <!-- MOST RECENT TAB -->
-                        <div role="tabpanel" class="tab-pane fade" id="mostrecent">
-                            <div class="row">
-
-                                <!-- Favorites post 1 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-2" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_2.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">2.1 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">3 Steps To…</h2>
-                                            <p>
-                                                The hottest beauty trends made easy. Host Elaine Welteroth, Teen Vogue’s beauty and health director, teams up with top…
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_2_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                 <!-- Favorites post 2 -->
-                                <div class="col-sm-6">
-                                    <div id="my-favorites-1" class="card-2">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="images/browse_shows/post_1.png" alt="image" title="image"/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="ratings">
-                                                <!-- Show Rating -->
-                                                <div class="show-rating">
-
-                                                    <!-- Result -->
-                                                    <a class="result btn">6.1 <span class="small">/ 10</span></a>
-                                                </div>
-
-                                                <div class="action">
-                                                    <a class="star btn"><img src="images/browse_shows/star_white.png"/></a>
-
-                                                    <!-- Reset -->
-                                                    <a class="reset"><i class="fa fa-close"></i></a> 
-                                                    
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_on.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-                                                    <a class="btn btn-link"><img src="images/browse_shows/star_off.png"></a>
-
-                                                </div>
-
-                                            </div>
-                                            <h2 class="title">10 Essentials</h2>
-                                            <p>
-                                                Some of the most stylish guys in the world count down the ten items they can’t live without, from Big Boi to Nate Berkus…
-                                            </p>
-                                            <a href="#" class="btn btn-danger">Remove</a>
-                                            <div class="source">
-                                                <a href="#"><img src="images/browse_shows/post_1_source.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div> 
-                        </div> 
-                    </div>
-                </div><!-- end./ Post Tabs -->
+                <div class="my-favorites-not-login">
+                    <p>Log in to view your watchlist</p>
+                    <a  href="#" data-toggle="modal" data-target="#loginModalFavorites" class="btn btn-primary">Log in</a>
+                </div>
 
             </div>
         </div>
@@ -839,7 +506,7 @@
     <footer id="footer" class="footer">
         <div class="footer-inner container">
             <div class="footer-logo">
-                <a href="user-login.html">
+                <a href="#">
                     <img src="images/logo_footer.png" alt="logo" title="logo" />
                 </a>
             </div>
@@ -887,6 +554,38 @@
         </div>
     </div>
 
+    <!-- LOG IN Favorites Modal -->
+    <div class="modal fade v-middle login-modal" id="loginModalFavorites" tabindex="-1" role="dialog" aria-labelledby="loginModalFavoritesLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+
+                        <!-- Button Login -->  <!-- <button type="submit" class="btn btn-primary btn-login">Log in</button> -->
+
+                        <!-- For demo page --> <a href="my-watchlist.html" class="btn btn-primary btn-login">Log in</a>
+
+                        <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
     <!-- SUBSCRIBER MODAL -->
     <div class="modal fade v-middle subscriber-modal" id="subscriberModal" tabindex="-1" role="dialog" aria-labelledby="subscriberModalLabel">
         <div class="modal-dialog" role="document">
@@ -921,7 +620,6 @@
             </div>
         </div>
     </div>
-    
     <!--==========================================
                   Javascript core
     ===========================================-->

@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web TV Worth Watching">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>My Watchlist | hypeSCREEN</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="styles/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:400,700" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--==========================================
+                        Header 
+    ===========================================-->
+    <header>
+        <nav class="navbar navbar-hypescreen">
+            <div class="container-fluid">
+            
+                <!-- Nav mobile -->
+                <div class="nav-mobile">
+                    <a id="show-sidenav"> 
+                        <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
+                        <img src="images/icon/close_icon.svg" class="close-icon" /> 
+                    </a>
+                </div>
+
+                <!-- Logo -->
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="user-login.html"><img src="images/logo.svg" alt="logo" title="logo"></a> 
+                    <p class="tagline">
+                        The best shows on the internet. <br/>In one place.
+                    </p>
+                </div>
+
+                <!-- Navbar menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li class="form-nav">
+                        <form class="form-search navbar-form navbar-left">
+                            <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn btn-submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="hidden-xs hidden-sm"><a href=""><i class="fa fa-twitter"></i></a></li>
+
+                    <!-- User not login -->
+                    <!-- <li class="nav-signup"><a href="#">Sign Up</a></li> 
+                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li> -->
+
+                    <!-- User login -->
+                    <li class="dropdown user-login">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" class="user-img" alt="user" title="user" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="my-watchlist-not-login.html">Log out</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+    <!--==========================================
+                        Main
+    ===========================================-->
+    <main>
+
+
+        <!--==========================================
+                            SIDENAV
+        ===========================================-->
+        <aside class="sidenav">
+            <nav> 
+
+                <!-- List menu -->
+                <ul class="list-menu">
+                    <li>
+                        <a href="user-login.html">
+                            <img class="is-visible" src="images/icon/sidenav/newsfeed.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/newsfeed_blue.svg"/> 
+                            Newsfeed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="browse.html">
+                            <img class="is-visible" src="images/icon/sidenav/browse_shows.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/browse_shows_blue.svg"/> 
+                            Browse shows
+                        </a>
+                    </li>
+                    <li class="active active-watchlist">
+                        <a href="my-favorites.html">
+                            <img class="is-visible" src="images/icon/sidenav/favorites.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/favorites_blue.svg"/> 
+                            Favorites
+                        </a>
+                        <div class="separate">|</div>
+                        <a href="my-watchlist.html">Watchlist</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="is-visible" src="images/icon/sidenav/comment.svg"/> 
+                            <img class="is-hidden" src="images/icon/sidenav/comment_blue.svg"/> 
+                            The Hypescreen Report
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="sidenav-tab">
+                    
+                    <ul class="list-inline">
+                        <li class="active"><a href="#categories" data-toggle="tab">Categories</a></li>
+                        <li><a href="#top-shows" data-toggle="tab">Top Shows</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- Filter -->
+                        <div id="categories" class="filter tab-pane active fade in">
+
+                            <!-- Filter Header -->
+                            <div class="filter-header visible-xs visible-sm">
+                                <h2>- CHOOSE YOUR CATEGORIES -</h2>
+                            </div>
+
+                            <!-- Filter Body -->
+                            <div class="filter-body">
+
+                                <!-- Filter Tags -->
+                                <div class="filter-tags">
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="business-tech">
+                                        <div class="image">
+                                            <img src="images/tags/business_technology.jpg" alt="Business & tech" 
+                                            title="Business & tech"/>
+                                        </div>
+                                        <span>BUSINESS &amp; TECH</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="food-drink">
+                                        <div class="image">
+                                            <img src="images/tags/food_drink.jpg" alt="Food & Drink" title="Food & Drink"/>
+                                        </div>
+                                        <span>FOOD &amp; DRINK</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="funny">
+                                        <div class="image">
+                                            <img src="images/tags/funny.jpg" alt="Funny" title="Funny"/>
+                                        </div>
+                                        <span>FUNNY</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="nerd-culture">
+                                        <div class="image">
+                                            <img src="images/tags/nerd_culture.jpg" alt="Nerd Culture" title="Nerd Culture"/>
+                                        </div>
+                                        <span>NERD CULTURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="pop-culture">
+                                        <div class="image">
+                                            <img src="images/tags/pop_culture.jpg" alt="Pop Culture" title="Pop Culture"/>
+                                        </div>
+                                        <span>POP CULTURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="real-stories">
+                                        <div class="image">
+                                            <img src="images/tags/real_stories.jpg" alt="Real Stories" title="Real Stories"/>
+                                        </div>
+                                        <span>REAL STORIES</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="science-nature">
+                                        <div class="image">
+                                            <img src="images/tags/science_nature.jpg" alt="Science Nature" title="Science Nature"/>
+                                        </div>
+                                        <span>SCIENCE &amp; NATURE</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="style-beauty">
+                                        <div class="image">
+                                            <img src="images/tags/style_beauty.jpg" alt="Style Beauty" title="Style Beauty"/>
+                                        </div>
+                                        <span>STYLE &amp; BEAUTY</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="web-series">
+                                        <div class="image">
+                                            <img src="images/tags/web_series.jpg" alt="Web Series" title="Web Series"/>
+                                        </div>
+                                        <span>WEB SERIES</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-tag btn-tag-image" data-color="default" 
+                                        data-slug="youtubers">
+                                        <div class="image">
+                                            <img src="images/tags/youtubers.jpg" alt="Youtubers" title="Youtubers"/>
+                                        </div>
+                                        <span>YOUTUBERS</span>
+                                    </button>
+
+                                </div>
+
+                                <!-- Filter Action -->
+                                <div class="filter-action clearfix">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-link">Clear All</a>
+                                        <a href="#" class="btn btn-link">Select All</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                All Publishers <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Filter More Tags -->
+                                <div class="filter-more-tags collapse" id="MoreTags">
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="animation">
+                                            Animation
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="art-dance">
+                                            Art &amp; Dance
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="automotive">
+                                            Automotive
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="celebs">
+                                            Celebs
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="classics">
+                                            Classics
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="diy-life-hacks">
+                                            DIY &amp; Life Hacks
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="documentary">
+                                            Documentary
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="drama">
+                                            Drama
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="game-shows">
+                                            Game Shows
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="gaming">
+                                            Gaming
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="health-wellness">
+                                            Health &amp; Wellness
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="history">
+                                            History
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="home-hospitality">
+                                            Home &amp; Hospitality
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="informational">
+                                            Informational
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="instructional">
+                                            Instructional
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="interviews">
+                                            Interviews
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="jokes-sketch-comedy">
+                                            Jokes &amp; Sketch Comedy
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="lgbt">
+                                            LGBT
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="love-dating">
+                                            Love &amp; Dating
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="movies-tv">
+                                            Movies &amp; TV
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="music">
+                                            Music
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="news">
+                                            News
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="our-faves">
+                                            Our Faves
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="parenthood">
+                                            Parenthood
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="pranks">
+                                            Pranks
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="reality">
+                                            Reality
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="reviews">
+                                            Reviews
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="sci-fi">
+                                            Sci Fi
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="sports">
+                                            Sports
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="talk-shows">
+                                            Talk Shows
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="teens">
+                                            Teens
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="thriller">
+                                            Thriller
+                                        </button>
+                                    
+                                        <button type="button" class="btn btn-tag" data-color="default" data-slug="travel">
+                                            Travel
+                                        </button>
+                                    
+                                </div>
+
+                                <!-- Button Filter More Tags -->
+                                <div class="btn-more-tags">
+                                    <a class="btn btn-link collapsed" role="button" data-toggle="collapse" href="#MoreTags" aria-expanded="false" aria-controls="MoreTags">
+                                        <img src="images/icon/tags_icon.svg"/>&nbsp; <span>More Tags</span>
+                                    </a> 
+                                </div> 
+                            </div>
+                        </div> 
+
+                        <!-- Top Shows -->
+                        <div id="top-shows" class="top-shows tab-pane fade">
+                            <h2 class="visible-xs visible-sm">TOP SHOWS: </h2>
+                            <div class="top-shows-dropdown"> 
+                                <div class="btn-group clearfix">
+                                    <button type="button" class="btn btn-primary">Funny</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/ice_hockey.png" alt="ice hockey" title="ice hockey">
+                                        <h5 class="title">
+                                            <span>Comedians In Cars Getting Coffee</span>
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/pewdiepie.png" alt="pewdiepie" title="pewdiepie">
+                                        <h5 class="title">
+                                            <span>Every Single Step w/ Nigel Lythgoe</span>
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/klub.png" alt="klub" title="klub">
+                                        <h5 class="title">
+                                            <span>Conde Nast Traveler</span>
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/kontrafakt.png" alt="kontrafakt" title="kontrafakt">
+                                        <h5 class="title">
+                                            <span>Donald Trump's The Art of The Deal </span>
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/moto.png" alt="moto" title="moto">
+                                        <h5 class="title">
+                                            <span>BlackBoxTV Presents | Horror Anthology Series</span>
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/top_shows/camel.png" alt="camel" title="camel">
+                                        <h5 class="title">
+                                            <span>Fear of the Walking Dead Flight 462</span>
+                                        </h5>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="go-to">GO TO ALL <img src="images/icon/arrow_right_icon.svg"/></a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Subscribe form -->
+                <div class="subscribe-form"> 
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="email_subscribe" class="form-control" placeholder="Subscribe to our newsletter"/>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscriberModal">Subscribe</button>
+                    </form>
+                </div>
+            </nav>
+            <div id="nav-backdrop"></div>
+        </aside>
+
+
+        <!--==========================================
+                        MAIN CONTENT
+        ===========================================-->
+        <div class="main-content">
+            <div class="container">
+                <!-- Nav heading -->
+                <ul class="nav-heading list-inline clearfix nav-tabs" role="tablist">
+                    <li>
+                        <a href="my-favorites.html">
+                            <h2 class="content-heading">FAVORITES</h2>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="my-watchlist.html">
+                            <h2 class="content-heading">WATCHLIST</h2>
+                        </a>
+                    </li> 
+                </ul>
+
+                <!-- WATCHLIST TAB -->
+                <div class="post-tabs">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav-tabs list-inline" role="tablist">
+                        <li class="active">
+                            <a href="#mostpopular-watchlist" aria-controls="mostpopular-watchlist" role="tab" data-toggle="tab">most popular</a>
+                        </li>
+                        <li>
+                            <a href="#mostrecent-watchlist" aria-controls="mostrecent-watchlist" role="tab" data-toggle="tab">most recent</a>
+                        </li> 
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+
+                        <!-- MOST POPULAR TAB -->
+                        <div role="tabpanel" class="tab-pane fade in active" id="mostpopular-watchlist">
+                            <div class="row">
+
+                                <!-- Newsfeed Post 1 -->
+                                <div class="col-sm-12">
+                                    <div id="newsfeed-post-1" class="card">
+
+                                        <!-- Header -->
+                                        <div class="card-header">
+                                            <h2 class="episode">
+                                                <a class="pull-left" href="#" target="_blank">
+                                                    <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                </a>
+                                                <div class="pull-left">
+                                                    <p>New Episode:</p>
+                                                    <p>
+                                                        <a href="#" target="_blank">Journeyman Pictures</a>
+                                                    </p>
+                                                </div>
+                                            </h2>
+                                            <div class="share-watchlist">
+                                                <div class="add-watchlist">
+                                                    <a class="btn">
+                                                        <i class="fa fa-minus"
+                                                           data-placement="top"
+                                                           data-toggle="tooltip"  
+                                                           title="Remove from Watchlist"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="share">
+                                                    <a tabindex="0"
+                                                       class="btn share-popover"   
+                                                       data-placement="top"
+                                                       data-html="true" 
+                                                       data-toggle="popover"  
+                                                       data-trigger="focus"
+                                                       role="button"
+                                                       title="false" 
+                                                       data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                            <i  class="fa fa-share"
+                                                                data-placement="top"
+                                                                data-toggle="tooltip"  
+                                                                title="Share"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="card-body clearfix">
+
+                                            <!-- Video -->
+                                            <div class="video">
+                                                <div class="video-inner">
+                                                    <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                    <div class="play-time">
+                                                        <span>01:23:23</span>
+                                                    </div>
+                                                    <div class="btn-play">
+                                                        <a href=""><i class="fa fa-play"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="content">
+                                                <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                <!-- Tags -->
+                                                <div class="tags">
+                                                    <a href="" class="btn tag-item">Sports</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Funny</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                </div>
+
+                                                <!-- Likes -->
+                                                <div class="likes clearfix">
+                                                    <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                    <span class="count">23</span>
+                                                    <span class="text">Likes</span>
+                                                </div>
+
+                                                <!-- Source -->
+                                                <div class="source">
+                                                    <img src="images/newsfeed/youtube_logo.svg"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+
+                                            <!-- Comments -->
+                                            <div class="comments">
+                                                <a href="#">
+                                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                    <h5>Ollie Pena</h5>
+                                                    <span class="time">3 hours ago</span>
+                                                </a>
+                                                <p>
+                                                    Astronomy Binoculars A Great Alternative
+                                                </p>
+                                            </div>
+
+                                            <!-- More comments -->
+                                            <div class="more-comments collapse" id="MoreComments-1">
+
+                                                <!-- Comments -->
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Isaiah Delgado</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                    </p>  
+                                                </div>
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Edward Hayes</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Las Vegas How To Have Non Gambling Related Fun
+                                                    </p>  
+                                                </div> 
+                                                <div class="comments comments-form clearfix">
+                                                    <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                        Leave a comment
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Btn more comments -->
+                                            <div class="btn-more-comments hidden-xs">
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+
+                                            <!-- Btn more comments mobile -->
+                                            <div class="btn-more-comments visible-xs">
+                                                <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                    <img src="images/newsfeed/dot_icon.png" />
+                                                </a> 
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-1" aria-expanded="false" aria-controls="MoreComments-1">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Newsfeed Post 2 -->
+                                <div class="col-sm-12">
+                                    <div id="newsfeed-post-2" class="card">
+
+                                        <!-- Header -->
+                                        <div class="card-header">
+                                            <h2 class="episode">
+                                                <a class="pull-left" href="#" target="_blank">
+                                                    <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                </a>
+                                                <div class="pull-left">
+                                                    <p>New Episode:</p>
+                                                    <p>
+                                                        <a href="#" target="_blank">7 Minutes in Heaven</a>
+                                                    </p>
+                                                </div>
+                                            </h2>
+                                            <div class="share-watchlist">
+                                                <div class="add-watchlist">
+                                                    <a class="btn">
+                                                        <i class="fa fa-minus"
+                                                           data-placement="top"
+                                                           data-toggle="tooltip"  
+                                                           title="Remove from Watchlist"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="share">
+                                                    <a tabindex="0"
+                                                       class="btn share-popover"   
+                                                       data-placement="top"
+                                                       data-html="true" 
+                                                       data-toggle="popover"  
+                                                       data-trigger="focus"
+                                                       role="button"
+                                                       title="false" 
+                                                       data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                            <i  class="fa fa-share"
+                                                                data-placement="top"
+                                                                data-toggle="tooltip"  
+                                                                title="Share"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="card-body clearfix">
+
+                                            <!-- Video -->
+                                            <div class="video">
+                                                <div class="video-inner">
+                                                    <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                    <div class="play-time">
+                                                        <span>01:23:23</span>
+                                                    </div>
+                                                    <div class="btn-play">
+                                                        <a href=""><i class="fa fa-play"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="content">
+                                                <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                <!-- Tags -->
+                                                <div class="tags">
+                                                    <a href="" class="btn tag-item">Sports</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Funny</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                </div>
+
+                                                <!-- Likes -->
+                                                <div class="likes clearfix">
+                                                    <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                    <span class="count">23</span>
+                                                    <span class="text">Likes</span>
+                                                </div>
+
+                                                <!-- Source -->
+                                                <div class="source">
+                                                    <img src="images/newsfeed/youtube_logo.svg"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+
+                                            <!-- Comments -->
+                                            <div class="comments">
+                                                <a href="#">
+                                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                    <h5>Ollie Pena</h5>
+                                                    <span class="time">3 hours ago</span>
+                                                </a>
+                                                <p>
+                                                    Astronomy Binoculars A Great Alternative
+                                                </p>
+                                            </div>
+
+                                            <!-- More comments -->
+                                            <div class="more-comments collapse" id="MoreComments-2">
+
+                                                <!-- Comments -->
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Isaiah Delgado</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                    </p>  
+                                                </div>
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Edward Hayes</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Las Vegas How To Have Non Gambling Related Fun
+                                                    </p>  
+                                                </div>
+                                                <div class="comments comments-form clearfix">
+                                                    <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                        Leave a comment
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Btn more comments -->
+                                            <div class="btn-more-comments">
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+
+                                            <!-- Btn more comments mobile -->
+                                            <div class="btn-more-comments visible-xs">
+                                                <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/newsfeed/dot_icon.png" />
+                                                </a> 
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- MOST RECENT TAB -->
+                        <div role="tabpanel" class="tab-pane fade" id="mostrecent-watchlist">
+                            <div class="row">
+
+                                <!-- Newsfeed Post 1 -->
+                                <div class="col-sm-12">
+                                    <div id="newsfeed-post-1" class="card">
+
+                                        <!-- Header -->
+                                        <div class="card-header">
+                                            <h2 class="episode">
+                                                <a class="pull-left" href="#" target="_blank">
+                                                    <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                </a>
+                                                <div class="pull-left">
+                                                    <p>New Episode:</p>
+                                                    <p>
+                                                        <a href="#" target="_blank">Deep Look</a>
+                                                    </p>
+                                                </div>
+                                            </h2>
+                                            <div class="share-watchlist">
+                                                <div class="add-watchlist">
+                                                    <a class="btn">
+                                                        <i class="fa fa-minus"
+                                                           data-placement="top"
+                                                           data-toggle="tooltip"  
+                                                           title="Remove from Watchlist"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="share">
+                                                    <a tabindex="0"
+                                                       class="btn share-popover"   
+                                                       data-placement="top"
+                                                       data-html="true" 
+                                                       data-toggle="popover"  
+                                                       data-trigger="focus"
+                                                       role="button"
+                                                       title="false" 
+                                                       data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                            <i  class="fa fa-share"
+                                                                data-placement="top"
+                                                                data-toggle="tooltip"  
+                                                                title="Share"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="card-body clearfix">
+
+                                            <!-- Video -->
+                                            <div class="video">
+                                                <div class="video-inner">
+                                                    <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                    <div class="play-time">
+                                                        <span>01:23:23</span>
+                                                    </div>
+                                                    <div class="btn-play">
+                                                        <a href=""><i class="fa fa-play"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="content">
+                                                <h3 title="Why Does Your Cat's Tongue Feel Like Sandpaper? | Deep Look">Why Does Your Cat's Tongue Feel Like Sandpaper? | Deep Look</h3>
+                                                <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                <!-- Tags -->
+                                                <div class="tags">
+                                                    <a href="" class="btn tag-item">Sports</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Funny</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Funny</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                </div>
+
+                                                <!-- Likes -->
+                                                <div class="likes clearfix">
+                                                    <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                    <span class="count">23</span>
+                                                    <span class="text">Likes</span>
+                                                </div>
+
+                                                <!-- Source -->
+                                                <div class="source">
+                                                    <img src="images/newsfeed/youtube_logo.svg"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+
+                                            <!-- Comments -->
+                                            <div class="comments">
+                                                <a href="#">
+                                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                    <h5>Ollie Pena</h5>
+                                                    <span class="time">3 hours ago</span>
+                                                </a>
+                                                <p>
+                                                    Astronomy Binoculars A Great Alternative
+                                                </p>
+                                            </div>
+
+                                            <!-- More comments -->
+                                            <div class="more-comments collapse" id="MoreComments-3">
+
+                                                <!-- Comments -->
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Isaiah Delgado</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                    </p>  
+                                                </div>
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Edward Hayes</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Las Vegas How To Have Non Gambling Related Fun
+                                                    </p>  
+                                                </div>
+                                                <div class="comments comments-form clearfix">
+                                                    <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                        Leave a comment
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Btn more comments -->
+                                            <div class="btn-more-comments">
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+
+                                            <!-- Btn more comments mobile -->
+                                            <div class="btn-more-comments visible-xs">
+                                                <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                    <img src="images/newsfeed/dot_icon.png" />
+                                                </a> 
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-3" aria-expanded="false" aria-controls="MoreComments-3">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Newsfeed Post 2 -->
+                                <div class="col-sm-12">
+                                    <div id="newsfeed-post-2" class="card">
+
+                                        <!-- Header -->
+                                        <div class="card-header">
+                                            <h2 class="episode">
+                                                <a class="pull-left" href="#" target="_blank">
+                                                    <img src="images/newsfeed/thumb_mwLQ8OQ.gif">
+                                                </a>
+                                                <div class="pull-left">
+                                                    <p>New Episode:</p>
+                                                    <p>
+                                                        <a href="#" target="_blank">7 Minutes in Heaven</a>
+                                                    </p>
+                                                </div>
+                                            </h2>
+                                            <div class="share-watchlist">
+                                                <div class="add-watchlist">
+                                                    <a class="btn">
+                                                        <i class="fa fa-minus"
+                                                           data-placement="top"
+                                                           data-toggle="tooltip"  
+                                                           title="Remove from Watchlist"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="share">
+                                                    <a tabindex="0"
+                                                       class="btn share-popover"   
+                                                       data-placement="top"
+                                                       data-html="true" 
+                                                       data-toggle="popover"  
+                                                       data-trigger="focus"
+                                                       role="button"
+                                                       title="false" 
+                                                       data-content="<div class='row no-gutters'><div class='col-xs-6'><a href=''><i class='fa fa-twitter'></i> Share on Twitter</a></div><div class='col-xs-6'><a href=''><i class='fa fa-facebook'></i> Share on Facebook</a></div></div><img class='share-arrow' src='images/newsfeed/share_arrow.svg'/>">
+                                                            <i  class="fa fa-share"
+                                                                data-placement="top"
+                                                                data-toggle="tooltip"  
+                                                                title="Share"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="card-body clearfix">
+
+                                            <!-- Video -->
+                                            <div class="video">
+                                                <div class="video-inner">
+                                                    <img src="images/newsfeed/post_1.png" alt="image" title="image" />
+                                                    <div class="play-time">
+                                                        <span>01:23:23</span>
+                                                    </div>
+                                                    <div class="btn-play">
+                                                        <a href=""><i class="fa fa-play"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="content">
+                                                <h3 title="Episode 3: Paul Rudd in the House">Episode 3: Paul Rudd in the House</h3>
+                                                <span class="time"><i class="fa fa-calendar-o"></i> TODAY</span>
+
+                                                <!-- Tags -->
+                                                <div class="tags">
+                                                    <a href="" class="btn tag-item">Sports</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                    <a href="" class="btn tag-item">Funny</a>
+                                                    <a href="" class="btn tag-item">Football</a>
+                                                    <a href="" class="btn tag-item">Jokes &amp; Stand up</a>
+                                                </div>
+
+                                                <!-- Likes -->
+                                                <div class="likes clearfix">
+                                                    <button class="btn not-like" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                                    <span class="count">23</span>
+                                                    <span class="text">Likes</span>
+                                                </div>
+
+                                                <!-- Source -->
+                                                <div class="source">
+                                                    <img src="images/newsfeed/youtube_logo.svg"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+
+                                            <!-- Comments -->
+                                            <div class="comments">
+                                                <a href="#">
+                                                    <img src="images/newsfeed/profile.png" class="avatar" alt="image" title="image"/>
+                                                    <h5>Ollie Pena</h5>
+                                                    <span class="time">3 hours ago</span>
+                                                </a>
+                                                <p>
+                                                    Astronomy Binoculars A Great Alternative
+                                                </p>
+                                            </div>
+
+                                            <!-- More comments -->
+                                            <div class="more-comments collapse" id="MoreComments-2">
+
+                                                <!-- Comments -->
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Isaiah Delgado</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Creating Remarkable Poster Prints Through 4 Color Poster Printing
+                                                    </p>  
+                                                </div>
+                                                <div class="comments">
+                                                    <a href="#">
+                                                        <img src="images/newsfeed/profile_2.png" class="avatar" alt="image" title="image"/>
+                                                        <h5>Edward Hayes</h5>
+                                                        <span class="time">3 days ago</span>
+                                                    </a>
+                                                    <p>
+                                                        Las Vegas How To Have Non Gambling Related Fun
+                                                    </p>  
+                                                </div>
+                                                <div class="comments comments-form clearfix">
+                                                    <button type="button" class="btn btn-primary anonymous pull-right" data-toggle="modal" data-target="#loginModal">
+                                                        Leave a comment
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Btn more comments -->
+                                            <div class="btn-more-comments">
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+
+                                            <!-- Btn more comments mobile -->
+                                            <div class="btn-more-comments visible-xs">
+                                                <a class="collapsed dot-icon" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/newsfeed/dot_icon.png" />
+                                                </a> 
+                                                <a class="collapsed" data-toggle="collapse" href="#MoreComments-2" aria-expanded="false" aria-controls="MoreComments-2">
+                                                    <img src="images/icon/arrow_down_icon.svg" />
+                                                </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div> 
+                        </div> 
+                    </div>
+                </div><!-- end./ Post Tabs -->
+
+            </div>
+        </div>
+    </main>
+
+    <!--==========================================
+                        Footer
+    ===========================================-->
+    <footer id="footer" class="footer">
+        <div class="footer-inner container">
+            <div class="footer-logo">
+                <a href="user-login.html">
+                    <img src="images/logo_footer.png" alt="logo" title="logo" />
+                </a>
+            </div>
+            <div class="footer-links">
+                <ul class="list-inline">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright &copy; 2016 <a href="#">hypeSCREEN</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOG IN Modal -->
+    <div class="modal fade v-middle login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+
+                        <!-- Button Login -->  <!-- <button type="submit" class="btn btn-primary btn-login">Log in</button> -->
+
+                        <!-- For demo page --> <a href="user-login.html" class="btn btn-primary btn-login">Log in</a>
+
+                        <a href="#" class="btn btn-link btn-signup">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBER MODAL -->
+    <div class="modal fade v-middle subscriber-modal" id="subscriberModal" tabindex="-1" role="dialog" aria-labelledby="subscriberModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                    <div class="subscribe-img">
+                        <img src="images/subscribe_img.png" class="img-responsive" alt="subscribe" title="subscribe"/>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>
+                        Get the best shows online <br/>
+                        delivered straight to your inbox.
+                    </h2>
+                    <!-- Subscribe form -->
+                    <div class="subscribe-form"> 
+                        <form>
+                            <div class="form-group">
+                                <input id="email_subscribe" type="email" name="email_subscribe" class="form-control" placeholder="Enter your email address"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                    <h3>
+                        Or sign up, <br/>
+                        to get the newsletter + full access to site.
+                    </h3>
+                    <a href="#" class="btn btn-primary btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <!--==========================================
+                  Javascript core
+    ===========================================-->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/modernizr.min.js"></script>   -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
