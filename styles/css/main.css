@@ -6786,44 +6786,6 @@ a, .btn-link {
         margin: 0 auto 30px;
         top: -7px; } }
 
-.nav-heading {
-  border: 0px;
-  margin-bottom: 50px;
-  margin-top: 15px; }
-  .nav-heading::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .nav-heading > li {
-    width: 50%; }
-    .nav-heading > li > a {
-      border: 0px !important;
-      display: block;
-      padding: 5px 0px; }
-      .nav-heading > li > a > .content-heading {
-        font-size: 32px;
-        margin-bottom: 0px;
-        padding: 0px;
-        transition: color .3s; }
-        .nav-heading > li > a > .content-heading:after {
-          display: none; }
-    .nav-heading > li:first-of-type {
-      border-right: 1px solid #bdbdbd; }
-    .nav-heading > li:last-of-type {
-      border-left: 1px solid #bdbdbd; }
-    .nav-heading > li:hover > a > .content-heading, .nav-heading > li:focus > a > .content-heading {
-      color: #919191; }
-    .nav-heading > li.active > a {
-      pointer-events: none; }
-      .nav-heading > li.active > a > .content-heading {
-        color: #616161; }
-  @media (max-width: 767px) {
-    .nav-heading {
-      margin-bottom: 30px;
-      margin-top: 0px; }
-      .nav-heading > li > a > .content-heading {
-        font-size: 16px; } }
-
 .post-tabs {
   margin-bottom: 20px; }
   .post-tabs > .nav-tabs {
