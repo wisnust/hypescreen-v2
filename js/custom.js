@@ -37,9 +37,9 @@ $(document).ready(function() {
     }
 
     // SideNav on hover overflow
-    $sideNav.hover(function() {
+    $sideNav.mouseenter(function() {
         $('html, body').css('overflow', 'hidden');
-    }, function() {
+    }).mouseleave(function() {
         $('html, body').css('overflow', 'auto');
     });
 
