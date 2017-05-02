@@ -54,6 +54,18 @@
 	 				font-weight: 700;
 	 			}
 	 		}
+ 			&.about-nav {
+ 				> a {
+					font-size: 13px;
+					font-style: italic;
+					letter-spacing: 0.2px;
+					line-height: 17px;
+					padding: 21px 15px;
+					text-align: center;
+					text-transform: none;
+					width: 115px;
+	 			}
+ 			}
 	 		&.nav-signup {
 	 			background-color: #469ce7;
 	 			> a {
@@ -173,12 +185,13 @@
 						color: rgba($c-white, .8);
 					}
 				}
-				&:nth-child(1) {
-					margin-top: 12px;
+				&.about-nav {
 					> a {
-						// padding: 23px 17px;
+						font-size: 16px;
+						padding: 10px;
+						width: 100%;
 					}
-				}  
+				}
 				&.nav-signup {
 					background-color: transparent;
 					float: left;

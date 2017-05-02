@@ -6077,6 +6077,15 @@ a, .btn-link {
       .navbar-hypescreen .navbar-nav > li > a > i {
         font-size: 20px;
         font-weight: 700; }
+    .navbar-hypescreen .navbar-nav > li.about-nav > a {
+      font-size: 13px;
+      font-style: italic;
+      letter-spacing: 0.2px;
+      line-height: 17px;
+      padding: 21px 15px;
+      text-align: center;
+      text-transform: none;
+      width: 115px; }
     .navbar-hypescreen .navbar-nav > li.nav-signup {
       background-color: #469ce7; }
       .navbar-hypescreen .navbar-nav > li.nav-signup > a {
@@ -6184,8 +6193,10 @@ a, .btn-link {
             .navbar-hypescreen .navbar-nav > li > a:hover, .navbar-hypescreen .navbar-nav > li > a:focus {
               background-color: transparent;
               color: rgba(255, 255, 255, 0.8); }
-          .navbar-hypescreen .navbar-nav > li:nth-child(1) {
-            margin-top: 12px; }
+          .navbar-hypescreen .navbar-nav > li.about-nav > a {
+            font-size: 16px;
+            padding: 10px;
+            width: 100%; }
           .navbar-hypescreen .navbar-nav > li.nav-signup {
             background-color: transparent;
             float: left;
@@ -8444,6 +8455,64 @@ a, .btn-link {
                 font-size: 12px; }
               .video.video-large > .video-inner > .btn-play > a:hover {
                 opacity: 1; } }
+
+#about-page .main-content .container {
+  color: #757575;
+  margin-left: 0;
+  padding: 65px 15px 30px 80px;
+  width: 900px; }
+#about-page h1 {
+  font-size: 38px;
+  color: #5aa9f0;
+  margin: 0px; }
+#about-page p.lead {
+  margin: 10px 0px;
+  font-weight: 400;
+  opacity: .8; }
+#about-page .about-content h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 30px;
+  margin-top: 0px; }
+#about-page .about-content p {
+  font-size: 14px;
+  padding: 5px 5px 5px 30px;
+  opacity: .8; }
+  #about-page .about-content p.no-padding {
+    padding-left: 0; }
+#about-page .about-content a {
+  color: #5aa9f0;
+  font-weight: bold; }
+  #about-page .about-content a:hover, #about-page .about-content a:focus {
+    color: #2b91ec; }
+#about-page .about-content .btn.btn-info {
+  background: #5aa9f0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 30px;
+  line-height: 19px;
+  border: 0px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  #about-page .about-content .btn.btn-info:hover, #about-page .about-content .btn.btn-info:focus {
+    background-color: #4e91ce; }
+@media (max-width: 991px) {
+  #about-page .main-content .container {
+    padding: 30px 20px;
+    width: 100%; }
+  #about-page h1 {
+    font-size: 24px;
+    text-align: center; }
+  #about-page .about-content {
+    padding-left: 0px; }
+    #about-page .about-content h2 {
+      margin-top: 0px; }
+    #about-page .about-content p {
+      padding-left: 20px; } }
 
 .my-favorites-not-login {
   text-align: center;
