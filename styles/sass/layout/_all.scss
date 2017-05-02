@@ -75,6 +75,9 @@ a, .btn-link {
 	}
 	@media (max-width: $screen-sm-max) {
 		padding-left: 0px;
+		&:before {
+			display: none;
+		}
 		.container {
 			width: 100%;
 			padding: 30px 20px; 

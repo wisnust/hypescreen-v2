@@ -36,13 +36,6 @@ $(document).ready(function() {
         });
     }
 
-    // SideNav on hover overflow
-    $sideNav.mouseenter(function() {
-        $('html, body').css('overflow', 'hidden');
-    }).mouseleave(function() {
-        $('html, body').css('overflow', 'auto');
-    });
-
     $(window).on("resize", function() {
 
         $topNav.css('top', $logoHeight + $('.list-menu').height() + 40); // 40 is padding of .list-menu 
