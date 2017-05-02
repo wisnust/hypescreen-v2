@@ -55,6 +55,9 @@
 	 			}
 	 		}
  			&.about-nav {
+ 				position: absolute;
+ 				top: 0px;
+ 				left: 49%;
  				> a {
 					font-size: 13px;
 					font-style: italic;
@@ -186,6 +189,7 @@
 					}
 				}
 				&.about-nav {
+					position: static;
 					> a {
 						font-size: 16px;
 						padding: 10px;

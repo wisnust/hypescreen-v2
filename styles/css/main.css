@@ -6077,15 +6077,19 @@ a, .btn-link {
       .navbar-hypescreen .navbar-nav > li > a > i {
         font-size: 20px;
         font-weight: 700; }
-    .navbar-hypescreen .navbar-nav > li.about-nav > a {
-      font-size: 13px;
-      font-style: italic;
-      letter-spacing: 0.2px;
-      line-height: 17px;
-      padding: 21px 15px;
-      text-align: center;
-      text-transform: none;
-      width: 115px; }
+    .navbar-hypescreen .navbar-nav > li.about-nav {
+      position: absolute;
+      top: 0px;
+      left: 49%; }
+      .navbar-hypescreen .navbar-nav > li.about-nav > a {
+        font-size: 13px;
+        font-style: italic;
+        letter-spacing: 0.2px;
+        line-height: 17px;
+        padding: 21px 15px;
+        text-align: center;
+        text-transform: none;
+        width: 115px; }
     .navbar-hypescreen .navbar-nav > li.nav-signup {
       background-color: #469ce7; }
       .navbar-hypescreen .navbar-nav > li.nav-signup > a {
@@ -6193,10 +6197,12 @@ a, .btn-link {
             .navbar-hypescreen .navbar-nav > li > a:hover, .navbar-hypescreen .navbar-nav > li > a:focus {
               background-color: transparent;
               color: rgba(255, 255, 255, 0.8); }
-          .navbar-hypescreen .navbar-nav > li.about-nav > a {
-            font-size: 16px;
-            padding: 10px;
-            width: 100%; }
+          .navbar-hypescreen .navbar-nav > li.about-nav {
+            position: static; }
+            .navbar-hypescreen .navbar-nav > li.about-nav > a {
+              font-size: 16px;
+              padding: 10px;
+              width: 100%; }
           .navbar-hypescreen .navbar-nav > li.nav-signup {
             background-color: transparent;
             float: left;
@@ -8462,25 +8468,29 @@ a, .btn-link {
   padding: 65px 15px 30px 80px;
   width: 900px; }
 #about-page h1 {
-  font-size: 38px;
+  font-size: 40px;
   color: #5aa9f0;
   margin: 0px; }
-#about-page p.lead {
-  margin: 10px 0px;
-  font-weight: 400;
-  opacity: .8; }
+#about-page p.lead, #about-page .bigger {
+  margin: 35px 0px 20px;
+  font-size: 23px !important;
+  font-weight: 600;
+  opacity: 1 !important; }
 #about-page .about-content h2 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 24px;
-  padding-top: 30px;
-  margin-top: 0px; }
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
 #about-page .about-content p {
-  font-size: 14px;
-  padding: 5px 5px 5px 30px;
+  font-size: 13px;
+  padding: 5px 5px 5px 0px;
   opacity: .8; }
   #about-page .about-content p.no-padding {
-    padding-left: 0; }
+    padding: 0; }
+  #about-page .about-content p.m-bottom-10 {
+    margin-bottom: 10px; }
 #about-page .about-content a {
   color: #5aa9f0;
   font-weight: bold; }
@@ -8510,9 +8520,7 @@ a, .btn-link {
   #about-page .about-content {
     padding-left: 0px; }
     #about-page .about-content h2 {
-      margin-top: 0px; }
-    #about-page .about-content p {
-      padding-left: 20px; } }
+      margin-top: 0px; } }
 
 .my-favorites-not-login {
   text-align: center;
