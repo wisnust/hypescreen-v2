@@ -6622,17 +6622,6 @@ a, .btn-link {
         color: #5aa9f0; }
       .sidenav nav .top-shows .go-to:hover {
         color: #000; }
-.sidenav.sidenav-hover:hover ~ .main-content:before {
-  background-color: rgba(0, 0, 0, 0.65);
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 1;
-  z-index: 8; }
 @media (max-width: 991px) {
   .sidenav:before {
     display: none; }

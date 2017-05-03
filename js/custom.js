@@ -35,6 +35,11 @@ $(document).ready(function() {
             height: '620px'
         });
     }
+    $sideNav.hover(function() {
+        $('html, body').css('overflow', 'hidden');
+    }, function() {
+        $('html, body').css('overflow', 'auto');
+    });
 
     $(window).on("resize", function() {
 

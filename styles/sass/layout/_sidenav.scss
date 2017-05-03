@@ -353,18 +353,6 @@
 			}
 		}
 	}
-	&.sidenav-hover:hover {
-		~ .main-content {
-			&:before {
-				background-color: rgba($c-black, .65);
-				content: "";
-				display: block;
-				@include position(fixed, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px); 
-				opacity: 1;
-				z-index: 8;
-			}
-		}
-	}
 
 	@media (max-width: $screen-sm-max) {
 		&:before {
