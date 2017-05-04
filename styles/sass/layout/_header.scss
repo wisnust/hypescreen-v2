@@ -13,7 +13,7 @@
  	.navbar-header {
  		.navbar-brand {
  			height: 100%;
- 			padding: 20px 0px 0px 40px;
+ 			padding: 20px 0px 0px 60px;
  			> img {
  				width: 220px;
  			}
@@ -24,9 +24,9 @@
 			font-size: 15px;
 			font-weight: 400;
 			line-height: 18px;
-			margin-left: 40px;
+			margin-left: 55px;
 			margin-top: 18px;
-			padding-left: 35px;
+			padding-left: 50px;
 			position: relative;
 			text-transform: uppercase;
 			&:before {
@@ -58,7 +58,7 @@
  				background-color: #469ce7;
  				position: absolute;
  				top: 0px;
- 				left: 50%;
+ 				left: 51%;
  				&:hover, &:focus {
  					background-color: transparent;
  				}
