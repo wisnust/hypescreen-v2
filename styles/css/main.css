@@ -6081,20 +6081,24 @@ a, .btn-link {
         font-size: 20px;
         font-weight: 700; }
     .navbar-hypescreen .navbar-nav > li.about-nav {
+      background-color: #469ce7;
       position: absolute;
       top: 0px;
-      left: 49%; }
+      left: 50%; }
+      .navbar-hypescreen .navbar-nav > li.about-nav:hover, .navbar-hypescreen .navbar-nav > li.about-nav:focus {
+        background-color: transparent; }
       .navbar-hypescreen .navbar-nav > li.about-nav > a {
-        font-size: 13px;
-        font-style: italic;
+        font-size: 14px;
         letter-spacing: 0.2px;
-        line-height: 17px;
-        padding: 21px 15px;
+        line-height: 18px;
+        padding: 20px;
         text-align: center;
         text-transform: none;
-        width: 115px; }
+        width: 130px; }
     .navbar-hypescreen .navbar-nav > li.nav-signup {
       background-color: #469ce7; }
+      .navbar-hypescreen .navbar-nav > li.nav-signup:hover, .navbar-hypescreen .navbar-nav > li.nav-signup:focus {
+        background-color: transparent; }
       .navbar-hypescreen .navbar-nav > li.nav-signup > a {
         outline: none !important; }
     .navbar-hypescreen .navbar-nav > li.nav-login {
@@ -6121,7 +6125,7 @@ a, .btn-link {
         height: 36px;
         padding: 15px 20px;
         transition: all .3s;
-        width: 237px; }
+        width: 190px; }
         .navbar-hypescreen .navbar-nav .form-search .form-control::-webkit-input-placeholder {
           color: #fff;
           text-transform: uppercase; }
@@ -6135,7 +6139,7 @@ a, .btn-link {
           color: #fff;
           text-transform: uppercase; }
         .navbar-hypescreen .navbar-nav .form-search .form-control:focus {
-          width: 257px;
+          width: 200px;
           -moz-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
           -o-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
           -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -6201,9 +6205,11 @@ a, .btn-link {
               background-color: transparent;
               color: rgba(255, 255, 255, 0.8); }
           .navbar-hypescreen .navbar-nav > li.about-nav {
+            background-color: transparent;
             position: static; }
             .navbar-hypescreen .navbar-nav > li.about-nav > a {
-              font-size: 16px;
+              font-size: 17px;
+              letter-spacing: .4px;
               padding: 10px;
               width: 100%; }
           .navbar-hypescreen .navbar-nav > li.nav-signup {

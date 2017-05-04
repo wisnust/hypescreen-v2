@@ -55,22 +55,28 @@
 	 			}
 	 		}
  			&.about-nav {
+ 				background-color: #469ce7;
  				position: absolute;
  				top: 0px;
- 				left: 49%;
+ 				left: 50%;
+ 				&:hover, &:focus {
+ 					background-color: transparent;
+ 				}
  				> a {
-					font-size: 13px;
-					font-style: italic;
+					font-size: 14px;
 					letter-spacing: 0.2px;
-					line-height: 17px;
-					padding: 21px 15px;
+					line-height: 18px;
+					padding: 20px;
 					text-align: center;
 					text-transform: none;
-					width: 115px;
+					width: 130px;
 	 			}
  			}
 	 		&.nav-signup {
 	 			background-color: #469ce7;
+ 				&:hover, &:focus {
+ 					background-color: transparent;
+ 				}
 	 			> a {
 	 				outline: none !important;
 	 			}
@@ -106,7 +112,7 @@
 			    height: 36px;
     			padding: 15px 20px;
     			transition: all .3s;
-    			width: 237px;
+    			width: 190px;
 			    &::-webkit-input-placeholder {
 				 	color: $c-white;
 			    	text-transform: uppercase;
@@ -124,7 +130,7 @@
 			    	text-transform: uppercase;
 				}
 				&:focus {
-					width: 257px;
+					width: 200px;
 					@include box-shadow(inset 2px 2px 4px rgba($c-black, .1));
 				}
 	 		}
@@ -189,9 +195,11 @@
 					}
 				}
 				&.about-nav {
+					background-color:transparent;
 					position: static;
 					> a {
-						font-size: 16px;
+						font-size: 17px;
+						letter-spacing: .4px;
 						padding: 10px;
 						width: 100%;
 					}
