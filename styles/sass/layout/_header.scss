@@ -53,12 +53,17 @@
 	 				font-size: 20px;
 	 				font-weight: 700;
 	 			}
+	 			> .instagram-icon {
+	 				display: block;
+	 				margin-top: 1px;
+	 				width: 17px;
+	 			}
 	 		}
  			&.about-nav {
  				background-color: #469ce7;
  				position: absolute;
  				top: 0px;
- 				left: 51%;
+ 				left: 53%;
  				&:hover, &:focus {
  					background-color: transparent;
  				}
@@ -70,6 +75,9 @@
 					text-align: center;
 					text-transform: none;
 					width: 130px;
+	 			}
+	 			&.anonymous {
+	 				left: 49.5%;
 	 			}
  			}
 	 		&.nav-signup {

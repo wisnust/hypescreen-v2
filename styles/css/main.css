@@ -6080,11 +6080,15 @@ a, .btn-link {
       .navbar-hypescreen .navbar-nav > li > a > i {
         font-size: 20px;
         font-weight: 700; }
+      .navbar-hypescreen .navbar-nav > li > a > .instagram-icon {
+        display: block;
+        margin-top: 1px;
+        width: 17px; }
     .navbar-hypescreen .navbar-nav > li.about-nav {
       background-color: #469ce7;
       position: absolute;
       top: 0px;
-      left: 51%; }
+      left: 53%; }
       .navbar-hypescreen .navbar-nav > li.about-nav:hover, .navbar-hypescreen .navbar-nav > li.about-nav:focus {
         background-color: transparent; }
       .navbar-hypescreen .navbar-nav > li.about-nav > a {
@@ -6095,6 +6099,8 @@ a, .btn-link {
         text-align: center;
         text-transform: none;
         width: 130px; }
+      .navbar-hypescreen .navbar-nav > li.about-nav.anonymous {
+        left: 49.5%; }
     .navbar-hypescreen .navbar-nav > li.nav-signup {
       background-color: #469ce7; }
       .navbar-hypescreen .navbar-nav > li.nav-signup:hover, .navbar-hypescreen .navbar-nav > li.nav-signup:focus {
