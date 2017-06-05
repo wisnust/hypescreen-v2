@@ -88,7 +88,18 @@
 	}
 
 	@media (max-width: $screen-xs-max) {
-		
+		margin-top: 0px !important;
+		> a {
+			width: 25px;
+			height: 25px;
+			> i {
+				font-size: 9px;
+				padding: 7px;
+				& + .tooltip {
+					display: none !important;
+				}
+			}
+		}
 		.popover.top {
 			min-width: 300px; 
 		    margin-left: -100px;  

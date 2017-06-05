@@ -312,8 +312,11 @@
 				}
 			}
 			.share-watchlist {
-				@include position(absolute, $top: 318px, $right: 20px);
+				@include position(absolute, $top: 5px, $right: 5px);
 				z-index: 30;
+			}
+			.add-watchlist > a > i {
+				font-size: 11px !important;
 			}
 		}
 		> .card-body {
@@ -422,14 +425,6 @@
 			}
 		}
 	} 
-	@media (max-width: 322px) {
-		> .card-header {
-			.share-watchlist {
-				top: 285px;
-				right: 15px;
-			}
-		}
-	}
 	@media (min-width: $screen-sm-min) {
 		> .card-body {  
 			> .content {

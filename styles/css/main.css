@@ -7273,9 +7273,11 @@ a, .btn-link {
           width: 80px; }
       .card > .card-header .share-watchlist {
         position: absolute;
-        top: 318px;
-        right: 20px;
+        top: 5px;
+        right: 5px;
         z-index: 30; }
+      .card > .card-header .add-watchlist > a > i {
+        font-size: 11px !important; }
     .card > .card-body {
       padding: 0px 20px;
       margin-bottom: 30px; }
@@ -7373,10 +7375,6 @@ a, .btn-link {
           -o-transform: scale(0);
           -webkit-transform: scale(0);
           transform: scale(0); } }
-  @media (max-width: 322px) {
-    .card > .card-header .share-watchlist {
-      top: 285px;
-      right: 15px; } }
   @media (min-width: 768px) {
     .card > .card-body > .content > .likes {
       top: inherit !important; } }
@@ -8141,13 +8139,23 @@ a, .btn-link {
         top: 100%;
         margin-top: -11px; }
   @media (max-width: 767px) {
-    .share .popover.top, .card > .card-header .add-watchlist .popover.top {
-      min-width: 300px;
-      margin-left: -100px; }
-      .share .popover.top .popover-content, .card > .card-header .add-watchlist .popover.top .popover-content {
-        padding: 0px; }
-        .share .popover.top .popover-content .share-arrow, .card > .card-header .add-watchlist .popover.top .popover-content .share-arrow {
-          left: 73.5%; } }
+    .share, .card > .card-header .add-watchlist {
+      margin-top: 0px !important; }
+      .share > a, .card > .card-header .add-watchlist > a {
+        width: 25px;
+        height: 25px; }
+        .share > a > i, .card > .card-header .add-watchlist > a > i {
+          font-size: 9px;
+          padding: 7px; }
+          .share > a > i + .tooltip, .card > .card-header .add-watchlist > a > i + .tooltip {
+            display: none !important; }
+      .share .popover.top, .card > .card-header .add-watchlist .popover.top {
+        min-width: 300px;
+        margin-left: -100px; }
+        .share .popover.top .popover-content, .card > .card-header .add-watchlist .popover.top .popover-content {
+          padding: 0px; }
+          .share .popover.top .popover-content .share-arrow, .card > .card-header .add-watchlist .popover.top .popover-content .share-arrow {
+            left: 73.5%; } }
   @media (max-width: 322px) {
     .share .popover.top, .card > .card-header .add-watchlist .popover.top {
       min-width: 260px; }
