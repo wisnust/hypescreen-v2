@@ -46,6 +46,27 @@
 			    }
 		    }
 	    }
+		.sticky-play {
+			@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px);
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			align-items: center;
+			> a {
+				transition: opacity .3s;
+				> img {
+					width: 70px;
+				}
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
     }
     &.video-large {
 		@include aspect-ratio-video(16,9);
@@ -91,6 +112,13 @@
 			    bottom: 13px;
 			    font-size: 10px;
 			    padding: 5px 10px;
+			}
+			.sticky-play {
+				> a {
+					> img {
+						width: 50px;
+					}
+				}
 			}
 		}
 		&.video-large {
