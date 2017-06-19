@@ -268,6 +268,7 @@
 }
 
 .subscriber-modal {
+	color: #919191;
 	.modal-dialog {
 		width: 600px;
 		.modal-content {
@@ -305,20 +306,27 @@
 				    margin: 0px 0px 30px;
 		    	}
 				.subscribe-form {
-					margin: 0 auto 60px;
+					margin: 0 auto 35px;
 					width: 300px;
 					> form {
-						> .form-group > .form-control {
-							border-color: #bdbdbd;
-							height: 35.5px;
-							&:focus {
-								border-color: $c-blue;
+						> .form-group {
+							margin-bottom: 10px;
+							> .form-control {
+								border-color: #bdbdbd;
+								height: 35.5px;
+								&:focus {
+									border-color: $c-blue;
+								}
 							}
 						}
 						> .btn-primary {
 							font-size: 11px;
 							padding: 9px 15px;
 						}
+					}
+					> .notes {
+						font-size: 10px;
+						margin: 0px;
 					}
 				}
 				h3 {
@@ -365,7 +373,7 @@
 						line-height: 24px;
 					}
 					.subscribe-form {
-						margin: 0 auto 50px;
+						margin: 0 auto 35px;
 						padding: 0px 30px 0px;
 						width: auto;
 					}

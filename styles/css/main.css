@@ -7955,107 +7955,114 @@ a, .btn-link {
     .signup-modal .modal-dialog .modal-content .modal-body > form {
       padding: 0px 20px; } }
 
-.subscriber-modal .modal-dialog {
-  width: 600px; }
-  .subscriber-modal .modal-dialog .modal-content {
-    border: 0px;
-    border-radius: 0px;
-    -moz-box-shadow: 0px 0px 0px transparent;
-    -o-box-shadow: 0px 0px 0px transparent;
-    -webkit-box-shadow: 0px 0px 0px transparent;
-    box-shadow: 0px 0px 0px transparent; }
-    .subscriber-modal .modal-dialog .modal-content .modal-header {
-      border: 0px;
-      padding: 40px 0px 30px;
-      text-align: center;
-      overflow: hidden; }
-      .subscriber-modal .modal-dialog .modal-content .modal-header > img {
-        width: 210px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-header .close {
-        position: absolute;
-        top: 13px;
-        right: 14px;
-        opacity: 1;
-        transition: opacity .3s; }
-        .subscriber-modal .modal-dialog .modal-content .modal-header .close:hover, .subscriber-modal .modal-dialog .modal-content .modal-header .close:focus {
-          opacity: .5; }
-      .subscriber-modal .modal-dialog .modal-content .modal-header .subscribe-img {
-        margin: 30px -35px 0px; }
-    .subscriber-modal .modal-dialog .modal-content .modal-body {
-      padding: 0px 50px 20px;
-      text-align: center; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
-        color: #f59c63;
-        font-size: 26px;
-        font-weight: 600;
-        line-height: 32px;
-        margin: 0px 0px 30px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
-        margin: 0 auto 60px;
-        width: 300px; }
-        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control {
-          border-color: #bdbdbd;
-          height: 35.5px; }
-          .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control:focus {
-            border-color: #5aa9f0; }
-        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
-          font-size: 11px;
-          padding: 9px 15px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body h3 {
-        color: #919191;
-        font-size: 20px;
-        line-height: 24px;
-        margin: 0px 0px 20px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup {
-        background: #5aa9f0;
-        display: block;
-        font-size: 14px;
-        margin: 25px auto;
-        padding: 8px;
-        letter-spacing: 0px;
-        line-height: 19px;
-        border: 0px;
-        width: 70px;
-        transition: background-color .3s; }
-        .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup:hover, .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup:focus {
-          background-color: #4e91ce; }
-@media (max-width: 767px) {
+.subscriber-modal {
+  color: #919191; }
   .subscriber-modal .modal-dialog {
-    margin: 80px 20px 0px;
-    width: auto; }
+    width: 600px; }
+    .subscriber-modal .modal-dialog .modal-content {
+      border: 0px;
+      border-radius: 0px;
+      -moz-box-shadow: 0px 0px 0px transparent;
+      -o-box-shadow: 0px 0px 0px transparent;
+      -webkit-box-shadow: 0px 0px 0px transparent;
+      box-shadow: 0px 0px 0px transparent; }
+      .subscriber-modal .modal-dialog .modal-content .modal-header {
+        border: 0px;
+        padding: 40px 0px 30px;
+        text-align: center;
+        overflow: hidden; }
+        .subscriber-modal .modal-dialog .modal-content .modal-header > img {
+          width: 210px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-header .close {
+          position: absolute;
+          top: 13px;
+          right: 14px;
+          opacity: 1;
+          transition: opacity .3s; }
+          .subscriber-modal .modal-dialog .modal-content .modal-header .close:hover, .subscriber-modal .modal-dialog .modal-content .modal-header .close:focus {
+            opacity: .5; }
+        .subscriber-modal .modal-dialog .modal-content .modal-header .subscribe-img {
+          margin: 30px -35px 0px; }
+      .subscriber-modal .modal-dialog .modal-content .modal-body {
+        padding: 0px 50px 20px;
+        text-align: center; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
+          color: #f59c63;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 32px;
+          margin: 0px 0px 30px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
+          margin: 0 auto 35px;
+          width: 300px; }
+          .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group {
+            margin-bottom: 10px; }
+            .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control {
+              border-color: #bdbdbd;
+              height: 35.5px; }
+              .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .form-group > .form-control:focus {
+                border-color: #5aa9f0; }
+          .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
+            font-size: 11px;
+            padding: 9px 15px; }
+          .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > .notes {
+            font-size: 10px;
+            margin: 0px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body h3 {
+          color: #919191;
+          font-size: 20px;
+          line-height: 24px;
+          margin: 0px 0px 20px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup {
+          background: #5aa9f0;
+          display: block;
+          font-size: 14px;
+          margin: 25px auto;
+          padding: 8px;
+          letter-spacing: 0px;
+          line-height: 19px;
+          border: 0px;
+          width: 70px;
+          transition: background-color .3s; }
+          .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup:hover, .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup:focus {
+            background-color: #4e91ce; }
+  @media (max-width: 767px) {
+    .subscriber-modal .modal-dialog {
+      margin: 80px 20px 0px;
+      width: auto; }
+      .subscriber-modal .modal-dialog .modal-content .modal-header {
+        padding: 40px 0px 20px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-header .close {
+          top: 10px;
+          right: 10px; }
+      .subscriber-modal .modal-dialog .modal-content .modal-body {
+        padding: 0px 10px 40px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
+          font-size: 16px;
+          line-height: 24px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
+          margin: 0 auto 35px;
+          padding: 0px 30px 0px;
+          width: auto; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body h3 {
+          font-size: 14px;
+          line-height: 20px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup {
+          margin: 20px auto 0px; } }
+  @media (max-width: 322px) {
     .subscriber-modal .modal-dialog .modal-content .modal-header {
-      padding: 40px 0px 20px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-header .close {
-        top: 10px;
-        right: 10px; }
+      padding: 30px 0px 20px; }
+      .subscriber-modal .modal-dialog .modal-content .modal-header .subscribe-img {
+        margin-top: 20px; }
     .subscriber-modal .modal-dialog .modal-content .modal-body {
-      padding: 0px 10px 40px; }
+      padding: 0px 10px 35px; }
       .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
-        font-size: 16px;
-        line-height: 24px; }
+        margin-bottom: 20px; }
       .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
-        margin: 0 auto 50px;
-        padding: 0px 30px 0px;
-        width: auto; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body h3 {
-        font-size: 14px;
-        line-height: 20px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body .btn-signup {
-        margin: 20px auto 0px; } }
-@media (max-width: 322px) {
-  .subscriber-modal .modal-dialog .modal-content .modal-header {
-    padding: 30px 0px 20px; }
-    .subscriber-modal .modal-dialog .modal-content .modal-header .subscribe-img {
-      margin-top: 20px; }
-  .subscriber-modal .modal-dialog .modal-content .modal-body {
-    padding: 0px 10px 35px; }
-    .subscriber-modal .modal-dialog .modal-content .modal-body h2 {
-      margin-bottom: 20px; }
-    .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form {
-      padding: 0px;
-      width: 230px; }
-      .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
-        padding: 9px 9px; } }
+        padding: 0px;
+        width: 230px; }
+        .subscriber-modal .modal-dialog .modal-content .modal-body .subscribe-form > form > .btn-primary {
+          padding: 9px 9px; } }
 
 .row.no-gutters {
   margin-right: 0;
