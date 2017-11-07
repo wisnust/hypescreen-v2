@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="Web TV Worth Watching">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>hypeSCREEN</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="styles/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:400,700" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--==========================================
+                        Header 
+    ===========================================-->
+    <header>
+        <nav class="navbar navbar-hypescreen">
+            <div class="container-fluid">
+
+                <!-- Nav mobile -->
+                <div class="nav-mobile">
+                    <a id="show-sidenav"> 
+                        <img src="images/icon/bars_icon.svg" class="bars-icon" /> 
+                        <img src="images/icon/close_icon.svg" class="close-icon" /> 
+                    </a>
+                </div>
+
+                <!-- Logo -->
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo" title="logo"></a> 
+                    <p class="tagline">
+                        FIND, CLICK &amp; WATCH - TOTALLY FREE <br/>ONLINE TV FOR EVERYONE
+                    </p>
+                </div>
+
+                <!-- Navbar menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="about-nav anonymous"><a href="about.html">What is hypeSCREEN?</a></li>
+                    <li class="form-nav">
+                        <form class="form-search navbar-form navbar-left">
+                            <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn btn-submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="icon-link hidden-xs hidden-sm"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="icon-link hidden-xs hidden-sm"><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li class="icon-link hidden-xs hidden-sm"><a href="https://www.instagram.com/hypescreen/"><img class="instagram-icon" src="images/icon/instagram.png"/></a></li>
+
+                    <!-- User not login -->
+                    <li class="nav-signup"><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li> 
+                    <li class="nav-login"><a href="#" data-toggle="modal" data-target="#loginModal">LOG IN</a></li>
+
+                    <!-- User login -->
+                    <!-- <li class="dropdown user-login">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.png" class="user-img" alt="user" title="user" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="index.html">Log out</a></li> 
+                        </ul>
+                    </li> -->
+
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+    <!--==========================================
+                        Main
+    ===========================================-->
+    <main>
+
+
+        <!--==========================================
+                        MAIN CONTENT
+        ===========================================-->
+        <div class="main-content">
+            <div class="container container-feeds">
+                <!-- Feeds grid -->
+                <div class="feeds-grid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="#">
+                                        <img src="images/newsfeed/post_1.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Episode</p>
+                                        <h2>5 Ways To..</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            "Kevin Hart is here!"
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="#">
+                                        <img src="images/browse_shows/post_2.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Show</p>
+                                        <h2>73 Questions</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa
+                                        </h4>
+                                        <p>
+                                            Guitar Greats featuring Billy Gibbons Concert - Skyville Live | go90
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="http://hypescreen.pythonanywhere.com/media/LtVYnZih_7THUMBNAIL.jpg.jpg" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Show</p>
+                                        <h2>7 Minutes in Heaven</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            labore et dolore magna aliqua
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="http://hypescreen.pythonanywhere.com/media/7p10ethumb.jpg" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>You Might Like:</p>
+                                        <h2>7P/10E</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            "Kevin Hart is here!"
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="images/browse_shows/post_1.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Episode</p>
+                                        <h2>8 Bit Cooking School</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            "Kevin Hart is here!"
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="images/browse_shows/post_4.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Show</p>
+                                        <h2>73 Questions</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa
+                                        </h4>
+                                        <p>
+                                            Guitar Greats featuring Billy Gibbons Concert - Skyville Live | go90
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="images/browse_shows/post_6.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Episode</p>
+                                        <h2>Hot Ones</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            labore et dolore magna aliqua
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="feeds-item">
+                                <div class="feeds-header">
+                                    <a href="">
+                                        <img src="images/browse_shows/post_1.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="feeds-body">
+                                    <div class="feeds-titles">
+                                        <p>New Episode</p>
+                                        <h2>Hot Ones</h2>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4 class="feeds-quote">
+                                            "Kevin Hart is here!"
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feeds-footer">
+                                    <div class="feeds-date">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>1 week, 2 days ago</span>
+                                    </div>
+                                    <div class="watchlist-control">
+                                        <a href="#" class="act-toggle-watchlist">
+                                            <i class="fa fa-plus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Add to Watchlist"></i>
+                                            <i class="fa fa-minus" data-placement="top" data-toggle="tooltip" title="" data-original-title="Remove from Watchlist"></i>
+                                        </a>
+                                    </div>
+                                    <div class="likes clearfix">
+                                        <button class="btn" type="button"><img src="images/icon/thumb_up_icon.png"/></button>
+                                        <span class="count">23</span>
+                                        <span class="text">Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!--==========================================
+                        Footer
+    ===========================================-->
+    <footer id="footer" class="footer">
+        <div class="footer-inner container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="logo" title="logo" />
+                </a>
+            </div>
+            <div class="footer-links">
+                <ul class="list-inline">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright &copy; 2016 <a href="#">hypeSCREEN</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOG IN MODAL -->
+    <div class="modal fade v-middle login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+
+                        <!-- Button Login -->  <!-- <button type="submit" class="btn btn-primary btn-login">Log in</button> -->
+
+                        <!-- For demo page --> <a href="user-login.html" class="btn btn-primary btn-login">Log in</a>
+
+                        <a href="#" class="btn btn-link btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Or sign up here</a>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SIGN UP MODAL -->
+    <div class="modal fade v-middle signup-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="auth">
+                        <a href="user-login.html" class="facebook"><img src="images/sign_in_fb.png"/></a>
+                        <a href="user-login.html" class="google-plus"><img src="images/sign_in_google.png"/></a>
+                    </div>
+                    <div class="divider"><span>- OR -</span></div>
+                    <form>
+                        <div class="form-group">
+                            <input type="username" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div> 
+                        <div class="form-group">
+                            <input type="confirm-password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                        </div>  
+
+                        <a href="user-login.html" class="btn btn-primary btn-signup">Sign Up</a>
+                        
+                        <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in here</a>.</p>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBER MODAL -->
+    <div class="modal fade v-middle subscriber-modal" id="subscriberModal" tabindex="-1" role="dialog" aria-labelledby="subscriberModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/icon/close_modal_icon.svg"/></button>
+                    <img src="images/logo_lg.png" alt="logo" title="logo" />
+                    <div class="subscribe-img">
+                        <img src="images/subscribe_img.png" class="img-responsive" alt="subscribe" title="subscribe"/>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>
+                        Get the best shows online <br/>
+                        delivered straight to your inbox.
+                    </h2>
+                    <!-- Subscribe form -->
+                    <div class="subscribe-form"> 
+                        <form>
+                            <div class="form-group">
+                                <input id="email_subscribe" type="email" name="email_subscribe" class="form-control" placeholder="Enter your email address"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                        <p class="notes">Unsubscribe anytime.</p>
+                    </div>
+                    <h3>
+                        Or sign up, <br/>
+                        to get the newsletter + full access to site.
+                    </h3>
+                    <a href="#" class="btn btn-primary btn-signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!--==========================================
+                  Javascript core
+    ===========================================-->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/modernizr.min.js"></script>   -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

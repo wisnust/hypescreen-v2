@@ -67,11 +67,14 @@ a, .btn-link {
 
 .main-content {
 	padding-top: 75px;
-	padding-left: $left-335px;
+	// padding-left: $left-335px;
 	.container { 
 		padding-top: 50px;
 		padding-bottom: 50px;
 		width: 805px;
+	}
+	.container-feeds {
+		width: 1300px;
 	}
 	@media (max-width: $screen-sm-max) {
 		padding-top: 85px;
@@ -79,7 +82,7 @@ a, .btn-link {
 		&:before {
 			display: none;
 		}
-		.container {
+		.container, .container-feeds {
 			width: 100%;
 			padding: 30px 20px; 
 		}
@@ -94,5 +97,16 @@ a, .btn-link {
 			background-color: #eee;
 			opacity: .8;
 		}
+	}
+}
+
+// No gutters
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+	> [class^="col-"],
+	> [class*=" col-"] {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }

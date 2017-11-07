@@ -190,4 +190,10 @@ $(document).ready(function() {
     //         $(this).parent().nextAll().removeClass('unselected');
     //     });
     // });
+
+    // Toggle watchlist
+    $('.act-toggle-watchlist').click(function(e) {
+        $(this).toggleClass('active');
+        e.preventDefault();
+    });
 });

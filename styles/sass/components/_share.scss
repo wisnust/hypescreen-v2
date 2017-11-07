@@ -17,16 +17,10 @@
 	    	padding: 10px;
 			& + .tooltip > {
 				.tooltip-inner {
-					background-color: $c-blue;
-					border-radius: 100px;
-					color: $c-white;
-					font-size: 12px;
-					letter-spacing: -0.09px;
-					padding: 4px 12px;
-					max-width: 400px !important;
+					background-color: #bf61a7 !important;
 				}
 				.tooltip-arrow { 
-					border-top-color: $c-blue, 
+					border-top-color: #bf61a7 !important; 
 				}
 			}
 	    }

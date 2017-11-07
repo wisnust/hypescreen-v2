@@ -1,0 +1,80 @@
+.likes {
+	@include clearfix;
+    min-width: 90px;
+	> button {    
+		@include gradient(left, #925AF7 -58%, #FF6C37 100%);
+		background-image: linear-gradient(to right, #925AF7 -58%, #FF6C37 100%);
+	    box-shadow: 0 9px 19px 0 rgba(208,100,138,0.41);
+	    border-radius: 100px;
+	    border: 0px;
+	    width: 46px;
+	    height: 46px;
+	    display: inline-block;
+	    padding: 10px;
+	    text-align: center;
+	    float: left;
+	    margin-right: 5px;
+	    position: relative;
+	    z-index: 3;
+	    top: 0px;
+	    transition: all .3s;
+	    outline: none !important;
+	    &:before {
+	    	content: " ";
+	    	display: block;
+	    	@include position(absolute, $top: 0px, $right: 0px, $bottom: 0px, $left: 0px); 
+			@include gradient(left, #FF6C37 -10%, #925AF7 100%);
+			background-image: linear-gradient(to right, #FF6C37 -10%, #925AF7 100%);
+	    	border-radius: 100px;
+			opacity: 0;
+			transition: opacity .3s;
+	    }
+	    &:hover {
+	    	@include box-shadow(0 13px 28px 0 rgba(208, 100, 138, 0.41));
+	    	&:before {
+	    		opacity: 1;
+	    	}
+	    }
+	    > img {
+	    	position: relative;
+	    	top: -2px;
+	    	z-index: 3;
+	    }
+	    &.not-like { 
+			@include gradient(left, #bdbdbd 3%, #8999AB 80%); 
+	    	background-image: linear-gradient(117deg, #bdbdbd 3%, #8999AB 80%);
+			box-shadow: 0 9px 19px 0 rgba(145,145,145,0.50);
+			&:before {
+				@include gradient(left, #8999AB 30%, #bdbdbd 110%);  
+		    	background-image: linear-gradient(117deg, #8999AB 30%, #bdbdbd 110%);
+			}
+			~ .text {
+				color: #5B6575;
+				opacity: 1;
+			}
+			&:hover {
+				@include box-shadow(0 13px 28px 0 rgba(145,145,145,0.50));
+			}
+	    }
+	}
+	> .count {
+		margin-top: 5px;
+		margin-bottom: 3px;
+		opacity: 0.71;
+	    font-size: 26px;
+	    color: #5B6575;
+	    letter-spacing: -0.57px;
+	    line-height: 18px;
+	    display: block;
+	    white-space: nowrap;
+	}
+	> .text {
+		opacity: 0.31;
+	    font-size: 11px;	
+	    color: #5B6575;
+	    letter-spacing: -0.17px;
+	    line-height: 18px;
+	    text-transform: uppercase;
+	    display: block;
+	}
+}
