@@ -1,0 +1,56 @@
+.main-menu {
+	margin-bottom: 30px;
+	ul {
+		padding: 0;
+		margin: 0 -17px;
+		> li {
+			padding: 0;
+			> a {
+				color: #bdbdbd;
+				font-size: 30px;
+				letter-spacing: -0.5px;
+				padding: 0 17px;
+				position: relative;
+				text-transform: uppercase;
+				transition: color .3s;
+				&:hover, &:focus {
+					color: #757575;
+					&:before {
+						color: #bdbdbd;
+					}
+				}
+			}
+			&.active {
+				> a {
+					color: #757575;
+					font-weight: 600;
+				}
+			}
+			&:not(:first-of-type) {
+				> a {
+					&:before {
+						position: absolute;
+						top: -3px;
+						left: -8px;
+						content: "/";
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		ul {
+			margin: 0 -12px;
+			> li {
+				> a {
+					font-size: 16px;
+					padding: 0 12px;
+				}
+				&:not(:first-of-type) > a:before {
+					top: -1px;
+					left: -5px;
+				}
+			}
+		}
+	}
+}

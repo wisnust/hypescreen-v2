@@ -8770,6 +8770,43 @@ a, .btn-link {
     text-transform: uppercase;
     display: block; }
 
+.main-menu {
+  margin-bottom: 30px; }
+  .main-menu ul {
+    padding: 0;
+    margin: 0 -17px; }
+    .main-menu ul > li {
+      padding: 0; }
+      .main-menu ul > li > a {
+        color: #bdbdbd;
+        font-size: 30px;
+        letter-spacing: -0.5px;
+        padding: 0 17px;
+        position: relative;
+        text-transform: uppercase;
+        transition: color .3s; }
+        .main-menu ul > li > a:hover, .main-menu ul > li > a:focus {
+          color: #757575; }
+          .main-menu ul > li > a:hover:before, .main-menu ul > li > a:focus:before {
+            color: #bdbdbd; }
+      .main-menu ul > li.active > a {
+        color: #757575;
+        font-weight: 600; }
+      .main-menu ul > li:not(:first-of-type) > a:before {
+        position: absolute;
+        top: -3px;
+        left: -8px;
+        content: "/"; }
+  @media (max-width: 767px) {
+    .main-menu ul {
+      margin: 0 -12px; }
+      .main-menu ul > li > a {
+        font-size: 16px;
+        padding: 0 12px; }
+      .main-menu ul > li:not(:first-of-type) > a:before {
+        top: -1px;
+        left: -5px; } }
+
 #about-page .main-content .container {
   color: #757575;
   margin-left: 0;
