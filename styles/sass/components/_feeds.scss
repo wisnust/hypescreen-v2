@@ -8,6 +8,19 @@
 			padding-right: 25px;
 		}
 	}
+	.subscribe-card {
+		@include flexbox;
+		@include justify-content(center);
+		@include align-items(center);
+		margin: 0 0 60px;
+		min-height: 460px;
+		padding: 30px;
+		.inner {
+			> h3 {
+				font-size: 18px;
+			}
+		}
+	}
 	@media (max-width: $screen-xs-max) {
 		.row {
 			margin-left: -20px;
@@ -16,6 +29,17 @@
 			> [class*=" col-"] {
 				padding-left: 0;
 				padding-right: 0;
+			}
+		}
+		.subscribe-card {
+			border-radius: 0;
+			margin-bottom: 0;
+			min-height: auto;
+			padding: 45px 30px;
+			.inner {
+				> h3 {
+					font-size: 15px;
+				}
 			}
 		}
 	}
