@@ -6010,7 +6010,7 @@ a, .btn-link {
     padding-bottom: 50px;
     width: 805px; }
   .main-content .container-feeds {
-    width: 1300px; }
+    width: 1355px; }
   @media (max-width: 991px) {
     .main-content {
       padding-top: 85px;
@@ -8521,12 +8521,12 @@ a, .btn-link {
                 opacity: 1; } }
 
 .feeds-grid .row {
-  margin-left: -25px;
-  margin-right: -25px; }
+  margin-left: -30px;
+  margin-right: -30px; }
   .feeds-grid .row > [class^="col-"],
   .feeds-grid .row > [class*=" col-"] {
-    padding-left: 25px;
-    padding-right: 25px; }
+    padding-left: 30px;
+    padding-right: 30px; }
 .feeds-grid .subscribe-card {
   display: -webkit-box;
   display: -webkit-flex;
